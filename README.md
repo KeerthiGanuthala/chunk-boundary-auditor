@@ -20,7 +20,7 @@ A chunker's output cannot show which facts it split across a boundary, because t
 
 ## The numbers that are not flattering
 
-- **The usual fix for extraction, `sort=True`, breaks 122 of the 396 planted facts (30.8 percent of every fact in the fixture) before any chunker runs.** Every one of them is on a two-column page, where position-sorted extraction interleaves the columns line by line: the fixture has 198 facts on two-column pages and sorting breaks 61.6 percent of them. Block clustering breaks 0 of the same facts.
+- **The usual fix for extraction, `sort=True`, breaks 122 of the 396 planted facts (30.8 percent of every fact in the fixture) before any chunker runs: roughly one answer in three that no retriever will ever see.** Every one of them is on a two-column page, where position-sorted extraction interleaves the columns line by line: the fixture has 198 facts on two-column pages and sorting breaks 61.6 percent of them. Block clustering breaks 0 of the same facts.
 - **Giving the recursive splitter 32 tokens of overlap loses 1 more fact than no overlap at all, and 64 tokens loses 4 more.** The carried pieces take room in the next chunk and push apart a paragraph pair that used to fit. It reaches zero at 256 tokens of overlap, half the chunk.
 - **The best strategy still orphans 5 facts at the policy size of 512 tokens.** Fixed windows, the tutorial default, lose 17 facts (4.3 percent of planted facts); the recursive splitter loses 20; page-aware windows lose 51, because all 36 cross-page facts are unreachable to it by construction.
 
@@ -235,7 +235,7 @@ Exit codes of `chunkaudit audit`:
 
 Code 1 is a finding and codes 2 and 3 are failures to find; a CI job should treat them differently. `chunkaudit audit --mode sorted` exits 1 on this fixture, by design.
 
-Make targets: `lint`, `test`, `fixtures` (the manifest check), `audit`, `experiments`, `receipts`, `evidence`, and `verify`, which runs lint, test, fixtures, experiments and receipts in that order. `receipts` re-measures every figure into `docs/metrics.json` and then runs `tools/check_numbers.py`, which matches anchor phrases rather than bare digits: "orphans 17 facts" going stale is caught even when the digits 17 still appear somewhere in a table.
+Make targets: `lint`, `test`, `fixtures` (the manifest check), `audit`, `experiments`, `receipts`, `docs` (rewrites the README tables and the banner from the measured numbers), `evidence`, and `verify`, which runs lint, test, fixtures, experiments and receipts in that order. `receipts` re-measures every figure into `docs/metrics.json` and then runs `tools/check_numbers.py`, which matches anchor phrases rather than bare digits: "orphans 17 facts" going stale is caught even when the digits 17 still appear somewhere in a table. `evidence` regenerates the diagram, screenshots and demo; it needs the `evidence` extra, Chromium via `playwright install chromium`, ffmpeg, and a local `mermaid.min.js` (each tool's docstring says where it looks).
 
 ## Stack
 
