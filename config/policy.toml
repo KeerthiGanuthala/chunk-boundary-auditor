@@ -6,7 +6,8 @@
 [fixture]
 # The seed fixes every document, every planted fact and every PDF byte. Change it and
 # `chunkaudit generate` produces a different corpus; `chunkaudit generate --check` then
-# fails until the committed fixture is regenerated. The date is the day the corpus was frozen.
+# fails until the committed fixture is regenerated. The value reads like a date; it is only an
+# integer and nothing derives a date from it.
 seed = 20251116
 documents = 18
 # Pages per document are drawn uniformly from this range so cross-page facts have room.

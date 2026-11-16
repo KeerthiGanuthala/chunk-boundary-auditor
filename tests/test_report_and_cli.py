@@ -1,12 +1,12 @@
 """The table, the verdict and the four exit codes, exercised through the real CLI."""
 
 import json
-from pathlib import Path
 
 import pytest
 
 from chunkaudit.cli import main
 from chunkaudit.config import load_policy
+from chunkaudit.fixture import DEFAULT_FIXTURE_DIR
 from chunkaudit.pipeline import run_audit
 from chunkaudit.report import (
     EXIT_ERROR,
@@ -206,7 +206,7 @@ def test_cli_explain_shows_where_each_span_landed(capsys):
 
 
 def test_cli_explain_reports_a_span_lost_in_extraction(capsys):
-    facts = json.loads(Path("fixtures/facts.json").read_text(encoding="utf-8"))
+    facts = json.loads((DEFAULT_FIXTURE_DIR / "facts.json").read_text(encoding="utf-8"))
     two_col = {d["doc_id"] for d in facts["documents"] if d["layout"] != "single"}
     fact_id = next(
         f["fact_id"]
