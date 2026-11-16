@@ -1,0 +1,43 @@
+{
+ "note": "animated explainer rendered from docs/metrics.json; captions only, no narration",
+ "resolution": [
+  1280,
+  720
+ ],
+ "scenes": [
+  {
+   "id": "title",
+   "seconds": 5.0
+  },
+  {
+   "id": "problem",
+   "seconds": 13.0
+  },
+  {
+   "id": "method",
+   "seconds": 12.0
+  },
+  {
+   "id": "extraction",
+   "seconds": 13.0
+  },
+  {
+   "id": "strategies",
+   "seconds": 12.0
+  },
+  {
+   "id": "overlap",
+   "seconds": 13.0
+  },
+  {
+   "id": "receipts",
+   "seconds": 8.0
+  },
+  {
+   "id": "outro",
+   "seconds": 5.0
+  }
+ ],
+ "total_seconds": 81.0,
+ "mp4_bytes": 1919963
+}

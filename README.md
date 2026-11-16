@@ -177,6 +177,8 @@ The verdict section of the HTML report, captured by `tools/capture_screenshots.p
 
 <img src="docs/video/demo.gif" alt="terminal replay: audit, sorted-mode audit exiting 1, explain, receipts" width="100%">
 
+An animated explainer of the argument, rendered by `tools/render_explainer.py` from `docs/metrics.json` so its figures are the checked ones, is at [`docs/video/explainer.mp4`](docs/video/explainer.mp4) (captions, no narration; scene timings in `docs/video/explainer.json`).
+
 A replay of captured stdout, not a screen recording: `tools/record_demo.py` runs each command, records its real output, exit code and wall time, and plays it back paced by that time. `docs/video/manifest.json` lists every command with its exit code; the MP4 is at `docs/video/demo.mp4`.
 
 ## The fixture
@@ -223,7 +225,7 @@ chunk-boundary-auditor/
   docs/adr/                 five decision records
   docs/metrics.json         every published figure, with the phrase each must be quoted in
   tools/                    collect_metrics, check_numbers, render_banner, render_diagram,
-                            capture_screenshots, record_demo
+                            capture_screenshots, record_demo, render_explainer
   tests/                    268 tests, each named as the property it pins
 ```
 

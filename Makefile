@@ -43,6 +43,7 @@ evidence:
 	$(PY) tools/render_diagram.py
 	$(PY) tools/capture_screenshots.py
 	$(PY) tools/record_demo.py
+	$(PY) tools/render_explainer.py
 
 clean:
 	rm -rf reports .pytest_cache .ruff_cache build dist *.egg-info src/*.egg-info
