@@ -246,3 +246,12 @@ def test_module_entry_point_runs(capsys):
         [sys.executable, "-m", "chunkaudit", "--version"], capture_output=True, text=True
     )
     assert proc.returncode == 0 and "chunkaudit" in proc.stdout
+
+
+def test_cli_overlap_flag_does_not_reach_sentence_packing_or_paragraph_packing(tmp_path):
+    out = tmp_path / "o.json"
+    code = main(["audit", "--overlap", "64", "--no-verdict", "--json", str(out)])
+    assert code == EXIT_OK
+    by = {r["strategy"]: r for r in json.loads(out.read_text())["results"]}
+    assert by["fixed"]["overlap"] == 64 and by["page_aware"]["overlap"] == 64
+    assert by["sentence_window"]["overlap"] == 0 and by["paragraph"]["overlap"] == 0

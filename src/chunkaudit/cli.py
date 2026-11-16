@@ -17,7 +17,7 @@ from pathlib import Path
 
 from . import __version__
 from .audit import normalize
-from .chunkers import STRATEGIES, chunk
+from .chunkers import STRATEGIES, chunk, effective_overlap
 from .config import KNOWN_EXTRACTION_MODES, PolicyError, load_policy
 from .extract import extract_dir, extract_pdf
 from .fixture import (
@@ -46,7 +46,13 @@ def build_parser() -> argparse.ArgumentParser:
     a = sub.add_parser("audit", help="audit every policy strategy and print the table")
     a.add_argument("--strategy", choices=sorted(STRATEGIES), action="append", default=None)
     a.add_argument("--size", type=int, default=None, help="chunk size in tokens")
-    a.add_argument("--overlap", type=int, default=None, help="overlap in tokens (or sentences)")
+    a.add_argument(
+        "--overlap",
+        type=int,
+        default=None,
+        help="token overlap for fixed, recursive and page_aware; sentence packing uses the "
+        "policy's sentence_overlap and paragraph packing takes none",
+    )
     a.add_argument("--mode", choices=KNOWN_EXTRACTION_MODES, default=None)
     a.add_argument("--json", type=Path, default=None, help="write results to this JSON file")
     a.add_argument("--html", type=Path, default=None, help="write a self-contained HTML report")
@@ -104,7 +110,7 @@ def cmd_audit(args, policy) -> int:
         run_audit(
             strategy=s,
             size=size,
-            overlap=overlap,
+            overlap=effective_overlap(s, overlap, policy.chunking.sentence_overlap),
             extraction_mode=mode,
             fixture_dir=args.fixtures,
             extracted=extracted,
@@ -152,6 +158,7 @@ def cmd_explain(args, policy) -> int:
     mode = args.mode or policy.extraction_mode
     size = args.size if args.size is not None else policy.chunking.default_size
     overlap = args.overlap if args.overlap is not None else policy.chunking.default_overlap
+    overlap = effective_overlap(args.strategy, overlap, policy.chunking.sentence_overlap)
     ex = extract_pdf(args.fixtures / f"{fact.doc_id}.pdf", mode)
     chunks = chunk(args.strategy, ex.pages, size, overlap)
     full = normalize(ex.text)

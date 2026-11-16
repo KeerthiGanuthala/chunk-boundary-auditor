@@ -196,7 +196,32 @@ STRATEGIES: dict[str, Strategy] = {
 }
 
 
+# What "overlap" means to each strategy. A token overlap handed to sentence packing would be read
+# as a count of sentences, and paragraph packing takes no overlap at all, so callers resolve the
+# effective overlap here instead of passing one number to every strategy.
+OVERLAP_UNIT: dict[str, str] = {
+    "fixed": "tokens",
+    "recursive": "tokens",
+    "page_aware": "tokens",
+    "sentence_window": "sentences",
+    "paragraph": "none",
+}
+
+
+def effective_overlap(strategy: str, token_overlap: int, sentence_overlap: int) -> int:
+    """The overlap a strategy actually receives, in its own unit (0 where it takes none)."""
+    unit = OVERLAP_UNIT[strategy]
+    if unit == "tokens":
+        return token_overlap
+    if unit == "sentences":
+        return sentence_overlap
+    return 0
+
+
 def chunk(strategy: str, pages: Sequence[str], size: int, overlap: int = 0) -> list[Chunk]:
+    """Chunk ``pages`` with ``strategy``; ``overlap`` is in that strategy's own unit."""
     if strategy not in STRATEGIES:
         raise ValueError(f"unknown strategy {strategy!r}, expected one of {tuple(STRATEGIES)}")
+    if OVERLAP_UNIT[strategy] == "none" and overlap:
+        raise ValueError(f"strategy {strategy!r} takes no overlap, got {overlap}")
     return STRATEGIES[strategy](pages, size, overlap)

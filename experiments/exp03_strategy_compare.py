@@ -6,6 +6,7 @@ README's figures are checked against it.
 
 from __future__ import annotations
 
+from chunkaudit.chunkers import effective_overlap
 from common import (
     DEFAULT_FIXTURE_DIR,
     extract_dir,
@@ -30,7 +31,9 @@ def main() -> None:
         r = run_audit(
             strategy=strategy,
             size=size,
-            overlap=policy.chunking.default_overlap,
+            overlap=effective_overlap(
+                strategy, policy.chunking.default_overlap, policy.chunking.sentence_overlap
+            ),
             extraction_mode=policy.extraction_mode,
             extracted=extracted,
         )

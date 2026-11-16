@@ -6,10 +6,12 @@ from chunkaudit import tokens as tk
 from chunkaudit.audit import normalize
 from chunkaudit.chunkers import (
     _SENTENCE_RE,
+    OVERLAP_UNIT,
     PAGE_JOIN,
     STRATEGIES,
     _split_recursive,
     chunk,
+    effective_overlap,
     fixed,
     page_aware,
     paragraph,
@@ -257,3 +259,27 @@ def test_sentence_window_treats_a_table_block_as_one_unit_after_unwrapping():
     table = "Unit | mass\nOstsen K3 | 8076 kg\nRilost V8 | 6406 kg"
     chunks = sentence_window([table], 512)
     assert len(chunks) == 1 and "Ostsen K3 | 8076 kg Rilost V8" in chunks[0].text
+
+
+def test_every_strategy_declares_its_overlap_unit():
+    assert set(OVERLAP_UNIT) == set(STRATEGIES)
+
+
+def test_effective_overlap_hands_tokens_to_token_strategies_and_sentences_to_sentence_packing():
+    """Pinned bug: `chunkaudit audit --overlap 64` handed sentence packing 64 sentences of overlap.
+
+    One --overlap flag went to every strategy as a bare integer. Fixed windows read it as tokens,
+    sentence packing read it as a sentence count, and paragraph packing ignored it while the
+    report still printed the requested value in its overlap column. The policy's
+    sentence_overlap key was never read by the CLI at all.
+    """
+    assert effective_overlap("fixed", 64, 1) == 64
+    assert effective_overlap("recursive", 64, 1) == 64
+    assert effective_overlap("page_aware", 64, 1) == 64
+    assert effective_overlap("sentence_window", 64, 1) == 1
+    assert effective_overlap("paragraph", 64, 1) == 0
+
+
+def test_paragraph_packing_refuses_a_non_zero_overlap_instead_of_ignoring_it():
+    with pytest.raises(ValueError, match="takes no overlap"):
+        chunk("paragraph", PAGES, 64, 8)
