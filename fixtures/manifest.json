@@ -1,0 +1,37 @@
+{
+ "files": {
+  "D01.pdf": "c8852c6ba937db1ea52f649f897e553763d9b8b0c518a5a2541f62e106b3858b",
+  "D02.pdf": "498d9738d7ed67134055f1f01608d5e17d3545386b2ef28805b1d542ee1f4a82",
+  "D03.pdf": "f04cdbaa2651dac01c8b214068fab3ac5498ec619bf1fb1e2ce4b4d769bbf43a",
+  "D04.pdf": "f53c8d03aa0c23974371aec39e24ed3f096c292e4fbaaad3b7adb7784d8aad4b",
+  "D05.pdf": "3d4a0d90e9dff3ad1d853ea2ac558fc2ebcce0405bbd0305afa16665e8a6efa6",
+  "D06.pdf": "b81eaa29e5b0e3352f24bb279bf4762898d1b08e34728fa1bd5d3b0873e33bdc",
+  "D07.pdf": "169046feed4793d710a5c934cdc84b986ba126af1afc4a10cdf56e45fd56a501",
+  "D08.pdf": "56a5de6aa4a632204054d76dd0d57cd236bc0d66dd8432fd17be5a5a135c3762",
+  "D09.pdf": "d2df9940322217cd81c7e38c6036740b24d1a96c5d5b137b76bb3e6fa8139e31",
+  "D10.pdf": "75034d9ea059164de2c65b9bbe080a7a52fa4f597d430f91caa6790142ef0503",
+  "D11.pdf": "a0052abcdee4c72dab1411ac4cfb4ca8ddfdfed50b62986622e36f947ac29ff1",
+  "D12.pdf": "9782967cb1e548b5ec1ecb7ebab972432ea09991bcb3c3735a19f19d49020447",
+  "D13.pdf": "9566e88da15ba22fa59a64595293604f01687825a9487557b78ae91e24fc1344",
+  "D14.pdf": "e63365eb815b6dcd843b6a90422ec724d17be29cfe0dabc3819bca40e4586a10",
+  "D15.pdf": "0caf804f48b520a2de263b656360dd64d743b0cb3a197988a30eaa476be61bb0",
+  "D16.pdf": "2836680fd09c68ea9aba94c7e42762caa8bd7695a2aa6ff69cfd5932ab435b9c",
+  "D17.pdf": "42859c953c48aae4c56f56a00ecd1d79fe176a9130e5cdcc0564eb3849d718b8",
+  "D18.pdf": "117cf63538703fe09dbe799bf1c54fcec2879b1e6b5d17c65a4c44f3026d7a81",
+  "facts.json": "810e12bc8f872a81c06bcc47796cebc569c9fb5d4d5bac04e4447fe3e4b533cf"
+ },
+ "generator": {
+  "documents": 18,
+  "facts_cross_page": 2,
+  "facts_cross_paragraph": 4,
+  "facts_cross_sentence": 6,
+  "facts_single": 6,
+  "facts_table": 4,
+  "pages_max": 5,
+  "pages_min": 3,
+  "reversed_stream_share": 0.5,
+  "seed": 20251116,
+  "two_column_share": 0.5
+ },
+ "seed": 20251116
+}

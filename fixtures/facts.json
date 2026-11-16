@@ -1,0 +1,4381 @@
+{
+ "seed": 20251116,
+ "documents": [
+  {
+   "doc_id": "D01",
+   "title": "Asset register D01: Senholm operations",
+   "layout": "single",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D02",
+   "title": "Asset register D02: Tovrin operations",
+   "layout": "two_column_reversed",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D03",
+   "title": "Asset register D03: Danvik operations",
+   "layout": "single",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D04",
+   "title": "Asset register D04: Quanex operations",
+   "layout": "single",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D05",
+   "title": "Asset register D05: Senholm operations",
+   "layout": "single",
+   "pages": 5,
+   "paragraphs": 34
+  },
+  {
+   "doc_id": "D06",
+   "title": "Asset register D06: Senholm operations",
+   "layout": "two_column",
+   "pages": 5,
+   "paragraphs": 34
+  },
+  {
+   "doc_id": "D07",
+   "title": "Asset register D07: Danvik operations",
+   "layout": "two_column_reversed",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D08",
+   "title": "Asset register D08: Ostbro operations",
+   "layout": "single",
+   "pages": 5,
+   "paragraphs": 34
+  },
+  {
+   "doc_id": "D09",
+   "title": "Asset register D09: Danvik operations",
+   "layout": "two_column",
+   "pages": 3,
+   "paragraphs": 22
+  },
+  {
+   "doc_id": "D10",
+   "title": "Asset register D10: Mirvale operations",
+   "layout": "two_column",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D11",
+   "title": "Asset register D11: Rilsen operations",
+   "layout": "single",
+   "pages": 3,
+   "paragraphs": 22
+  },
+  {
+   "doc_id": "D12",
+   "title": "Asset register D12: Mirvale operations",
+   "layout": "two_column_reversed",
+   "pages": 3,
+   "paragraphs": 22
+  },
+  {
+   "doc_id": "D13",
+   "title": "Asset register D13: Rilsen operations",
+   "layout": "single",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D14",
+   "title": "Asset register D14: Senholm operations",
+   "layout": "two_column_reversed",
+   "pages": 3,
+   "paragraphs": 22
+  },
+  {
+   "doc_id": "D15",
+   "title": "Asset register D15: Quanex operations",
+   "layout": "single",
+   "pages": 3,
+   "paragraphs": 22
+  },
+  {
+   "doc_id": "D16",
+   "title": "Asset register D16: Tovrin operations",
+   "layout": "two_column",
+   "pages": 4,
+   "paragraphs": 28
+  },
+  {
+   "doc_id": "D17",
+   "title": "Asset register D17: Senholm operations",
+   "layout": "two_column",
+   "pages": 3,
+   "paragraphs": 22
+  },
+  {
+   "doc_id": "D18",
+   "title": "Asset register D18: Senholm operations",
+   "layout": "single",
+   "pages": 4,
+   "paragraphs": 28
+  }
+ ],
+ "facts": [
+  {
+   "fact_id": "D01-cross_page-0",
+   "doc_id": "D01",
+   "kind": "cross_page",
+   "question": "What is the design pressure of the Dandan T6 unit?",
+   "answer": "103 bar",
+   "spans": [
+    "The Dandan T6 unit was commissioned at the Danvik site in 2001.",
+    "Its design pressure is 103 bar."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_page-1",
+   "doc_id": "D01",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Brotov M9 unit?",
+   "answer": "388 TB",
+   "spans": [
+    "The Brotov M9 unit was commissioned at the Mirvale site in 1999.",
+    "Its storage capacity is 388 TB."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_paragraph-0",
+   "doc_id": "D01",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Rilqua T4 unit?",
+   "answer": "7 years",
+   "spans": [
+    "The Rilqua T4 unit was commissioned at the Ostbro site in 2011.",
+    "Its warranty period is 7 years."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_paragraph-1",
+   "doc_id": "D01",
+   "kind": "cross_paragraph",
+   "question": "What is the nominal voltage of the Tovtov V3 unit?",
+   "answer": "273 V",
+   "spans": [
+    "The Tovtov V3 unit was commissioned at the Tovrin site in 2020.",
+    "Its nominal voltage is 273 V."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_paragraph-2",
+   "doc_id": "D01",
+   "kind": "cross_paragraph",
+   "question": "What is the storage capacity of the Ostkel V9 unit?",
+   "answer": "474 TB",
+   "spans": [
+    "The Ostkel V9 unit was commissioned at the Senholm site in 2012.",
+    "Its storage capacity is 474 TB."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_paragraph-3",
+   "doc_id": "D01",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Nexkel X8 unit?",
+   "answer": "73 bar",
+   "spans": [
+    "The Nexkel X8 unit was commissioned at the Danvik site in 1990.",
+    "Its design pressure is 73 bar."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_sentence-0",
+   "doc_id": "D01",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Quatov K1 unit?",
+   "answer": "21 months",
+   "spans": [
+    "The Quatov K1 unit was commissioned at the Senholm site in 2012.",
+    "Its service interval is 21 months."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_sentence-1",
+   "doc_id": "D01",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Danlen T6 unit?",
+   "answer": "6 months",
+   "spans": [
+    "The Danlen T6 unit was commissioned at the Kelmar site in 2020.",
+    "Its service interval is 6 months."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_sentence-2",
+   "doc_id": "D01",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Brotov R2 unit?",
+   "answer": "20 bar",
+   "spans": [
+    "The Brotov R2 unit was commissioned at the Mirvale site in 2001.",
+    "Its design pressure is 20 bar."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_sentence-3",
+   "doc_id": "D01",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Kelqua V8 unit?",
+   "answer": "932 kg",
+   "spans": [
+    "The Kelqua V8 unit was commissioned at the Tovrin site in 1988.",
+    "Its mass is 932 kg."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_sentence-4",
+   "doc_id": "D01",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Varmir M8 unit?",
+   "answer": "8 years",
+   "spans": [
+    "The Varmir M8 unit was commissioned at the Quanex site in 1988.",
+    "Its warranty period is 8 years."
+   ]
+  },
+  {
+   "fact_id": "D01-cross_sentence-5",
+   "doc_id": "D01",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Lennex V5 unit?",
+   "answer": "7 years",
+   "spans": [
+    "The Lennex V5 unit was commissioned at the Mirvale site in 2015.",
+    "Its warranty period is 7 years."
+   ]
+  },
+  {
+   "fact_id": "D01-single-0",
+   "doc_id": "D01",
+   "kind": "single",
+   "question": "What is the rated output of the Varvar R8 unit?",
+   "answer": "566 MW",
+   "spans": [
+    "The Varvar R8 unit has a rated output of 566 MW."
+   ]
+  },
+  {
+   "fact_id": "D01-single-1",
+   "doc_id": "D01",
+   "kind": "single",
+   "question": "What is the unit price of the Kelnex R3 unit?",
+   "answer": "17798 USD",
+   "spans": [
+    "The Kelnex R3 unit has a unit price of 17798 USD."
+   ]
+  },
+  {
+   "fact_id": "D01-single-2",
+   "doc_id": "D01",
+   "kind": "single",
+   "question": "What is the mass of the Mirvar K9 unit?",
+   "answer": "6760 kg",
+   "spans": [
+    "The Mirvar K9 unit has a mass of 6760 kg."
+   ]
+  },
+  {
+   "fact_id": "D01-single-3",
+   "doc_id": "D01",
+   "kind": "single",
+   "question": "What is the design pressure of the Keldan V7 unit?",
+   "answer": "47 bar",
+   "spans": [
+    "The Keldan V7 unit has a design pressure of 47 bar."
+   ]
+  },
+  {
+   "fact_id": "D01-single-4",
+   "doc_id": "D01",
+   "kind": "single",
+   "question": "What is the unit price of the Nexost K4 unit?",
+   "answer": "16557 USD",
+   "spans": [
+    "The Nexost K4 unit has a unit price of 16557 USD."
+   ]
+  },
+  {
+   "fact_id": "D01-single-5",
+   "doc_id": "D01",
+   "kind": "single",
+   "question": "What is the unit price of the Danlen K3 unit?",
+   "answer": "31198 USD",
+   "spans": [
+    "The Danlen K3 unit has a unit price of 31198 USD."
+   ]
+  },
+  {
+   "fact_id": "D01-table-0",
+   "doc_id": "D01",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Ostost M2 unit?",
+   "answer": "547 V",
+   "spans": [
+    "Unit | design pressure | nominal voltage",
+    "Ostost M2 | 183 bar | 547 V"
+   ]
+  },
+  {
+   "fact_id": "D01-table-1",
+   "doc_id": "D01",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Kelbro M5 unit?",
+   "answer": "498 V",
+   "spans": [
+    "Unit | nominal voltage | storage capacity",
+    "Kelbro M5 | 498 V | 853 TB"
+   ]
+  },
+  {
+   "fact_id": "D01-table-2",
+   "doc_id": "D01",
+   "kind": "table",
+   "question": "What is the service interval of the Senbro M2 unit?",
+   "answer": "33 months",
+   "spans": [
+    "Unit | service interval | warranty period",
+    "Senbro M2 | 33 months | 6 years"
+   ]
+  },
+  {
+   "fact_id": "D01-table-3",
+   "doc_id": "D01",
+   "kind": "table",
+   "question": "What is the mass of the Mirril K7 unit?",
+   "answer": "4176 kg",
+   "spans": [
+    "Unit | mass | design pressure",
+    "Mirril K7 | 4176 kg | 204 bar"
+   ]
+  },
+  {
+   "fact_id": "D02-cross_page-0",
+   "doc_id": "D02",
+   "kind": "cross_page",
+   "question": "What is the nominal voltage of the Mirkel K9 unit?",
+   "answer": "603 V",
+   "spans": [
+    "The Mirkel K9 unit was commissioned at the Tovrin site in 1988.",
+    "Its nominal voltage is 603 V."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_page-1",
+   "doc_id": "D02",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Danlen T1 unit?",
+   "answer": "681 TB",
+   "spans": [
+    "The Danlen T1 unit was commissioned at the Quanex site in 1990.",
+    "Its storage capacity is 681 TB."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_paragraph-0",
+   "doc_id": "D02",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Danvar X2 unit?",
+   "answer": "561 MW",
+   "spans": [
+    "The Danvar X2 unit was commissioned at the Mirvale site in 2019.",
+    "Its rated output is 561 MW."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_paragraph-1",
+   "doc_id": "D02",
+   "kind": "cross_paragraph",
+   "question": "What is the service interval of the Tovlen R5 unit?",
+   "answer": "34 months",
+   "spans": [
+    "The Tovlen R5 unit was commissioned at the Ostbro site in 2022.",
+    "Its service interval is 34 months."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_paragraph-2",
+   "doc_id": "D02",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Brolen R3 unit?",
+   "answer": "207 bar",
+   "spans": [
+    "The Brolen R3 unit was commissioned at the Ostbro site in 1999.",
+    "Its design pressure is 207 bar."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_paragraph-3",
+   "doc_id": "D02",
+   "kind": "cross_paragraph",
+   "question": "What is the mass of the Ostbro K9 unit?",
+   "answer": "5688 kg",
+   "spans": [
+    "The Ostbro K9 unit was commissioned at the Ostbro site in 1999.",
+    "Its mass is 5688 kg."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_sentence-0",
+   "doc_id": "D02",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Danbro X3 unit?",
+   "answer": "22 months",
+   "spans": [
+    "The Danbro X3 unit was commissioned at the Ostbro site in 2012.",
+    "Its service interval is 22 months."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_sentence-1",
+   "doc_id": "D02",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Mirmir K3 unit?",
+   "answer": "803 MW",
+   "spans": [
+    "The Mirmir K3 unit was commissioned at the Danvik site in 2022.",
+    "Its rated output is 803 MW."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_sentence-2",
+   "doc_id": "D02",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Varqua T6 unit?",
+   "answer": "4 years",
+   "spans": [
+    "The Varqua T6 unit was commissioned at the Danvik site in 1994.",
+    "Its warranty period is 4 years."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_sentence-3",
+   "doc_id": "D02",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Nexmir V6 unit?",
+   "answer": "262 bar",
+   "spans": [
+    "The Nexmir V6 unit was commissioned at the Danvik site in 2003.",
+    "Its design pressure is 262 bar."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_sentence-4",
+   "doc_id": "D02",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Kelvar X8 unit?",
+   "answer": "16 months",
+   "spans": [
+    "The Kelvar X8 unit was commissioned at the Rilsen site in 2018.",
+    "Its service interval is 16 months."
+   ]
+  },
+  {
+   "fact_id": "D02-cross_sentence-5",
+   "doc_id": "D02",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Tovtov T1 unit?",
+   "answer": "4362 kg",
+   "spans": [
+    "The Tovtov T1 unit was commissioned at the Quanex site in 1999.",
+    "Its mass is 4362 kg."
+   ]
+  },
+  {
+   "fact_id": "D02-single-0",
+   "doc_id": "D02",
+   "kind": "single",
+   "question": "What is the mass of the Tovmir R5 unit?",
+   "answer": "894 kg",
+   "spans": [
+    "The Tovmir R5 unit has a mass of 894 kg."
+   ]
+  },
+  {
+   "fact_id": "D02-single-1",
+   "doc_id": "D02",
+   "kind": "single",
+   "question": "What is the rated output of the Lenmir K8 unit?",
+   "answer": "698 MW",
+   "spans": [
+    "The Lenmir K8 unit has a rated output of 698 MW."
+   ]
+  },
+  {
+   "fact_id": "D02-single-2",
+   "doc_id": "D02",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Varlen T2 unit?",
+   "answer": "209 V",
+   "spans": [
+    "The Varlen T2 unit has a nominal voltage of 209 V."
+   ]
+  },
+  {
+   "fact_id": "D02-single-3",
+   "doc_id": "D02",
+   "kind": "single",
+   "question": "What is the mass of the Quadan X9 unit?",
+   "answer": "3613 kg",
+   "spans": [
+    "The Quadan X9 unit has a mass of 3613 kg."
+   ]
+  },
+  {
+   "fact_id": "D02-single-4",
+   "doc_id": "D02",
+   "kind": "single",
+   "question": "What is the rated output of the Danost K3 unit?",
+   "answer": "250 MW",
+   "spans": [
+    "The Danost K3 unit has a rated output of 250 MW."
+   ]
+  },
+  {
+   "fact_id": "D02-single-5",
+   "doc_id": "D02",
+   "kind": "single",
+   "question": "What is the service interval of the Lenkel K6 unit?",
+   "answer": "8 months",
+   "spans": [
+    "The Lenkel K6 unit has a service interval of 8 months."
+   ]
+  },
+  {
+   "fact_id": "D02-table-0",
+   "doc_id": "D02",
+   "kind": "table",
+   "question": "What is the mass of the Sentov X1 unit?",
+   "answer": "4337 kg",
+   "spans": [
+    "Unit | mass | design pressure",
+    "Sentov X1 | 4337 kg | 180 bar"
+   ]
+  },
+  {
+   "fact_id": "D02-table-1",
+   "doc_id": "D02",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Nexkel K4 unit?",
+   "answer": "427 V",
+   "spans": [
+    "Unit | storage capacity | nominal voltage",
+    "Nexkel K4 | 191 TB | 427 V"
+   ]
+  },
+  {
+   "fact_id": "D02-table-2",
+   "doc_id": "D02",
+   "kind": "table",
+   "question": "What is the storage capacity of the Quaqua T8 unit?",
+   "answer": "359 TB",
+   "spans": [
+    "Unit | design pressure | storage capacity",
+    "Quaqua T8 | 294 bar | 359 TB"
+   ]
+  },
+  {
+   "fact_id": "D02-table-3",
+   "doc_id": "D02",
+   "kind": "table",
+   "question": "What is the storage capacity of the Rilost V8 unit?",
+   "answer": "714 TB",
+   "spans": [
+    "Unit | storage capacity | mass",
+    "Rilost V8 | 714 TB | 6406 kg"
+   ]
+  },
+  {
+   "fact_id": "D03-cross_page-0",
+   "doc_id": "D03",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Rildan X5 unit?",
+   "answer": "848 TB",
+   "spans": [
+    "The Rildan X5 unit was commissioned at the Quanex site in 2004.",
+    "Its storage capacity is 848 TB."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_page-1",
+   "doc_id": "D03",
+   "kind": "cross_page",
+   "question": "What is the unit price of the Broril R3 unit?",
+   "answer": "49762 USD",
+   "spans": [
+    "The Broril R3 unit was commissioned at the Danvik site in 2000.",
+    "Its unit price is 49762 USD."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_paragraph-0",
+   "doc_id": "D03",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Dannex R9 unit?",
+   "answer": "191 bar",
+   "spans": [
+    "The Dannex R9 unit was commissioned at the Ostbro site in 2007.",
+    "Its design pressure is 191 bar."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_paragraph-1",
+   "doc_id": "D03",
+   "kind": "cross_paragraph",
+   "question": "What is the storage capacity of the Mirlen K7 unit?",
+   "answer": "77 TB",
+   "spans": [
+    "The Mirlen K7 unit was commissioned at the Senholm site in 1990.",
+    "Its storage capacity is 77 TB."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_paragraph-2",
+   "doc_id": "D03",
+   "kind": "cross_paragraph",
+   "question": "What is the mass of the Rildan R7 unit?",
+   "answer": "2989 kg",
+   "spans": [
+    "The Rildan R7 unit was commissioned at the Quanex site in 1992.",
+    "Its mass is 2989 kg."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_paragraph-3",
+   "doc_id": "D03",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Dannex X2 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Dannex X2 unit was commissioned at the Mirvale site in 2002.",
+    "Its warranty period is 3 years."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_sentence-0",
+   "doc_id": "D03",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Kelril V7 unit?",
+   "answer": "6341 kg",
+   "spans": [
+    "The Kelril V7 unit was commissioned at the Senholm site in 2019.",
+    "Its mass is 6341 kg."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_sentence-1",
+   "doc_id": "D03",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Nextov R2 unit?",
+   "answer": "8 months",
+   "spans": [
+    "The Nextov R2 unit was commissioned at the Quanex site in 1989.",
+    "Its service interval is 8 months."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_sentence-2",
+   "doc_id": "D03",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Lenlen R2 unit?",
+   "answer": "50424 USD",
+   "spans": [
+    "The Lenlen R2 unit was commissioned at the Kelmar site in 2014.",
+    "Its unit price is 50424 USD."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_sentence-3",
+   "doc_id": "D03",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Bronex R6 unit?",
+   "answer": "442 MW",
+   "spans": [
+    "The Bronex R6 unit was commissioned at the Rilsen site in 2002.",
+    "Its rated output is 442 MW."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_sentence-4",
+   "doc_id": "D03",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Tovqua M6 unit?",
+   "answer": "38430 USD",
+   "spans": [
+    "The Tovqua M6 unit was commissioned at the Ostbro site in 2002.",
+    "Its unit price is 38430 USD."
+   ]
+  },
+  {
+   "fact_id": "D03-cross_sentence-5",
+   "doc_id": "D03",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Ostmir X7 unit?",
+   "answer": "3891 kg",
+   "spans": [
+    "The Ostmir X7 unit was commissioned at the Mirvale site in 2007.",
+    "Its mass is 3891 kg."
+   ]
+  },
+  {
+   "fact_id": "D03-single-0",
+   "doc_id": "D03",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Varmir M4 unit?",
+   "answer": "490 V",
+   "spans": [
+    "The Varmir M4 unit has a nominal voltage of 490 V."
+   ]
+  },
+  {
+   "fact_id": "D03-single-1",
+   "doc_id": "D03",
+   "kind": "single",
+   "question": "What is the mass of the Quavar T1 unit?",
+   "answer": "7165 kg",
+   "spans": [
+    "The Quavar T1 unit has a mass of 7165 kg."
+   ]
+  },
+  {
+   "fact_id": "D03-single-2",
+   "doc_id": "D03",
+   "kind": "single",
+   "question": "What is the storage capacity of the Keltov X1 unit?",
+   "answer": "403 TB",
+   "spans": [
+    "The Keltov X1 unit has a storage capacity of 403 TB."
+   ]
+  },
+  {
+   "fact_id": "D03-single-3",
+   "doc_id": "D03",
+   "kind": "single",
+   "question": "What is the unit price of the Rilbro R5 unit?",
+   "answer": "5023 USD",
+   "spans": [
+    "The Rilbro R5 unit has a unit price of 5023 USD."
+   ]
+  },
+  {
+   "fact_id": "D03-single-4",
+   "doc_id": "D03",
+   "kind": "single",
+   "question": "What is the mass of the Ostril V2 unit?",
+   "answer": "1930 kg",
+   "spans": [
+    "The Ostril V2 unit has a mass of 1930 kg."
+   ]
+  },
+  {
+   "fact_id": "D03-single-5",
+   "doc_id": "D03",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Lensen X4 unit?",
+   "answer": "684 V",
+   "spans": [
+    "The Lensen X4 unit has a nominal voltage of 684 V."
+   ]
+  },
+  {
+   "fact_id": "D03-table-0",
+   "doc_id": "D03",
+   "kind": "table",
+   "question": "What is the design pressure of the Ostlen M8 unit?",
+   "answer": "285 bar",
+   "spans": [
+    "Unit | warranty period | design pressure",
+    "Ostlen M8 | 5 years | 285 bar"
+   ]
+  },
+  {
+   "fact_id": "D03-table-1",
+   "doc_id": "D03",
+   "kind": "table",
+   "question": "What is the unit price of the Nexnex T8 unit?",
+   "answer": "3887 USD",
+   "spans": [
+    "Unit | unit price | warranty period",
+    "Nexnex T8 | 3887 USD | 10 years"
+   ]
+  },
+  {
+   "fact_id": "D03-table-2",
+   "doc_id": "D03",
+   "kind": "table",
+   "question": "What is the warranty period of the Brovar R4 unit?",
+   "answer": "7 years",
+   "spans": [
+    "Unit | design pressure | warranty period",
+    "Brovar R4 | 61 bar | 7 years"
+   ]
+  },
+  {
+   "fact_id": "D03-table-3",
+   "doc_id": "D03",
+   "kind": "table",
+   "question": "What is the unit price of the Tovlen X9 unit?",
+   "answer": "68617 USD",
+   "spans": [
+    "Unit | unit price | warranty period",
+    "Tovlen X9 | 68617 USD | 2 years"
+   ]
+  },
+  {
+   "fact_id": "D04-cross_page-0",
+   "doc_id": "D04",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Senost R2 unit?",
+   "answer": "543 TB",
+   "spans": [
+    "The Senost R2 unit was commissioned at the Rilsen site in 2021.",
+    "Its storage capacity is 543 TB."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_page-1",
+   "doc_id": "D04",
+   "kind": "cross_page",
+   "question": "What is the warranty period of the Rildan K5 unit?",
+   "answer": "5 years",
+   "spans": [
+    "The Rildan K5 unit was commissioned at the Rilsen site in 2019.",
+    "Its warranty period is 5 years."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_paragraph-0",
+   "doc_id": "D04",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Varvar K8 unit?",
+   "answer": "373 MW",
+   "spans": [
+    "The Varvar K8 unit was commissioned at the Rilsen site in 2003.",
+    "Its rated output is 373 MW."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_paragraph-1",
+   "doc_id": "D04",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Danmir R5 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Danmir R5 unit was commissioned at the Danvik site in 1988.",
+    "Its warranty period is 3 years."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_paragraph-2",
+   "doc_id": "D04",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Nexlen R1 unit?",
+   "answer": "209 MW",
+   "spans": [
+    "The Nexlen R1 unit was commissioned at the Senholm site in 1997.",
+    "Its rated output is 209 MW."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_paragraph-3",
+   "doc_id": "D04",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Ostqua T9 unit?",
+   "answer": "170 MW",
+   "spans": [
+    "The Ostqua T9 unit was commissioned at the Danvik site in 2016.",
+    "Its rated output is 170 MW."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_sentence-0",
+   "doc_id": "D04",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Kelkel R2 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Kelkel R2 unit was commissioned at the Ostbro site in 2021.",
+    "Its warranty period is 3 years."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_sentence-1",
+   "doc_id": "D04",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Varvar X7 unit?",
+   "answer": "16 months",
+   "spans": [
+    "The Varvar X7 unit was commissioned at the Quanex site in 1989.",
+    "Its service interval is 16 months."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_sentence-2",
+   "doc_id": "D04",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Ostsen X5 unit?",
+   "answer": "2091 kg",
+   "spans": [
+    "The Ostsen X5 unit was commissioned at the Kelmar site in 2005.",
+    "Its mass is 2091 kg."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_sentence-3",
+   "doc_id": "D04",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Broril K9 unit?",
+   "answer": "49816 USD",
+   "spans": [
+    "The Broril K9 unit was commissioned at the Mirvale site in 2013.",
+    "Its unit price is 49816 USD."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_sentence-4",
+   "doc_id": "D04",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Tovdan X3 unit?",
+   "answer": "104 TB",
+   "spans": [
+    "The Tovdan X3 unit was commissioned at the Senholm site in 1996.",
+    "Its storage capacity is 104 TB."
+   ]
+  },
+  {
+   "fact_id": "D04-cross_sentence-5",
+   "doc_id": "D04",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Lenbro T2 unit?",
+   "answer": "465 MW",
+   "spans": [
+    "The Lenbro T2 unit was commissioned at the Tovrin site in 2014.",
+    "Its rated output is 465 MW."
+   ]
+  },
+  {
+   "fact_id": "D04-single-0",
+   "doc_id": "D04",
+   "kind": "single",
+   "question": "What is the warranty period of the Lenbro T4 unit?",
+   "answer": "10 years",
+   "spans": [
+    "The Lenbro T4 unit has a warranty period of 10 years."
+   ]
+  },
+  {
+   "fact_id": "D04-single-1",
+   "doc_id": "D04",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Lenbro X4 unit?",
+   "answer": "318 V",
+   "spans": [
+    "The Lenbro X4 unit has a nominal voltage of 318 V."
+   ]
+  },
+  {
+   "fact_id": "D04-single-2",
+   "doc_id": "D04",
+   "kind": "single",
+   "question": "What is the mass of the Varkel K4 unit?",
+   "answer": "5977 kg",
+   "spans": [
+    "The Varkel K4 unit has a mass of 5977 kg."
+   ]
+  },
+  {
+   "fact_id": "D04-single-3",
+   "doc_id": "D04",
+   "kind": "single",
+   "question": "What is the service interval of the Mirbro X3 unit?",
+   "answer": "30 months",
+   "spans": [
+    "The Mirbro X3 unit has a service interval of 30 months."
+   ]
+  },
+  {
+   "fact_id": "D04-single-4",
+   "doc_id": "D04",
+   "kind": "single",
+   "question": "What is the mass of the Tovsen V5 unit?",
+   "answer": "5087 kg",
+   "spans": [
+    "The Tovsen V5 unit has a mass of 5087 kg."
+   ]
+  },
+  {
+   "fact_id": "D04-single-5",
+   "doc_id": "D04",
+   "kind": "single",
+   "question": "What is the storage capacity of the Kelril X2 unit?",
+   "answer": "253 TB",
+   "spans": [
+    "The Kelril X2 unit has a storage capacity of 253 TB."
+   ]
+  },
+  {
+   "fact_id": "D04-table-0",
+   "doc_id": "D04",
+   "kind": "table",
+   "question": "What is the rated output of the Riltov T9 unit?",
+   "answer": "757 MW",
+   "spans": [
+    "Unit | rated output | unit price",
+    "Riltov T9 | 757 MW | 96801 USD"
+   ]
+  },
+  {
+   "fact_id": "D04-table-1",
+   "doc_id": "D04",
+   "kind": "table",
+   "question": "What is the warranty period of the Ostdan M7 unit?",
+   "answer": "8 years",
+   "spans": [
+    "Unit | nominal voltage | warranty period",
+    "Ostdan M7 | 613 V | 8 years"
+   ]
+  },
+  {
+   "fact_id": "D04-table-2",
+   "doc_id": "D04",
+   "kind": "table",
+   "question": "What is the design pressure of the Senbro X4 unit?",
+   "answer": "288 bar",
+   "spans": [
+    "Unit | unit price | design pressure",
+    "Senbro X4 | 76476 USD | 288 bar"
+   ]
+  },
+  {
+   "fact_id": "D04-table-3",
+   "doc_id": "D04",
+   "kind": "table",
+   "question": "What is the service interval of the Quamir X9 unit?",
+   "answer": "28 months",
+   "spans": [
+    "Unit | service interval | rated output",
+    "Quamir X9 | 28 months | 438 MW"
+   ]
+  },
+  {
+   "fact_id": "D05-cross_page-0",
+   "doc_id": "D05",
+   "kind": "cross_page",
+   "question": "What is the warranty period of the Rilkel V9 unit?",
+   "answer": "8 years",
+   "spans": [
+    "The Rilkel V9 unit was commissioned at the Senholm site in 2001.",
+    "Its warranty period is 8 years."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_page-1",
+   "doc_id": "D05",
+   "kind": "cross_page",
+   "question": "What is the rated output of the Varvar R3 unit?",
+   "answer": "415 MW",
+   "spans": [
+    "The Varvar R3 unit was commissioned at the Mirvale site in 2007.",
+    "Its rated output is 415 MW."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_paragraph-0",
+   "doc_id": "D05",
+   "kind": "cross_paragraph",
+   "question": "What is the nominal voltage of the Mirdan T6 unit?",
+   "answer": "276 V",
+   "spans": [
+    "The Mirdan T6 unit was commissioned at the Mirvale site in 2016.",
+    "Its nominal voltage is 276 V."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_paragraph-1",
+   "doc_id": "D05",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Rilril M1 unit?",
+   "answer": "561 MW",
+   "spans": [
+    "The Rilril M1 unit was commissioned at the Quanex site in 1991.",
+    "Its rated output is 561 MW."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_paragraph-2",
+   "doc_id": "D05",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Nexdan T2 unit?",
+   "answer": "1 years",
+   "spans": [
+    "The Nexdan T2 unit was commissioned at the Senholm site in 1993.",
+    "Its warranty period is 1 years."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_paragraph-3",
+   "doc_id": "D05",
+   "kind": "cross_paragraph",
+   "question": "What is the storage capacity of the Quaqua K3 unit?",
+   "answer": "261 TB",
+   "spans": [
+    "The Quaqua K3 unit was commissioned at the Danvik site in 2006.",
+    "Its storage capacity is 261 TB."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_sentence-0",
+   "doc_id": "D05",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Kelost X8 unit?",
+   "answer": "677 TB",
+   "spans": [
+    "The Kelost X8 unit was commissioned at the Senholm site in 1994.",
+    "Its storage capacity is 677 TB."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_sentence-1",
+   "doc_id": "D05",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Senlen K4 unit?",
+   "answer": "260 MW",
+   "spans": [
+    "The Senlen K4 unit was commissioned at the Rilsen site in 1995.",
+    "Its rated output is 260 MW."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_sentence-2",
+   "doc_id": "D05",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Dansen X8 unit?",
+   "answer": "77714 USD",
+   "spans": [
+    "The Dansen X8 unit was commissioned at the Rilsen site in 2015.",
+    "Its unit price is 77714 USD."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_sentence-3",
+   "doc_id": "D05",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Ostlen T5 unit?",
+   "answer": "108 bar",
+   "spans": [
+    "The Ostlen T5 unit was commissioned at the Mirvale site in 2013.",
+    "Its design pressure is 108 bar."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_sentence-4",
+   "doc_id": "D05",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Dannex X6 unit?",
+   "answer": "10 years",
+   "spans": [
+    "The Dannex X6 unit was commissioned at the Rilsen site in 2020.",
+    "Its warranty period is 10 years."
+   ]
+  },
+  {
+   "fact_id": "D05-cross_sentence-5",
+   "doc_id": "D05",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Nexsen X2 unit?",
+   "answer": "53523 USD",
+   "spans": [
+    "The Nexsen X2 unit was commissioned at the Kelmar site in 2004.",
+    "Its unit price is 53523 USD."
+   ]
+  },
+  {
+   "fact_id": "D05-single-0",
+   "doc_id": "D05",
+   "kind": "single",
+   "question": "What is the service interval of the Osttov M1 unit?",
+   "answer": "20 months",
+   "spans": [
+    "The Osttov M1 unit has a service interval of 20 months."
+   ]
+  },
+  {
+   "fact_id": "D05-single-1",
+   "doc_id": "D05",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Mirvar T2 unit?",
+   "answer": "346 V",
+   "spans": [
+    "The Mirvar T2 unit has a nominal voltage of 346 V."
+   ]
+  },
+  {
+   "fact_id": "D05-single-2",
+   "doc_id": "D05",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Lenkel R3 unit?",
+   "answer": "326 V",
+   "spans": [
+    "The Lenkel R3 unit has a nominal voltage of 326 V."
+   ]
+  },
+  {
+   "fact_id": "D05-single-3",
+   "doc_id": "D05",
+   "kind": "single",
+   "question": "What is the warranty period of the Sendan R7 unit?",
+   "answer": "1 years",
+   "spans": [
+    "The Sendan R7 unit has a warranty period of 1 years."
+   ]
+  },
+  {
+   "fact_id": "D05-single-4",
+   "doc_id": "D05",
+   "kind": "single",
+   "question": "What is the unit price of the Dankel X7 unit?",
+   "answer": "22719 USD",
+   "spans": [
+    "The Dankel X7 unit has a unit price of 22719 USD."
+   ]
+  },
+  {
+   "fact_id": "D05-single-5",
+   "doc_id": "D05",
+   "kind": "single",
+   "question": "What is the mass of the Mirtov K8 unit?",
+   "answer": "6199 kg",
+   "spans": [
+    "The Mirtov K8 unit has a mass of 6199 kg."
+   ]
+  },
+  {
+   "fact_id": "D05-table-0",
+   "doc_id": "D05",
+   "kind": "table",
+   "question": "What is the service interval of the Sensen K4 unit?",
+   "answer": "16 months",
+   "spans": [
+    "Unit | service interval | warranty period",
+    "Sensen K4 | 16 months | 10 years"
+   ]
+  },
+  {
+   "fact_id": "D05-table-1",
+   "doc_id": "D05",
+   "kind": "table",
+   "question": "What is the rated output of the Rilnex T7 unit?",
+   "answer": "324 MW",
+   "spans": [
+    "Unit | rated output | unit price",
+    "Rilnex T7 | 324 MW | 34008 USD"
+   ]
+  },
+  {
+   "fact_id": "D05-table-2",
+   "doc_id": "D05",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Lenvar M9 unit?",
+   "answer": "676 V",
+   "spans": [
+    "Unit | nominal voltage | mass",
+    "Lenvar M9 | 676 V | 2742 kg"
+   ]
+  },
+  {
+   "fact_id": "D05-table-3",
+   "doc_id": "D05",
+   "kind": "table",
+   "question": "What is the service interval of the Lenril R5 unit?",
+   "answer": "23 months",
+   "spans": [
+    "Unit | storage capacity | service interval",
+    "Lenril R5 | 514 TB | 23 months"
+   ]
+  },
+  {
+   "fact_id": "D06-cross_page-0",
+   "doc_id": "D06",
+   "kind": "cross_page",
+   "question": "What is the service interval of the Quaost T5 unit?",
+   "answer": "14 months",
+   "spans": [
+    "The Quaost T5 unit was commissioned at the Kelmar site in 2008.",
+    "Its service interval is 14 months."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_page-1",
+   "doc_id": "D06",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Kelqua K3 unit?",
+   "answer": "204 TB",
+   "spans": [
+    "The Kelqua K3 unit was commissioned at the Quanex site in 2010.",
+    "Its storage capacity is 204 TB."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_paragraph-0",
+   "doc_id": "D06",
+   "kind": "cross_paragraph",
+   "question": "What is the storage capacity of the Quakel M6 unit?",
+   "answer": "78 TB",
+   "spans": [
+    "The Quakel M6 unit was commissioned at the Mirvale site in 2012.",
+    "Its storage capacity is 78 TB."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_paragraph-1",
+   "doc_id": "D06",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Nexmir X3 unit?",
+   "answer": "96619 USD",
+   "spans": [
+    "The Nexmir X3 unit was commissioned at the Senholm site in 2015.",
+    "Its unit price is 96619 USD."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_paragraph-2",
+   "doc_id": "D06",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Mirsen X3 unit?",
+   "answer": "4 years",
+   "spans": [
+    "The Mirsen X3 unit was commissioned at the Mirvale site in 1998.",
+    "Its warranty period is 4 years."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_paragraph-3",
+   "doc_id": "D06",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Ostost K3 unit?",
+   "answer": "5 years",
+   "spans": [
+    "The Ostost K3 unit was commissioned at the Rilsen site in 1988.",
+    "Its warranty period is 5 years."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_sentence-0",
+   "doc_id": "D06",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Lenbro V5 unit?",
+   "answer": "269 V",
+   "spans": [
+    "The Lenbro V5 unit was commissioned at the Tovrin site in 2021.",
+    "Its nominal voltage is 269 V."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_sentence-1",
+   "doc_id": "D06",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Vardan V7 unit?",
+   "answer": "7 months",
+   "spans": [
+    "The Vardan V7 unit was commissioned at the Kelmar site in 1990.",
+    "Its service interval is 7 months."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_sentence-2",
+   "doc_id": "D06",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Rilbro M9 unit?",
+   "answer": "11 years",
+   "spans": [
+    "The Rilbro M9 unit was commissioned at the Tovrin site in 1996.",
+    "Its warranty period is 11 years."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_sentence-3",
+   "doc_id": "D06",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Dantov R1 unit?",
+   "answer": "310 bar",
+   "spans": [
+    "The Dantov R1 unit was commissioned at the Ostbro site in 1999.",
+    "Its design pressure is 310 bar."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_sentence-4",
+   "doc_id": "D06",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Brotov M7 unit?",
+   "answer": "12 years",
+   "spans": [
+    "The Brotov M7 unit was commissioned at the Kelmar site in 2018.",
+    "Its warranty period is 12 years."
+   ]
+  },
+  {
+   "fact_id": "D06-cross_sentence-5",
+   "doc_id": "D06",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Rilqua R2 unit?",
+   "answer": "12420 USD",
+   "spans": [
+    "The Rilqua R2 unit was commissioned at the Ostbro site in 2020.",
+    "Its unit price is 12420 USD."
+   ]
+  },
+  {
+   "fact_id": "D06-single-0",
+   "doc_id": "D06",
+   "kind": "single",
+   "question": "What is the mass of the Tovmir M5 unit?",
+   "answer": "3178 kg",
+   "spans": [
+    "The Tovmir M5 unit has a mass of 3178 kg."
+   ]
+  },
+  {
+   "fact_id": "D06-single-1",
+   "doc_id": "D06",
+   "kind": "single",
+   "question": "What is the mass of the Kellen X1 unit?",
+   "answer": "1580 kg",
+   "spans": [
+    "The Kellen X1 unit has a mass of 1580 kg."
+   ]
+  },
+  {
+   "fact_id": "D06-single-2",
+   "doc_id": "D06",
+   "kind": "single",
+   "question": "What is the mass of the Varnex T8 unit?",
+   "answer": "412 kg",
+   "spans": [
+    "The Varnex T8 unit has a mass of 412 kg."
+   ]
+  },
+  {
+   "fact_id": "D06-single-3",
+   "doc_id": "D06",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Lenqua K3 unit?",
+   "answer": "658 V",
+   "spans": [
+    "The Lenqua K3 unit has a nominal voltage of 658 V."
+   ]
+  },
+  {
+   "fact_id": "D06-single-4",
+   "doc_id": "D06",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Mirdan V9 unit?",
+   "answer": "570 V",
+   "spans": [
+    "The Mirdan V9 unit has a nominal voltage of 570 V."
+   ]
+  },
+  {
+   "fact_id": "D06-single-5",
+   "doc_id": "D06",
+   "kind": "single",
+   "question": "What is the storage capacity of the Quasen R9 unit?",
+   "answer": "629 TB",
+   "spans": [
+    "The Quasen R9 unit has a storage capacity of 629 TB."
+   ]
+  },
+  {
+   "fact_id": "D06-table-0",
+   "doc_id": "D06",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Bromir T1 unit?",
+   "answer": "647 V",
+   "spans": [
+    "Unit | storage capacity | nominal voltage",
+    "Bromir T1 | 549 TB | 647 V"
+   ]
+  },
+  {
+   "fact_id": "D06-table-1",
+   "doc_id": "D06",
+   "kind": "table",
+   "question": "What is the service interval of the Lenvar V5 unit?",
+   "answer": "25 months",
+   "spans": [
+    "Unit | warranty period | service interval",
+    "Lenvar V5 | 3 years | 25 months"
+   ]
+  },
+  {
+   "fact_id": "D06-table-2",
+   "doc_id": "D06",
+   "kind": "table",
+   "question": "What is the design pressure of the Varost T2 unit?",
+   "answer": "47 bar",
+   "spans": [
+    "Unit | design pressure | storage capacity",
+    "Varost T2 | 47 bar | 797 TB"
+   ]
+  },
+  {
+   "fact_id": "D06-table-3",
+   "doc_id": "D06",
+   "kind": "table",
+   "question": "What is the design pressure of the Lenqua T2 unit?",
+   "answer": "43 bar",
+   "spans": [
+    "Unit | design pressure | unit price",
+    "Lenqua T2 | 43 bar | 20407 USD"
+   ]
+  },
+  {
+   "fact_id": "D07-cross_page-0",
+   "doc_id": "D07",
+   "kind": "cross_page",
+   "question": "What is the rated output of the Quaril T5 unit?",
+   "answer": "145 MW",
+   "spans": [
+    "The Quaril T5 unit was commissioned at the Kelmar site in 2002.",
+    "Its rated output is 145 MW."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_page-1",
+   "doc_id": "D07",
+   "kind": "cross_page",
+   "question": "What is the service interval of the Varvar R6 unit?",
+   "answer": "20 months",
+   "spans": [
+    "The Varvar R6 unit was commissioned at the Senholm site in 2003.",
+    "Its service interval is 20 months."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_paragraph-0",
+   "doc_id": "D07",
+   "kind": "cross_paragraph",
+   "question": "What is the mass of the Bromir K4 unit?",
+   "answer": "7707 kg",
+   "spans": [
+    "The Bromir K4 unit was commissioned at the Kelmar site in 2014.",
+    "Its mass is 7707 kg."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_paragraph-1",
+   "doc_id": "D07",
+   "kind": "cross_paragraph",
+   "question": "What is the nominal voltage of the Danbro X9 unit?",
+   "answer": "636 V",
+   "spans": [
+    "The Danbro X9 unit was commissioned at the Senholm site in 1989.",
+    "Its nominal voltage is 636 V."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_paragraph-2",
+   "doc_id": "D07",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Danost M8 unit?",
+   "answer": "277 bar",
+   "spans": [
+    "The Danost M8 unit was commissioned at the Quanex site in 2001.",
+    "Its design pressure is 277 bar."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_paragraph-3",
+   "doc_id": "D07",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Keltov T2 unit?",
+   "answer": "285 bar",
+   "spans": [
+    "The Keltov T2 unit was commissioned at the Tovrin site in 2016.",
+    "Its design pressure is 285 bar."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_sentence-0",
+   "doc_id": "D07",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Tovnex X2 unit?",
+   "answer": "19 months",
+   "spans": [
+    "The Tovnex X2 unit was commissioned at the Mirvale site in 2001.",
+    "Its service interval is 19 months."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_sentence-1",
+   "doc_id": "D07",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Tovnex R8 unit?",
+   "answer": "260 TB",
+   "spans": [
+    "The Tovnex R8 unit was commissioned at the Quanex site in 2017.",
+    "Its storage capacity is 260 TB."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_sentence-2",
+   "doc_id": "D07",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Rilbro V6 unit?",
+   "answer": "1362 kg",
+   "spans": [
+    "The Rilbro V6 unit was commissioned at the Quanex site in 1990.",
+    "Its mass is 1362 kg."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_sentence-3",
+   "doc_id": "D07",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Nexvar V7 unit?",
+   "answer": "664 V",
+   "spans": [
+    "The Nexvar V7 unit was commissioned at the Danvik site in 2014.",
+    "Its nominal voltage is 664 V."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_sentence-4",
+   "doc_id": "D07",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Lenvar X4 unit?",
+   "answer": "183 bar",
+   "spans": [
+    "The Lenvar X4 unit was commissioned at the Kelmar site in 2007.",
+    "Its design pressure is 183 bar."
+   ]
+  },
+  {
+   "fact_id": "D07-cross_sentence-5",
+   "doc_id": "D07",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Tovkel X3 unit?",
+   "answer": "657 MW",
+   "spans": [
+    "The Tovkel X3 unit was commissioned at the Rilsen site in 1995.",
+    "Its rated output is 657 MW."
+   ]
+  },
+  {
+   "fact_id": "D07-single-0",
+   "doc_id": "D07",
+   "kind": "single",
+   "question": "What is the storage capacity of the Brodan K5 unit?",
+   "answer": "423 TB",
+   "spans": [
+    "The Brodan K5 unit has a storage capacity of 423 TB."
+   ]
+  },
+  {
+   "fact_id": "D07-single-1",
+   "doc_id": "D07",
+   "kind": "single",
+   "question": "What is the storage capacity of the Mirbro V6 unit?",
+   "answer": "335 TB",
+   "spans": [
+    "The Mirbro V6 unit has a storage capacity of 335 TB."
+   ]
+  },
+  {
+   "fact_id": "D07-single-2",
+   "doc_id": "D07",
+   "kind": "single",
+   "question": "What is the warranty period of the Ostbro K2 unit?",
+   "answer": "2 years",
+   "spans": [
+    "The Ostbro K2 unit has a warranty period of 2 years."
+   ]
+  },
+  {
+   "fact_id": "D07-single-3",
+   "doc_id": "D07",
+   "kind": "single",
+   "question": "What is the rated output of the Ostmir K5 unit?",
+   "answer": "399 MW",
+   "spans": [
+    "The Ostmir K5 unit has a rated output of 399 MW."
+   ]
+  },
+  {
+   "fact_id": "D07-single-4",
+   "doc_id": "D07",
+   "kind": "single",
+   "question": "What is the unit price of the Tovdan X6 unit?",
+   "answer": "82272 USD",
+   "spans": [
+    "The Tovdan X6 unit has a unit price of 82272 USD."
+   ]
+  },
+  {
+   "fact_id": "D07-single-5",
+   "doc_id": "D07",
+   "kind": "single",
+   "question": "What is the unit price of the Danril R2 unit?",
+   "answer": "12838 USD",
+   "spans": [
+    "The Danril R2 unit has a unit price of 12838 USD."
+   ]
+  },
+  {
+   "fact_id": "D07-table-0",
+   "doc_id": "D07",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Varbro V8 unit?",
+   "answer": "316 V",
+   "spans": [
+    "Unit | mass | nominal voltage",
+    "Varbro V8 | 7515 kg | 316 V"
+   ]
+  },
+  {
+   "fact_id": "D07-table-1",
+   "doc_id": "D07",
+   "kind": "table",
+   "question": "What is the design pressure of the Lensen R6 unit?",
+   "answer": "287 bar",
+   "spans": [
+    "Unit | service interval | design pressure",
+    "Lensen R6 | 16 months | 287 bar"
+   ]
+  },
+  {
+   "fact_id": "D07-table-2",
+   "doc_id": "D07",
+   "kind": "table",
+   "question": "What is the rated output of the Ostnex R9 unit?",
+   "answer": "89 MW",
+   "spans": [
+    "Unit | rated output | nominal voltage",
+    "Ostnex R9 | 89 MW | 406 V"
+   ]
+  },
+  {
+   "fact_id": "D07-table-3",
+   "doc_id": "D07",
+   "kind": "table",
+   "question": "What is the storage capacity of the Senmir T4 unit?",
+   "answer": "167 TB",
+   "spans": [
+    "Unit | storage capacity | warranty period",
+    "Senmir T4 | 167 TB | 6 years"
+   ]
+  },
+  {
+   "fact_id": "D08-cross_page-0",
+   "doc_id": "D08",
+   "kind": "cross_page",
+   "question": "What is the mass of the Senlen K3 unit?",
+   "answer": "8669 kg",
+   "spans": [
+    "The Senlen K3 unit was commissioned at the Tovrin site in 2011.",
+    "Its mass is 8669 kg."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_page-1",
+   "doc_id": "D08",
+   "kind": "cross_page",
+   "question": "What is the service interval of the Danqua T2 unit?",
+   "answer": "7 months",
+   "spans": [
+    "The Danqua T2 unit was commissioned at the Tovrin site in 2016.",
+    "Its service interval is 7 months."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_paragraph-0",
+   "doc_id": "D08",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Tovsen T9 unit?",
+   "answer": "9261 USD",
+   "spans": [
+    "The Tovsen T9 unit was commissioned at the Senholm site in 2016.",
+    "Its unit price is 9261 USD."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_paragraph-1",
+   "doc_id": "D08",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Broril M1 unit?",
+   "answer": "89959 USD",
+   "spans": [
+    "The Broril M1 unit was commissioned at the Ostbro site in 2017.",
+    "Its unit price is 89959 USD."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_paragraph-2",
+   "doc_id": "D08",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Senril M7 unit?",
+   "answer": "306 bar",
+   "spans": [
+    "The Senril M7 unit was commissioned at the Rilsen site in 2023.",
+    "Its design pressure is 306 bar."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_paragraph-3",
+   "doc_id": "D08",
+   "kind": "cross_paragraph",
+   "question": "What is the nominal voltage of the Sennex X1 unit?",
+   "answer": "241 V",
+   "spans": [
+    "The Sennex X1 unit was commissioned at the Mirvale site in 2022.",
+    "Its nominal voltage is 241 V."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_sentence-0",
+   "doc_id": "D08",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Mirkel T8 unit?",
+   "answer": "410 V",
+   "spans": [
+    "The Mirkel T8 unit was commissioned at the Danvik site in 2002.",
+    "Its nominal voltage is 410 V."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_sentence-1",
+   "doc_id": "D08",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Ostkel R7 unit?",
+   "answer": "2847 kg",
+   "spans": [
+    "The Ostkel R7 unit was commissioned at the Senholm site in 2018.",
+    "Its mass is 2847 kg."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_sentence-2",
+   "doc_id": "D08",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Ostril T6 unit?",
+   "answer": "91 bar",
+   "spans": [
+    "The Ostril T6 unit was commissioned at the Ostbro site in 2013.",
+    "Its design pressure is 91 bar."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_sentence-3",
+   "doc_id": "D08",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Danbro K4 unit?",
+   "answer": "9 years",
+   "spans": [
+    "The Danbro K4 unit was commissioned at the Mirvale site in 1994.",
+    "Its warranty period is 9 years."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_sentence-4",
+   "doc_id": "D08",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Quamir T5 unit?",
+   "answer": "37445 USD",
+   "spans": [
+    "The Quamir T5 unit was commissioned at the Tovrin site in 2020.",
+    "Its unit price is 37445 USD."
+   ]
+  },
+  {
+   "fact_id": "D08-cross_sentence-5",
+   "doc_id": "D08",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Danqua X9 unit?",
+   "answer": "23719 USD",
+   "spans": [
+    "The Danqua X9 unit was commissioned at the Quanex site in 1991.",
+    "Its unit price is 23719 USD."
+   ]
+  },
+  {
+   "fact_id": "D08-single-0",
+   "doc_id": "D08",
+   "kind": "single",
+   "question": "What is the service interval of the Mirsen M7 unit?",
+   "answer": "18 months",
+   "spans": [
+    "The Mirsen M7 unit has a service interval of 18 months."
+   ]
+  },
+  {
+   "fact_id": "D08-single-1",
+   "doc_id": "D08",
+   "kind": "single",
+   "question": "What is the design pressure of the Quasen T4 unit?",
+   "answer": "155 bar",
+   "spans": [
+    "The Quasen T4 unit has a design pressure of 155 bar."
+   ]
+  },
+  {
+   "fact_id": "D08-single-2",
+   "doc_id": "D08",
+   "kind": "single",
+   "question": "What is the design pressure of the Rilmir V4 unit?",
+   "answer": "139 bar",
+   "spans": [
+    "The Rilmir V4 unit has a design pressure of 139 bar."
+   ]
+  },
+  {
+   "fact_id": "D08-single-3",
+   "doc_id": "D08",
+   "kind": "single",
+   "question": "What is the storage capacity of the Kelsen R8 unit?",
+   "answer": "682 TB",
+   "spans": [
+    "The Kelsen R8 unit has a storage capacity of 682 TB."
+   ]
+  },
+  {
+   "fact_id": "D08-single-4",
+   "doc_id": "D08",
+   "kind": "single",
+   "question": "What is the warranty period of the Ostmir V6 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Ostmir V6 unit has a warranty period of 3 years."
+   ]
+  },
+  {
+   "fact_id": "D08-single-5",
+   "doc_id": "D08",
+   "kind": "single",
+   "question": "What is the warranty period of the Mirtov R9 unit?",
+   "answer": "6 years",
+   "spans": [
+    "The Mirtov R9 unit has a warranty period of 6 years."
+   ]
+  },
+  {
+   "fact_id": "D08-table-0",
+   "doc_id": "D08",
+   "kind": "table",
+   "question": "What is the warranty period of the Lentov X9 unit?",
+   "answer": "4 years",
+   "spans": [
+    "Unit | warranty period | rated output",
+    "Lentov X9 | 4 years | 565 MW"
+   ]
+  },
+  {
+   "fact_id": "D08-table-1",
+   "doc_id": "D08",
+   "kind": "table",
+   "question": "What is the warranty period of the Quavar R8 unit?",
+   "answer": "12 years",
+   "spans": [
+    "Unit | warranty period | design pressure",
+    "Quavar R8 | 12 years | 267 bar"
+   ]
+  },
+  {
+   "fact_id": "D08-table-2",
+   "doc_id": "D08",
+   "kind": "table",
+   "question": "What is the storage capacity of the Dansen K4 unit?",
+   "answer": "664 TB",
+   "spans": [
+    "Unit | storage capacity | unit price",
+    "Dansen K4 | 664 TB | 41681 USD"
+   ]
+  },
+  {
+   "fact_id": "D08-table-3",
+   "doc_id": "D08",
+   "kind": "table",
+   "question": "What is the design pressure of the Quaqua K7 unit?",
+   "answer": "34 bar",
+   "spans": [
+    "Unit | design pressure | warranty period",
+    "Quaqua K7 | 34 bar | 2 years"
+   ]
+  },
+  {
+   "fact_id": "D09-cross_page-0",
+   "doc_id": "D09",
+   "kind": "cross_page",
+   "question": "What is the rated output of the Dankel R3 unit?",
+   "answer": "809 MW",
+   "spans": [
+    "The Dankel R3 unit was commissioned at the Tovrin site in 1999.",
+    "Its rated output is 809 MW."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_page-1",
+   "doc_id": "D09",
+   "kind": "cross_page",
+   "question": "What is the nominal voltage of the Lenmir X8 unit?",
+   "answer": "117 V",
+   "spans": [
+    "The Lenmir X8 unit was commissioned at the Kelmar site in 2001.",
+    "Its nominal voltage is 117 V."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_paragraph-0",
+   "doc_id": "D09",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Kelbro X1 unit?",
+   "answer": "4 years",
+   "spans": [
+    "The Kelbro X1 unit was commissioned at the Tovrin site in 1995.",
+    "Its warranty period is 4 years."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_paragraph-1",
+   "doc_id": "D09",
+   "kind": "cross_paragraph",
+   "question": "What is the storage capacity of the Brotov M2 unit?",
+   "answer": "252 TB",
+   "spans": [
+    "The Brotov M2 unit was commissioned at the Quanex site in 2005.",
+    "Its storage capacity is 252 TB."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_paragraph-2",
+   "doc_id": "D09",
+   "kind": "cross_paragraph",
+   "question": "What is the nominal voltage of the Quaqua X6 unit?",
+   "answer": "121 V",
+   "spans": [
+    "The Quaqua X6 unit was commissioned at the Tovrin site in 2021.",
+    "Its nominal voltage is 121 V."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_paragraph-3",
+   "doc_id": "D09",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Rilril T9 unit?",
+   "answer": "96 bar",
+   "spans": [
+    "The Rilril T9 unit was commissioned at the Kelmar site in 1991.",
+    "Its design pressure is 96 bar."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_sentence-0",
+   "doc_id": "D09",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Quavar R5 unit?",
+   "answer": "3709 kg",
+   "spans": [
+    "The Quavar R5 unit was commissioned at the Senholm site in 1992.",
+    "Its mass is 3709 kg."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_sentence-1",
+   "doc_id": "D09",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Senlen R2 unit?",
+   "answer": "4301 kg",
+   "spans": [
+    "The Senlen R2 unit was commissioned at the Quanex site in 1990.",
+    "Its mass is 4301 kg."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_sentence-2",
+   "doc_id": "D09",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Varnex X8 unit?",
+   "answer": "13 months",
+   "spans": [
+    "The Varnex X8 unit was commissioned at the Senholm site in 2006.",
+    "Its service interval is 13 months."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_sentence-3",
+   "doc_id": "D09",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Quaril K4 unit?",
+   "answer": "85462 USD",
+   "spans": [
+    "The Quaril K4 unit was commissioned at the Quanex site in 2000.",
+    "Its unit price is 85462 USD."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_sentence-4",
+   "doc_id": "D09",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Riltov M7 unit?",
+   "answer": "30 months",
+   "spans": [
+    "The Riltov M7 unit was commissioned at the Rilsen site in 2003.",
+    "Its service interval is 30 months."
+   ]
+  },
+  {
+   "fact_id": "D09-cross_sentence-5",
+   "doc_id": "D09",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Ostdan K3 unit?",
+   "answer": "12 years",
+   "spans": [
+    "The Ostdan K3 unit was commissioned at the Kelmar site in 2021.",
+    "Its warranty period is 12 years."
+   ]
+  },
+  {
+   "fact_id": "D09-single-0",
+   "doc_id": "D09",
+   "kind": "single",
+   "question": "What is the unit price of the Tovril V1 unit?",
+   "answer": "23339 USD",
+   "spans": [
+    "The Tovril V1 unit has a unit price of 23339 USD."
+   ]
+  },
+  {
+   "fact_id": "D09-single-1",
+   "doc_id": "D09",
+   "kind": "single",
+   "question": "What is the warranty period of the Rilqua X2 unit?",
+   "answer": "11 years",
+   "spans": [
+    "The Rilqua X2 unit has a warranty period of 11 years."
+   ]
+  },
+  {
+   "fact_id": "D09-single-2",
+   "doc_id": "D09",
+   "kind": "single",
+   "question": "What is the rated output of the Nexnex M2 unit?",
+   "answer": "786 MW",
+   "spans": [
+    "The Nexnex M2 unit has a rated output of 786 MW."
+   ]
+  },
+  {
+   "fact_id": "D09-single-3",
+   "doc_id": "D09",
+   "kind": "single",
+   "question": "What is the rated output of the Nexril M3 unit?",
+   "answer": "137 MW",
+   "spans": [
+    "The Nexril M3 unit has a rated output of 137 MW."
+   ]
+  },
+  {
+   "fact_id": "D09-single-4",
+   "doc_id": "D09",
+   "kind": "single",
+   "question": "What is the design pressure of the Tovqua V5 unit?",
+   "answer": "205 bar",
+   "spans": [
+    "The Tovqua V5 unit has a design pressure of 205 bar."
+   ]
+  },
+  {
+   "fact_id": "D09-single-5",
+   "doc_id": "D09",
+   "kind": "single",
+   "question": "What is the warranty period of the Lendan M3 unit?",
+   "answer": "1 years",
+   "spans": [
+    "The Lendan M3 unit has a warranty period of 1 years."
+   ]
+  },
+  {
+   "fact_id": "D09-table-0",
+   "doc_id": "D09",
+   "kind": "table",
+   "question": "What is the mass of the Senlen K7 unit?",
+   "answer": "5812 kg",
+   "spans": [
+    "Unit | mass | storage capacity",
+    "Senlen K7 | 5812 kg | 810 TB"
+   ]
+  },
+  {
+   "fact_id": "D09-table-1",
+   "doc_id": "D09",
+   "kind": "table",
+   "question": "What is the service interval of the Varmir X5 unit?",
+   "answer": "9 months",
+   "spans": [
+    "Unit | rated output | service interval",
+    "Varmir X5 | 134 MW | 9 months"
+   ]
+  },
+  {
+   "fact_id": "D09-table-2",
+   "doc_id": "D09",
+   "kind": "table",
+   "question": "What is the service interval of the Varlen K8 unit?",
+   "answer": "27 months",
+   "spans": [
+    "Unit | design pressure | service interval",
+    "Varlen K8 | 166 bar | 27 months"
+   ]
+  },
+  {
+   "fact_id": "D09-table-3",
+   "doc_id": "D09",
+   "kind": "table",
+   "question": "What is the unit price of the Mirbro R4 unit?",
+   "answer": "88469 USD",
+   "spans": [
+    "Unit | unit price | nominal voltage",
+    "Mirbro R4 | 88469 USD | 465 V"
+   ]
+  },
+  {
+   "fact_id": "D10-cross_page-0",
+   "doc_id": "D10",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Nexdan T5 unit?",
+   "answer": "104 TB",
+   "spans": [
+    "The Nexdan T5 unit was commissioned at the Rilsen site in 1997.",
+    "Its storage capacity is 104 TB."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_page-1",
+   "doc_id": "D10",
+   "kind": "cross_page",
+   "question": "What is the nominal voltage of the Sensen R6 unit?",
+   "answer": "471 V",
+   "spans": [
+    "The Sensen R6 unit was commissioned at the Rilsen site in 2003.",
+    "Its nominal voltage is 471 V."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_paragraph-0",
+   "doc_id": "D10",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Tovkel V7 unit?",
+   "answer": "2 years",
+   "spans": [
+    "The Tovkel V7 unit was commissioned at the Mirvale site in 2000.",
+    "Its warranty period is 2 years."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_paragraph-1",
+   "doc_id": "D10",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Lentov K7 unit?",
+   "answer": "900 MW",
+   "spans": [
+    "The Lentov K7 unit was commissioned at the Quanex site in 1998.",
+    "Its rated output is 900 MW."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_paragraph-2",
+   "doc_id": "D10",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Danost R8 unit?",
+   "answer": "38 bar",
+   "spans": [
+    "The Danost R8 unit was commissioned at the Mirvale site in 2018.",
+    "Its design pressure is 38 bar."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_paragraph-3",
+   "doc_id": "D10",
+   "kind": "cross_paragraph",
+   "question": "What is the nominal voltage of the Sendan K3 unit?",
+   "answer": "272 V",
+   "spans": [
+    "The Sendan K3 unit was commissioned at the Ostbro site in 2013.",
+    "Its nominal voltage is 272 V."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_sentence-0",
+   "doc_id": "D10",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Senkel V5 unit?",
+   "answer": "46741 USD",
+   "spans": [
+    "The Senkel V5 unit was commissioned at the Tovrin site in 2013.",
+    "Its unit price is 46741 USD."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_sentence-1",
+   "doc_id": "D10",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Ostmir R9 unit?",
+   "answer": "383 MW",
+   "spans": [
+    "The Ostmir R9 unit was commissioned at the Mirvale site in 1996.",
+    "Its rated output is 383 MW."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_sentence-2",
+   "doc_id": "D10",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Kelkel M9 unit?",
+   "answer": "787 TB",
+   "spans": [
+    "The Kelkel M9 unit was commissioned at the Senholm site in 2022.",
+    "Its storage capacity is 787 TB."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_sentence-3",
+   "doc_id": "D10",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Tovril X3 unit?",
+   "answer": "59952 USD",
+   "spans": [
+    "The Tovril X3 unit was commissioned at the Senholm site in 2001.",
+    "Its unit price is 59952 USD."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_sentence-4",
+   "doc_id": "D10",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Nexost V7 unit?",
+   "answer": "6 months",
+   "spans": [
+    "The Nexost V7 unit was commissioned at the Senholm site in 1999.",
+    "Its service interval is 6 months."
+   ]
+  },
+  {
+   "fact_id": "D10-cross_sentence-5",
+   "doc_id": "D10",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Rildan V8 unit?",
+   "answer": "381 MW",
+   "spans": [
+    "The Rildan V8 unit was commissioned at the Mirvale site in 2012.",
+    "Its rated output is 381 MW."
+   ]
+  },
+  {
+   "fact_id": "D10-single-0",
+   "doc_id": "D10",
+   "kind": "single",
+   "question": "What is the unit price of the Qualen M2 unit?",
+   "answer": "29327 USD",
+   "spans": [
+    "The Qualen M2 unit has a unit price of 29327 USD."
+   ]
+  },
+  {
+   "fact_id": "D10-single-1",
+   "doc_id": "D10",
+   "kind": "single",
+   "question": "What is the rated output of the Kelost R3 unit?",
+   "answer": "418 MW",
+   "spans": [
+    "The Kelost R3 unit has a rated output of 418 MW."
+   ]
+  },
+  {
+   "fact_id": "D10-single-2",
+   "doc_id": "D10",
+   "kind": "single",
+   "question": "What is the unit price of the Rildan R4 unit?",
+   "answer": "31323 USD",
+   "spans": [
+    "The Rildan R4 unit has a unit price of 31323 USD."
+   ]
+  },
+  {
+   "fact_id": "D10-single-3",
+   "doc_id": "D10",
+   "kind": "single",
+   "question": "What is the design pressure of the Varbro T3 unit?",
+   "answer": "97 bar",
+   "spans": [
+    "The Varbro T3 unit has a design pressure of 97 bar."
+   ]
+  },
+  {
+   "fact_id": "D10-single-4",
+   "doc_id": "D10",
+   "kind": "single",
+   "question": "What is the storage capacity of the Rilkel M2 unit?",
+   "answer": "236 TB",
+   "spans": [
+    "The Rilkel M2 unit has a storage capacity of 236 TB."
+   ]
+  },
+  {
+   "fact_id": "D10-single-5",
+   "doc_id": "D10",
+   "kind": "single",
+   "question": "What is the service interval of the Mirtov X4 unit?",
+   "answer": "30 months",
+   "spans": [
+    "The Mirtov X4 unit has a service interval of 30 months."
+   ]
+  },
+  {
+   "fact_id": "D10-table-0",
+   "doc_id": "D10",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Nextov R6 unit?",
+   "answer": "309 V",
+   "spans": [
+    "Unit | nominal voltage | service interval",
+    "Nextov R6 | 309 V | 21 months"
+   ]
+  },
+  {
+   "fact_id": "D10-table-1",
+   "doc_id": "D10",
+   "kind": "table",
+   "question": "What is the rated output of the Qualen V6 unit?",
+   "answer": "662 MW",
+   "spans": [
+    "Unit | rated output | storage capacity",
+    "Qualen V6 | 662 MW | 849 TB"
+   ]
+  },
+  {
+   "fact_id": "D10-table-2",
+   "doc_id": "D10",
+   "kind": "table",
+   "question": "What is the unit price of the Varost T8 unit?",
+   "answer": "53684 USD",
+   "spans": [
+    "Unit | unit price | nominal voltage",
+    "Varost T8 | 53684 USD | 686 V"
+   ]
+  },
+  {
+   "fact_id": "D10-table-3",
+   "doc_id": "D10",
+   "kind": "table",
+   "question": "What is the warranty period of the Dantov K2 unit?",
+   "answer": "7 years",
+   "spans": [
+    "Unit | warranty period | rated output",
+    "Dantov K2 | 7 years | 675 MW"
+   ]
+  },
+  {
+   "fact_id": "D11-cross_page-0",
+   "doc_id": "D11",
+   "kind": "cross_page",
+   "question": "What is the unit price of the Broost M4 unit?",
+   "answer": "54325 USD",
+   "spans": [
+    "The Broost M4 unit was commissioned at the Senholm site in 1992.",
+    "Its unit price is 54325 USD."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_page-1",
+   "doc_id": "D11",
+   "kind": "cross_page",
+   "question": "What is the warranty period of the Senvar K9 unit?",
+   "answer": "6 years",
+   "spans": [
+    "The Senvar K9 unit was commissioned at the Ostbro site in 1991.",
+    "Its warranty period is 6 years."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_paragraph-0",
+   "doc_id": "D11",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Ostqua M9 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Ostqua M9 unit was commissioned at the Kelmar site in 1993.",
+    "Its warranty period is 3 years."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_paragraph-1",
+   "doc_id": "D11",
+   "kind": "cross_paragraph",
+   "question": "What is the service interval of the Lensen K3 unit?",
+   "answer": "22 months",
+   "spans": [
+    "The Lensen K3 unit was commissioned at the Quanex site in 2007.",
+    "Its service interval is 22 months."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_paragraph-2",
+   "doc_id": "D11",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Osttov X7 unit?",
+   "answer": "139 MW",
+   "spans": [
+    "The Osttov X7 unit was commissioned at the Mirvale site in 1992.",
+    "Its rated output is 139 MW."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_paragraph-3",
+   "doc_id": "D11",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Rilost V2 unit?",
+   "answer": "10 years",
+   "spans": [
+    "The Rilost V2 unit was commissioned at the Kelmar site in 2014.",
+    "Its warranty period is 10 years."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_sentence-0",
+   "doc_id": "D11",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Bronex M1 unit?",
+   "answer": "645 MW",
+   "spans": [
+    "The Bronex M1 unit was commissioned at the Tovrin site in 1993.",
+    "Its rated output is 645 MW."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_sentence-1",
+   "doc_id": "D11",
+   "kind": "cross_sentence",
+   "question": "What is the unit price of the Nexvar M1 unit?",
+   "answer": "8666 USD",
+   "spans": [
+    "The Nexvar M1 unit was commissioned at the Quanex site in 1994.",
+    "Its unit price is 8666 USD."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_sentence-2",
+   "doc_id": "D11",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Dankel M6 unit?",
+   "answer": "284 bar",
+   "spans": [
+    "The Dankel M6 unit was commissioned at the Senholm site in 2004.",
+    "Its design pressure is 284 bar."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_sentence-3",
+   "doc_id": "D11",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Rilost M6 unit?",
+   "answer": "573 V",
+   "spans": [
+    "The Rilost M6 unit was commissioned at the Ostbro site in 2010.",
+    "Its nominal voltage is 573 V."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_sentence-4",
+   "doc_id": "D11",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Lenost T2 unit?",
+   "answer": "240 bar",
+   "spans": [
+    "The Lenost T2 unit was commissioned at the Ostbro site in 2023.",
+    "Its design pressure is 240 bar."
+   ]
+  },
+  {
+   "fact_id": "D11-cross_sentence-5",
+   "doc_id": "D11",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Kellen K6 unit?",
+   "answer": "16 months",
+   "spans": [
+    "The Kellen K6 unit was commissioned at the Mirvale site in 2017.",
+    "Its service interval is 16 months."
+   ]
+  },
+  {
+   "fact_id": "D11-single-0",
+   "doc_id": "D11",
+   "kind": "single",
+   "question": "What is the mass of the Tovmir V1 unit?",
+   "answer": "7184 kg",
+   "spans": [
+    "The Tovmir V1 unit has a mass of 7184 kg."
+   ]
+  },
+  {
+   "fact_id": "D11-single-1",
+   "doc_id": "D11",
+   "kind": "single",
+   "question": "What is the storage capacity of the Senqua K5 unit?",
+   "answer": "764 TB",
+   "spans": [
+    "The Senqua K5 unit has a storage capacity of 764 TB."
+   ]
+  },
+  {
+   "fact_id": "D11-single-2",
+   "doc_id": "D11",
+   "kind": "single",
+   "question": "What is the unit price of the Kelmir T8 unit?",
+   "answer": "69605 USD",
+   "spans": [
+    "The Kelmir T8 unit has a unit price of 69605 USD."
+   ]
+  },
+  {
+   "fact_id": "D11-single-3",
+   "doc_id": "D11",
+   "kind": "single",
+   "question": "What is the unit price of the Lensen V6 unit?",
+   "answer": "96965 USD",
+   "spans": [
+    "The Lensen V6 unit has a unit price of 96965 USD."
+   ]
+  },
+  {
+   "fact_id": "D11-single-4",
+   "doc_id": "D11",
+   "kind": "single",
+   "question": "What is the unit price of the Nexnex X2 unit?",
+   "answer": "41672 USD",
+   "spans": [
+    "The Nexnex X2 unit has a unit price of 41672 USD."
+   ]
+  },
+  {
+   "fact_id": "D11-single-5",
+   "doc_id": "D11",
+   "kind": "single",
+   "question": "What is the service interval of the Nexnex T2 unit?",
+   "answer": "11 months",
+   "spans": [
+    "The Nexnex T2 unit has a service interval of 11 months."
+   ]
+  },
+  {
+   "fact_id": "D11-table-0",
+   "doc_id": "D11",
+   "kind": "table",
+   "question": "What is the mass of the Rilmir R2 unit?",
+   "answer": "7576 kg",
+   "spans": [
+    "Unit | nominal voltage | mass",
+    "Rilmir R2 | 532 V | 7576 kg"
+   ]
+  },
+  {
+   "fact_id": "D11-table-1",
+   "doc_id": "D11",
+   "kind": "table",
+   "question": "What is the unit price of the Quakel K3 unit?",
+   "answer": "6935 USD",
+   "spans": [
+    "Unit | unit price | design pressure",
+    "Quakel K3 | 6935 USD | 107 bar"
+   ]
+  },
+  {
+   "fact_id": "D11-table-2",
+   "doc_id": "D11",
+   "kind": "table",
+   "question": "What is the unit price of the Kelnex V9 unit?",
+   "answer": "19113 USD",
+   "spans": [
+    "Unit | service interval | unit price",
+    "Kelnex V9 | 6 months | 19113 USD"
+   ]
+  },
+  {
+   "fact_id": "D11-table-3",
+   "doc_id": "D11",
+   "kind": "table",
+   "question": "What is the service interval of the Nexvar K1 unit?",
+   "answer": "20 months",
+   "spans": [
+    "Unit | service interval | storage capacity",
+    "Nexvar K1 | 20 months | 192 TB"
+   ]
+  },
+  {
+   "fact_id": "D12-cross_page-0",
+   "doc_id": "D12",
+   "kind": "cross_page",
+   "question": "What is the warranty period of the Tovbro X5 unit?",
+   "answer": "8 years",
+   "spans": [
+    "The Tovbro X5 unit was commissioned at the Tovrin site in 1993.",
+    "Its warranty period is 8 years."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_page-1",
+   "doc_id": "D12",
+   "kind": "cross_page",
+   "question": "What is the mass of the Mirsen M1 unit?",
+   "answer": "8512 kg",
+   "spans": [
+    "The Mirsen M1 unit was commissioned at the Tovrin site in 1992.",
+    "Its mass is 8512 kg."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_paragraph-0",
+   "doc_id": "D12",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Quaost M1 unit?",
+   "answer": "5134 USD",
+   "spans": [
+    "The Quaost M1 unit was commissioned at the Kelmar site in 1993.",
+    "Its unit price is 5134 USD."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_paragraph-1",
+   "doc_id": "D12",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Tovlen K2 unit?",
+   "answer": "552 MW",
+   "spans": [
+    "The Tovlen K2 unit was commissioned at the Danvik site in 2005.",
+    "Its rated output is 552 MW."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_paragraph-2",
+   "doc_id": "D12",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Varril M1 unit?",
+   "answer": "297 bar",
+   "spans": [
+    "The Varril M1 unit was commissioned at the Danvik site in 2013.",
+    "Its design pressure is 297 bar."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_paragraph-3",
+   "doc_id": "D12",
+   "kind": "cross_paragraph",
+   "question": "What is the service interval of the Broost K8 unit?",
+   "answer": "24 months",
+   "spans": [
+    "The Broost K8 unit was commissioned at the Mirvale site in 2010.",
+    "Its service interval is 24 months."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_sentence-0",
+   "doc_id": "D12",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Rilbro T5 unit?",
+   "answer": "104 bar",
+   "spans": [
+    "The Rilbro T5 unit was commissioned at the Tovrin site in 1995.",
+    "Its design pressure is 104 bar."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_sentence-1",
+   "doc_id": "D12",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Nexvar X7 unit?",
+   "answer": "15 months",
+   "spans": [
+    "The Nexvar X7 unit was commissioned at the Kelmar site in 1997.",
+    "Its service interval is 15 months."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_sentence-2",
+   "doc_id": "D12",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Quavar M7 unit?",
+   "answer": "736 TB",
+   "spans": [
+    "The Quavar M7 unit was commissioned at the Danvik site in 1989.",
+    "Its storage capacity is 736 TB."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_sentence-3",
+   "doc_id": "D12",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Brotov V6 unit?",
+   "answer": "645 V",
+   "spans": [
+    "The Brotov V6 unit was commissioned at the Tovrin site in 1988.",
+    "Its nominal voltage is 645 V."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_sentence-4",
+   "doc_id": "D12",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Mirnex T4 unit?",
+   "answer": "30 months",
+   "spans": [
+    "The Mirnex T4 unit was commissioned at the Rilsen site in 2008.",
+    "Its service interval is 30 months."
+   ]
+  },
+  {
+   "fact_id": "D12-cross_sentence-5",
+   "doc_id": "D12",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Nexmir K2 unit?",
+   "answer": "752 MW",
+   "spans": [
+    "The Nexmir K2 unit was commissioned at the Senholm site in 2023.",
+    "Its rated output is 752 MW."
+   ]
+  },
+  {
+   "fact_id": "D12-single-0",
+   "doc_id": "D12",
+   "kind": "single",
+   "question": "What is the service interval of the Senmir K2 unit?",
+   "answer": "33 months",
+   "spans": [
+    "The Senmir K2 unit has a service interval of 33 months."
+   ]
+  },
+  {
+   "fact_id": "D12-single-1",
+   "doc_id": "D12",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Nexril X3 unit?",
+   "answer": "259 V",
+   "spans": [
+    "The Nexril X3 unit has a nominal voltage of 259 V."
+   ]
+  },
+  {
+   "fact_id": "D12-single-2",
+   "doc_id": "D12",
+   "kind": "single",
+   "question": "What is the design pressure of the Brobro R4 unit?",
+   "answer": "96 bar",
+   "spans": [
+    "The Brobro R4 unit has a design pressure of 96 bar."
+   ]
+  },
+  {
+   "fact_id": "D12-single-3",
+   "doc_id": "D12",
+   "kind": "single",
+   "question": "What is the storage capacity of the Brotov V9 unit?",
+   "answer": "165 TB",
+   "spans": [
+    "The Brotov V9 unit has a storage capacity of 165 TB."
+   ]
+  },
+  {
+   "fact_id": "D12-single-4",
+   "doc_id": "D12",
+   "kind": "single",
+   "question": "What is the rated output of the Sennex T5 unit?",
+   "answer": "326 MW",
+   "spans": [
+    "The Sennex T5 unit has a rated output of 326 MW."
+   ]
+  },
+  {
+   "fact_id": "D12-single-5",
+   "doc_id": "D12",
+   "kind": "single",
+   "question": "What is the unit price of the Mirtov X1 unit?",
+   "answer": "93089 USD",
+   "spans": [
+    "The Mirtov X1 unit has a unit price of 93089 USD."
+   ]
+  },
+  {
+   "fact_id": "D12-table-0",
+   "doc_id": "D12",
+   "kind": "table",
+   "question": "What is the rated output of the Quabro X5 unit?",
+   "answer": "209 MW",
+   "spans": [
+    "Unit | service interval | rated output",
+    "Quabro X5 | 16 months | 209 MW"
+   ]
+  },
+  {
+   "fact_id": "D12-table-1",
+   "doc_id": "D12",
+   "kind": "table",
+   "question": "What is the mass of the Brolen X2 unit?",
+   "answer": "7860 kg",
+   "spans": [
+    "Unit | storage capacity | mass",
+    "Brolen X2 | 297 TB | 7860 kg"
+   ]
+  },
+  {
+   "fact_id": "D12-table-2",
+   "doc_id": "D12",
+   "kind": "table",
+   "question": "What is the service interval of the Lenkel K2 unit?",
+   "answer": "8 months",
+   "spans": [
+    "Unit | service interval | rated output",
+    "Lenkel K2 | 8 months | 931 MW"
+   ]
+  },
+  {
+   "fact_id": "D12-table-3",
+   "doc_id": "D12",
+   "kind": "table",
+   "question": "What is the mass of the Mirlen K6 unit?",
+   "answer": "9196 kg",
+   "spans": [
+    "Unit | mass | storage capacity",
+    "Mirlen K6 | 9196 kg | 603 TB"
+   ]
+  },
+  {
+   "fact_id": "D13-cross_page-0",
+   "doc_id": "D13",
+   "kind": "cross_page",
+   "question": "What is the rated output of the Kelvar R5 unit?",
+   "answer": "399 MW",
+   "spans": [
+    "The Kelvar R5 unit was commissioned at the Senholm site in 1991.",
+    "Its rated output is 399 MW."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_page-1",
+   "doc_id": "D13",
+   "kind": "cross_page",
+   "question": "What is the design pressure of the Brodan M6 unit?",
+   "answer": "286 bar",
+   "spans": [
+    "The Brodan M6 unit was commissioned at the Kelmar site in 1998.",
+    "Its design pressure is 286 bar."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_paragraph-0",
+   "doc_id": "D13",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Lenbro X5 unit?",
+   "answer": "243 bar",
+   "spans": [
+    "The Lenbro X5 unit was commissioned at the Rilsen site in 2023.",
+    "Its design pressure is 243 bar."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_paragraph-1",
+   "doc_id": "D13",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Tovsen M1 unit?",
+   "answer": "240 bar",
+   "spans": [
+    "The Tovsen M1 unit was commissioned at the Quanex site in 2001.",
+    "Its design pressure is 240 bar."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_paragraph-2",
+   "doc_id": "D13",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Danmir T9 unit?",
+   "answer": "366 MW",
+   "spans": [
+    "The Danmir T9 unit was commissioned at the Rilsen site in 2011.",
+    "Its rated output is 366 MW."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_paragraph-3",
+   "doc_id": "D13",
+   "kind": "cross_paragraph",
+   "question": "What is the service interval of the Ostnex M7 unit?",
+   "answer": "18 months",
+   "spans": [
+    "The Ostnex M7 unit was commissioned at the Kelmar site in 2003.",
+    "Its service interval is 18 months."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_sentence-0",
+   "doc_id": "D13",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Varlen X9 unit?",
+   "answer": "431 V",
+   "spans": [
+    "The Varlen X9 unit was commissioned at the Danvik site in 1989.",
+    "Its nominal voltage is 431 V."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_sentence-1",
+   "doc_id": "D13",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Nexvar M2 unit?",
+   "answer": "274 TB",
+   "spans": [
+    "The Nexvar M2 unit was commissioned at the Senholm site in 2008.",
+    "Its storage capacity is 274 TB."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_sentence-2",
+   "doc_id": "D13",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Danlen V1 unit?",
+   "answer": "391 V",
+   "spans": [
+    "The Danlen V1 unit was commissioned at the Ostbro site in 2006.",
+    "Its nominal voltage is 391 V."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_sentence-3",
+   "doc_id": "D13",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Dankel X9 unit?",
+   "answer": "30 months",
+   "spans": [
+    "The Dankel X9 unit was commissioned at the Quanex site in 2020.",
+    "Its service interval is 30 months."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_sentence-4",
+   "doc_id": "D13",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Quakel X1 unit?",
+   "answer": "154 MW",
+   "spans": [
+    "The Quakel X1 unit was commissioned at the Ostbro site in 1994.",
+    "Its rated output is 154 MW."
+   ]
+  },
+  {
+   "fact_id": "D13-cross_sentence-5",
+   "doc_id": "D13",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Varril X6 unit?",
+   "answer": "27 months",
+   "spans": [
+    "The Varril X6 unit was commissioned at the Ostbro site in 2022.",
+    "Its service interval is 27 months."
+   ]
+  },
+  {
+   "fact_id": "D13-single-0",
+   "doc_id": "D13",
+   "kind": "single",
+   "question": "What is the unit price of the Nexost V9 unit?",
+   "answer": "71160 USD",
+   "spans": [
+    "The Nexost V9 unit has a unit price of 71160 USD."
+   ]
+  },
+  {
+   "fact_id": "D13-single-1",
+   "doc_id": "D13",
+   "kind": "single",
+   "question": "What is the design pressure of the Nextov K8 unit?",
+   "answer": "238 bar",
+   "spans": [
+    "The Nextov K8 unit has a design pressure of 238 bar."
+   ]
+  },
+  {
+   "fact_id": "D13-single-2",
+   "doc_id": "D13",
+   "kind": "single",
+   "question": "What is the unit price of the Nexqua K4 unit?",
+   "answer": "89447 USD",
+   "spans": [
+    "The Nexqua K4 unit has a unit price of 89447 USD."
+   ]
+  },
+  {
+   "fact_id": "D13-single-3",
+   "doc_id": "D13",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Nexbro R2 unit?",
+   "answer": "523 V",
+   "spans": [
+    "The Nexbro R2 unit has a nominal voltage of 523 V."
+   ]
+  },
+  {
+   "fact_id": "D13-single-4",
+   "doc_id": "D13",
+   "kind": "single",
+   "question": "What is the unit price of the Nexbro T8 unit?",
+   "answer": "6329 USD",
+   "spans": [
+    "The Nexbro T8 unit has a unit price of 6329 USD."
+   ]
+  },
+  {
+   "fact_id": "D13-single-5",
+   "doc_id": "D13",
+   "kind": "single",
+   "question": "What is the unit price of the Quadan K8 unit?",
+   "answer": "89043 USD",
+   "spans": [
+    "The Quadan K8 unit has a unit price of 89043 USD."
+   ]
+  },
+  {
+   "fact_id": "D13-table-0",
+   "doc_id": "D13",
+   "kind": "table",
+   "question": "What is the unit price of the Rilbro X9 unit?",
+   "answer": "75250 USD",
+   "spans": [
+    "Unit | unit price | service interval",
+    "Rilbro X9 | 75250 USD | 25 months"
+   ]
+  },
+  {
+   "fact_id": "D13-table-1",
+   "doc_id": "D13",
+   "kind": "table",
+   "question": "What is the rated output of the Dantov V1 unit?",
+   "answer": "302 MW",
+   "spans": [
+    "Unit | warranty period | rated output",
+    "Dantov V1 | 12 years | 302 MW"
+   ]
+  },
+  {
+   "fact_id": "D13-table-2",
+   "doc_id": "D13",
+   "kind": "table",
+   "question": "What is the rated output of the Rilqua V1 unit?",
+   "answer": "935 MW",
+   "spans": [
+    "Unit | rated output | mass",
+    "Rilqua V1 | 935 MW | 1530 kg"
+   ]
+  },
+  {
+   "fact_id": "D13-table-3",
+   "doc_id": "D13",
+   "kind": "table",
+   "question": "What is the rated output of the Kelvar R4 unit?",
+   "answer": "175 MW",
+   "spans": [
+    "Unit | nominal voltage | rated output",
+    "Kelvar R4 | 668 V | 175 MW"
+   ]
+  },
+  {
+   "fact_id": "D14-cross_page-0",
+   "doc_id": "D14",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Tovbro K4 unit?",
+   "answer": "713 TB",
+   "spans": [
+    "The Tovbro K4 unit was commissioned at the Kelmar site in 1992.",
+    "Its storage capacity is 713 TB."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_page-1",
+   "doc_id": "D14",
+   "kind": "cross_page",
+   "question": "What is the service interval of the Rilnex X1 unit?",
+   "answer": "34 months",
+   "spans": [
+    "The Rilnex X1 unit was commissioned at the Quanex site in 1995.",
+    "Its service interval is 34 months."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_paragraph-0",
+   "doc_id": "D14",
+   "kind": "cross_paragraph",
+   "question": "What is the storage capacity of the Senqua V7 unit?",
+   "answer": "255 TB",
+   "spans": [
+    "The Senqua V7 unit was commissioned at the Senholm site in 1993.",
+    "Its storage capacity is 255 TB."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_paragraph-1",
+   "doc_id": "D14",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Ostnex K5 unit?",
+   "answer": "52970 USD",
+   "spans": [
+    "The Ostnex K5 unit was commissioned at the Danvik site in 1993.",
+    "Its unit price is 52970 USD."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_paragraph-2",
+   "doc_id": "D14",
+   "kind": "cross_paragraph",
+   "question": "What is the mass of the Senmir T2 unit?",
+   "answer": "2289 kg",
+   "spans": [
+    "The Senmir T2 unit was commissioned at the Senholm site in 1994.",
+    "Its mass is 2289 kg."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_paragraph-3",
+   "doc_id": "D14",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Mirbro M6 unit?",
+   "answer": "90052 USD",
+   "spans": [
+    "The Mirbro M6 unit was commissioned at the Senholm site in 2018.",
+    "Its unit price is 90052 USD."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_sentence-0",
+   "doc_id": "D14",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Mirlen R5 unit?",
+   "answer": "21 bar",
+   "spans": [
+    "The Mirlen R5 unit was commissioned at the Ostbro site in 2013.",
+    "Its design pressure is 21 bar."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_sentence-1",
+   "doc_id": "D14",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Quaqua R4 unit?",
+   "answer": "942 MW",
+   "spans": [
+    "The Quaqua R4 unit was commissioned at the Kelmar site in 1999.",
+    "Its rated output is 942 MW."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_sentence-2",
+   "doc_id": "D14",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Rilkel K8 unit?",
+   "answer": "926 MW",
+   "spans": [
+    "The Rilkel K8 unit was commissioned at the Quanex site in 2009.",
+    "Its rated output is 926 MW."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_sentence-3",
+   "doc_id": "D14",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Dantov V8 unit?",
+   "answer": "7438 kg",
+   "spans": [
+    "The Dantov V8 unit was commissioned at the Tovrin site in 1988.",
+    "Its mass is 7438 kg."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_sentence-4",
+   "doc_id": "D14",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Mirlen X3 unit?",
+   "answer": "413 TB",
+   "spans": [
+    "The Mirlen X3 unit was commissioned at the Ostbro site in 2003.",
+    "Its storage capacity is 413 TB."
+   ]
+  },
+  {
+   "fact_id": "D14-cross_sentence-5",
+   "doc_id": "D14",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Rilbro V2 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Rilbro V2 unit was commissioned at the Senholm site in 2000.",
+    "Its warranty period is 3 years."
+   ]
+  },
+  {
+   "fact_id": "D14-single-0",
+   "doc_id": "D14",
+   "kind": "single",
+   "question": "What is the service interval of the Quaril X7 unit?",
+   "answer": "10 months",
+   "spans": [
+    "The Quaril X7 unit has a service interval of 10 months."
+   ]
+  },
+  {
+   "fact_id": "D14-single-1",
+   "doc_id": "D14",
+   "kind": "single",
+   "question": "What is the warranty period of the Rilmir R4 unit?",
+   "answer": "6 years",
+   "spans": [
+    "The Rilmir R4 unit has a warranty period of 6 years."
+   ]
+  },
+  {
+   "fact_id": "D14-single-2",
+   "doc_id": "D14",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Quavar X7 unit?",
+   "answer": "324 V",
+   "spans": [
+    "The Quavar X7 unit has a nominal voltage of 324 V."
+   ]
+  },
+  {
+   "fact_id": "D14-single-3",
+   "doc_id": "D14",
+   "kind": "single",
+   "question": "What is the design pressure of the Rilnex R6 unit?",
+   "answer": "230 bar",
+   "spans": [
+    "The Rilnex R6 unit has a design pressure of 230 bar."
+   ]
+  },
+  {
+   "fact_id": "D14-single-4",
+   "doc_id": "D14",
+   "kind": "single",
+   "question": "What is the unit price of the Brovar K6 unit?",
+   "answer": "92053 USD",
+   "spans": [
+    "The Brovar K6 unit has a unit price of 92053 USD."
+   ]
+  },
+  {
+   "fact_id": "D14-single-5",
+   "doc_id": "D14",
+   "kind": "single",
+   "question": "What is the unit price of the Ostmir K3 unit?",
+   "answer": "62990 USD",
+   "spans": [
+    "The Ostmir K3 unit has a unit price of 62990 USD."
+   ]
+  },
+  {
+   "fact_id": "D14-table-0",
+   "doc_id": "D14",
+   "kind": "table",
+   "question": "What is the rated output of the Quasen X6 unit?",
+   "answer": "788 MW",
+   "spans": [
+    "Unit | unit price | rated output",
+    "Quasen X6 | 48110 USD | 788 MW"
+   ]
+  },
+  {
+   "fact_id": "D14-table-1",
+   "doc_id": "D14",
+   "kind": "table",
+   "question": "What is the service interval of the Nexlen V2 unit?",
+   "answer": "36 months",
+   "spans": [
+    "Unit | service interval | mass",
+    "Nexlen V2 | 36 months | 6931 kg"
+   ]
+  },
+  {
+   "fact_id": "D14-table-2",
+   "doc_id": "D14",
+   "kind": "table",
+   "question": "What is the storage capacity of the Rilsen R2 unit?",
+   "answer": "872 TB",
+   "spans": [
+    "Unit | storage capacity | nominal voltage",
+    "Rilsen R2 | 872 TB | 161 V"
+   ]
+  },
+  {
+   "fact_id": "D14-table-3",
+   "doc_id": "D14",
+   "kind": "table",
+   "question": "What is the warranty period of the Ostsen K6 unit?",
+   "answer": "7 years",
+   "spans": [
+    "Unit | storage capacity | warranty period",
+    "Ostsen K6 | 413 TB | 7 years"
+   ]
+  },
+  {
+   "fact_id": "D15-cross_page-0",
+   "doc_id": "D15",
+   "kind": "cross_page",
+   "question": "What is the warranty period of the Nexnex T9 unit?",
+   "answer": "2 years",
+   "spans": [
+    "The Nexnex T9 unit was commissioned at the Rilsen site in 1997.",
+    "Its warranty period is 2 years."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_page-1",
+   "doc_id": "D15",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Senbro K9 unit?",
+   "answer": "792 TB",
+   "spans": [
+    "The Senbro K9 unit was commissioned at the Danvik site in 1996.",
+    "Its storage capacity is 792 TB."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_paragraph-0",
+   "doc_id": "D15",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Dantov M5 unit?",
+   "answer": "90 bar",
+   "spans": [
+    "The Dantov M5 unit was commissioned at the Mirvale site in 2020.",
+    "Its design pressure is 90 bar."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_paragraph-1",
+   "doc_id": "D15",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Bromir R7 unit?",
+   "answer": "917 MW",
+   "spans": [
+    "The Bromir R7 unit was commissioned at the Quanex site in 2007.",
+    "Its rated output is 917 MW."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_paragraph-2",
+   "doc_id": "D15",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Mirmir T2 unit?",
+   "answer": "99 bar",
+   "spans": [
+    "The Mirmir T2 unit was commissioned at the Ostbro site in 2018.",
+    "Its design pressure is 99 bar."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_paragraph-3",
+   "doc_id": "D15",
+   "kind": "cross_paragraph",
+   "question": "What is the design pressure of the Mirost V5 unit?",
+   "answer": "187 bar",
+   "spans": [
+    "The Mirost V5 unit was commissioned at the Tovrin site in 2018.",
+    "Its design pressure is 187 bar."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_sentence-0",
+   "doc_id": "D15",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Nexkel R8 unit?",
+   "answer": "15 months",
+   "spans": [
+    "The Nexkel R8 unit was commissioned at the Mirvale site in 2018.",
+    "Its service interval is 15 months."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_sentence-1",
+   "doc_id": "D15",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Rilsen V4 unit?",
+   "answer": "12 months",
+   "spans": [
+    "The Rilsen V4 unit was commissioned at the Ostbro site in 2003.",
+    "Its service interval is 12 months."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_sentence-2",
+   "doc_id": "D15",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Dannex R8 unit?",
+   "answer": "11 years",
+   "spans": [
+    "The Dannex R8 unit was commissioned at the Tovrin site in 2019.",
+    "Its warranty period is 11 years."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_sentence-3",
+   "doc_id": "D15",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Mirtov K5 unit?",
+   "answer": "638 V",
+   "spans": [
+    "The Mirtov K5 unit was commissioned at the Tovrin site in 2008.",
+    "Its nominal voltage is 638 V."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_sentence-4",
+   "doc_id": "D15",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Quamir X3 unit?",
+   "answer": "7 years",
+   "spans": [
+    "The Quamir X3 unit was commissioned at the Tovrin site in 2006.",
+    "Its warranty period is 7 years."
+   ]
+  },
+  {
+   "fact_id": "D15-cross_sentence-5",
+   "doc_id": "D15",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Ostnex T9 unit?",
+   "answer": "94 bar",
+   "spans": [
+    "The Ostnex T9 unit was commissioned at the Tovrin site in 2011.",
+    "Its design pressure is 94 bar."
+   ]
+  },
+  {
+   "fact_id": "D15-single-0",
+   "doc_id": "D15",
+   "kind": "single",
+   "question": "What is the unit price of the Qualen V7 unit?",
+   "answer": "37373 USD",
+   "spans": [
+    "The Qualen V7 unit has a unit price of 37373 USD."
+   ]
+  },
+  {
+   "fact_id": "D15-single-1",
+   "doc_id": "D15",
+   "kind": "single",
+   "question": "What is the rated output of the Quamir M8 unit?",
+   "answer": "282 MW",
+   "spans": [
+    "The Quamir M8 unit has a rated output of 282 MW."
+   ]
+  },
+  {
+   "fact_id": "D15-single-2",
+   "doc_id": "D15",
+   "kind": "single",
+   "question": "What is the warranty period of the Kelvar V4 unit?",
+   "answer": "11 years",
+   "spans": [
+    "The Kelvar V4 unit has a warranty period of 11 years."
+   ]
+  },
+  {
+   "fact_id": "D15-single-3",
+   "doc_id": "D15",
+   "kind": "single",
+   "question": "What is the storage capacity of the Danril T6 unit?",
+   "answer": "699 TB",
+   "spans": [
+    "The Danril T6 unit has a storage capacity of 699 TB."
+   ]
+  },
+  {
+   "fact_id": "D15-single-4",
+   "doc_id": "D15",
+   "kind": "single",
+   "question": "What is the mass of the Varqua K8 unit?",
+   "answer": "9175 kg",
+   "spans": [
+    "The Varqua K8 unit has a mass of 9175 kg."
+   ]
+  },
+  {
+   "fact_id": "D15-single-5",
+   "doc_id": "D15",
+   "kind": "single",
+   "question": "What is the storage capacity of the Vardan X6 unit?",
+   "answer": "726 TB",
+   "spans": [
+    "The Vardan X6 unit has a storage capacity of 726 TB."
+   ]
+  },
+  {
+   "fact_id": "D15-table-0",
+   "doc_id": "D15",
+   "kind": "table",
+   "question": "What is the service interval of the Senmir M2 unit?",
+   "answer": "32 months",
+   "spans": [
+    "Unit | warranty period | service interval",
+    "Senmir M2 | 6 years | 32 months"
+   ]
+  },
+  {
+   "fact_id": "D15-table-1",
+   "doc_id": "D15",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Brosen K1 unit?",
+   "answer": "672 V",
+   "spans": [
+    "Unit | nominal voltage | design pressure",
+    "Brosen K1 | 672 V | 188 bar"
+   ]
+  },
+  {
+   "fact_id": "D15-table-2",
+   "doc_id": "D15",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Mirtov V2 unit?",
+   "answer": "646 V",
+   "spans": [
+    "Unit | unit price | nominal voltage",
+    "Mirtov V2 | 46701 USD | 646 V"
+   ]
+  },
+  {
+   "fact_id": "D15-table-3",
+   "doc_id": "D15",
+   "kind": "table",
+   "question": "What is the mass of the Lenril X4 unit?",
+   "answer": "7285 kg",
+   "spans": [
+    "Unit | rated output | mass",
+    "Lenril X4 | 365 MW | 7285 kg"
+   ]
+  },
+  {
+   "fact_id": "D16-cross_page-0",
+   "doc_id": "D16",
+   "kind": "cross_page",
+   "question": "What is the mass of the Danmir X2 unit?",
+   "answer": "2305 kg",
+   "spans": [
+    "The Danmir X2 unit was commissioned at the Tovrin site in 1999.",
+    "Its mass is 2305 kg."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_page-1",
+   "doc_id": "D16",
+   "kind": "cross_page",
+   "question": "What is the service interval of the Nexmir M9 unit?",
+   "answer": "13 months",
+   "spans": [
+    "The Nexmir M9 unit was commissioned at the Tovrin site in 2015.",
+    "Its service interval is 13 months."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_paragraph-0",
+   "doc_id": "D16",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Brolen K2 unit?",
+   "answer": "16862 USD",
+   "spans": [
+    "The Brolen K2 unit was commissioned at the Rilsen site in 1991.",
+    "Its unit price is 16862 USD."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_paragraph-1",
+   "doc_id": "D16",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Brovar K7 unit?",
+   "answer": "523 MW",
+   "spans": [
+    "The Brovar K7 unit was commissioned at the Mirvale site in 2009.",
+    "Its rated output is 523 MW."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_paragraph-2",
+   "doc_id": "D16",
+   "kind": "cross_paragraph",
+   "question": "What is the mass of the Kelkel K9 unit?",
+   "answer": "8154 kg",
+   "spans": [
+    "The Kelkel K9 unit was commissioned at the Rilsen site in 1993.",
+    "Its mass is 8154 kg."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_paragraph-3",
+   "doc_id": "D16",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Rilqua X3 unit?",
+   "answer": "2531 USD",
+   "spans": [
+    "The Rilqua X3 unit was commissioned at the Mirvale site in 1997.",
+    "Its unit price is 2531 USD."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_sentence-0",
+   "doc_id": "D16",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Varril X2 unit?",
+   "answer": "7 months",
+   "spans": [
+    "The Varril X2 unit was commissioned at the Mirvale site in 2006.",
+    "Its service interval is 7 months."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_sentence-1",
+   "doc_id": "D16",
+   "kind": "cross_sentence",
+   "question": "What is the nominal voltage of the Lenlen V2 unit?",
+   "answer": "167 V",
+   "spans": [
+    "The Lenlen V2 unit was commissioned at the Rilsen site in 2009.",
+    "Its nominal voltage is 167 V."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_sentence-2",
+   "doc_id": "D16",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Lenbro V1 unit?",
+   "answer": "481 MW",
+   "spans": [
+    "The Lenbro V1 unit was commissioned at the Quanex site in 2022.",
+    "Its rated output is 481 MW."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_sentence-3",
+   "doc_id": "D16",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Tovtov T2 unit?",
+   "answer": "255 bar",
+   "spans": [
+    "The Tovtov T2 unit was commissioned at the Kelmar site in 1993.",
+    "Its design pressure is 255 bar."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_sentence-4",
+   "doc_id": "D16",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Lenril X5 unit?",
+   "answer": "785 MW",
+   "spans": [
+    "The Lenril X5 unit was commissioned at the Senholm site in 2006.",
+    "Its rated output is 785 MW."
+   ]
+  },
+  {
+   "fact_id": "D16-cross_sentence-5",
+   "doc_id": "D16",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Kelvar V8 unit?",
+   "answer": "51 TB",
+   "spans": [
+    "The Kelvar V8 unit was commissioned at the Senholm site in 2004.",
+    "Its storage capacity is 51 TB."
+   ]
+  },
+  {
+   "fact_id": "D16-single-0",
+   "doc_id": "D16",
+   "kind": "single",
+   "question": "What is the warranty period of the Sentov X3 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Sentov X3 unit has a warranty period of 3 years."
+   ]
+  },
+  {
+   "fact_id": "D16-single-1",
+   "doc_id": "D16",
+   "kind": "single",
+   "question": "What is the storage capacity of the Mirril T4 unit?",
+   "answer": "578 TB",
+   "spans": [
+    "The Mirril T4 unit has a storage capacity of 578 TB."
+   ]
+  },
+  {
+   "fact_id": "D16-single-2",
+   "doc_id": "D16",
+   "kind": "single",
+   "question": "What is the design pressure of the Danmir X6 unit?",
+   "answer": "254 bar",
+   "spans": [
+    "The Danmir X6 unit has a design pressure of 254 bar."
+   ]
+  },
+  {
+   "fact_id": "D16-single-3",
+   "doc_id": "D16",
+   "kind": "single",
+   "question": "What is the service interval of the Nexost X1 unit?",
+   "answer": "9 months",
+   "spans": [
+    "The Nexost X1 unit has a service interval of 9 months."
+   ]
+  },
+  {
+   "fact_id": "D16-single-4",
+   "doc_id": "D16",
+   "kind": "single",
+   "question": "What is the mass of the Sentov T1 unit?",
+   "answer": "6546 kg",
+   "spans": [
+    "The Sentov T1 unit has a mass of 6546 kg."
+   ]
+  },
+  {
+   "fact_id": "D16-single-5",
+   "doc_id": "D16",
+   "kind": "single",
+   "question": "What is the storage capacity of the Tovdan M6 unit?",
+   "answer": "519 TB",
+   "spans": [
+    "The Tovdan M6 unit has a storage capacity of 519 TB."
+   ]
+  },
+  {
+   "fact_id": "D16-table-0",
+   "doc_id": "D16",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Mirvar T4 unit?",
+   "answer": "133 V",
+   "spans": [
+    "Unit | design pressure | nominal voltage",
+    "Mirvar T4 | 189 bar | 133 V"
+   ]
+  },
+  {
+   "fact_id": "D16-table-1",
+   "doc_id": "D16",
+   "kind": "table",
+   "question": "What is the warranty period of the Lenbro V4 unit?",
+   "answer": "7 years",
+   "spans": [
+    "Unit | warranty period | nominal voltage",
+    "Lenbro V4 | 7 years | 472 V"
+   ]
+  },
+  {
+   "fact_id": "D16-table-2",
+   "doc_id": "D16",
+   "kind": "table",
+   "question": "What is the mass of the Ostnex M6 unit?",
+   "answer": "5275 kg",
+   "spans": [
+    "Unit | unit price | mass",
+    "Ostnex M6 | 79661 USD | 5275 kg"
+   ]
+  },
+  {
+   "fact_id": "D16-table-3",
+   "doc_id": "D16",
+   "kind": "table",
+   "question": "What is the mass of the Rilmir M4 unit?",
+   "answer": "3291 kg",
+   "spans": [
+    "Unit | design pressure | mass",
+    "Rilmir M4 | 154 bar | 3291 kg"
+   ]
+  },
+  {
+   "fact_id": "D17-cross_page-0",
+   "doc_id": "D17",
+   "kind": "cross_page",
+   "question": "What is the storage capacity of the Mirsen R9 unit?",
+   "answer": "694 TB",
+   "spans": [
+    "The Mirsen R9 unit was commissioned at the Senholm site in 2002.",
+    "Its storage capacity is 694 TB."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_page-1",
+   "doc_id": "D17",
+   "kind": "cross_page",
+   "question": "What is the mass of the Ostbro M4 unit?",
+   "answer": "7355 kg",
+   "spans": [
+    "The Ostbro M4 unit was commissioned at the Senholm site in 2004.",
+    "Its mass is 7355 kg."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_paragraph-0",
+   "doc_id": "D17",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Danmir V2 unit?",
+   "answer": "5 years",
+   "spans": [
+    "The Danmir V2 unit was commissioned at the Senholm site in 2011.",
+    "Its warranty period is 5 years."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_paragraph-1",
+   "doc_id": "D17",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Tovsen R7 unit?",
+   "answer": "415 MW",
+   "spans": [
+    "The Tovsen R7 unit was commissioned at the Mirvale site in 2009.",
+    "Its rated output is 415 MW."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_paragraph-2",
+   "doc_id": "D17",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Brovar R6 unit?",
+   "answer": "66807 USD",
+   "spans": [
+    "The Brovar R6 unit was commissioned at the Rilsen site in 1989.",
+    "Its unit price is 66807 USD."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_paragraph-3",
+   "doc_id": "D17",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Brotov V1 unit?",
+   "answer": "10 years",
+   "spans": [
+    "The Brotov V1 unit was commissioned at the Mirvale site in 1997.",
+    "Its warranty period is 10 years."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_sentence-0",
+   "doc_id": "D17",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Rilkel X2 unit?",
+   "answer": "9 years",
+   "spans": [
+    "The Rilkel X2 unit was commissioned at the Tovrin site in 2018.",
+    "Its warranty period is 9 years."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_sentence-1",
+   "doc_id": "D17",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Senril T3 unit?",
+   "answer": "686 MW",
+   "spans": [
+    "The Senril T3 unit was commissioned at the Ostbro site in 1996.",
+    "Its rated output is 686 MW."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_sentence-2",
+   "doc_id": "D17",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Brokel T2 unit?",
+   "answer": "1 years",
+   "spans": [
+    "The Brokel T2 unit was commissioned at the Quanex site in 2015.",
+    "Its warranty period is 1 years."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_sentence-3",
+   "doc_id": "D17",
+   "kind": "cross_sentence",
+   "question": "What is the design pressure of the Brokel R2 unit?",
+   "answer": "49 bar",
+   "spans": [
+    "The Brokel R2 unit was commissioned at the Kelmar site in 2001.",
+    "Its design pressure is 49 bar."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_sentence-4",
+   "doc_id": "D17",
+   "kind": "cross_sentence",
+   "question": "What is the rated output of the Brodan M2 unit?",
+   "answer": "419 MW",
+   "spans": [
+    "The Brodan M2 unit was commissioned at the Ostbro site in 2002.",
+    "Its rated output is 419 MW."
+   ]
+  },
+  {
+   "fact_id": "D17-cross_sentence-5",
+   "doc_id": "D17",
+   "kind": "cross_sentence",
+   "question": "What is the service interval of the Ostqua X7 unit?",
+   "answer": "31 months",
+   "spans": [
+    "The Ostqua X7 unit was commissioned at the Danvik site in 2000.",
+    "Its service interval is 31 months."
+   ]
+  },
+  {
+   "fact_id": "D17-single-0",
+   "doc_id": "D17",
+   "kind": "single",
+   "question": "What is the service interval of the Kellen R6 unit?",
+   "answer": "14 months",
+   "spans": [
+    "The Kellen R6 unit has a service interval of 14 months."
+   ]
+  },
+  {
+   "fact_id": "D17-single-1",
+   "doc_id": "D17",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Danost R6 unit?",
+   "answer": "512 V",
+   "spans": [
+    "The Danost R6 unit has a nominal voltage of 512 V."
+   ]
+  },
+  {
+   "fact_id": "D17-single-2",
+   "doc_id": "D17",
+   "kind": "single",
+   "question": "What is the rated output of the Tovdan M3 unit?",
+   "answer": "291 MW",
+   "spans": [
+    "The Tovdan M3 unit has a rated output of 291 MW."
+   ]
+  },
+  {
+   "fact_id": "D17-single-3",
+   "doc_id": "D17",
+   "kind": "single",
+   "question": "What is the unit price of the Vardan M9 unit?",
+   "answer": "8338 USD",
+   "spans": [
+    "The Vardan M9 unit has a unit price of 8338 USD."
+   ]
+  },
+  {
+   "fact_id": "D17-single-4",
+   "doc_id": "D17",
+   "kind": "single",
+   "question": "What is the mass of the Tovvar X9 unit?",
+   "answer": "7160 kg",
+   "spans": [
+    "The Tovvar X9 unit has a mass of 7160 kg."
+   ]
+  },
+  {
+   "fact_id": "D17-single-5",
+   "doc_id": "D17",
+   "kind": "single",
+   "question": "What is the storage capacity of the Lendan X4 unit?",
+   "answer": "230 TB",
+   "spans": [
+    "The Lendan X4 unit has a storage capacity of 230 TB."
+   ]
+  },
+  {
+   "fact_id": "D17-table-0",
+   "doc_id": "D17",
+   "kind": "table",
+   "question": "What is the nominal voltage of the Quasen T2 unit?",
+   "answer": "545 V",
+   "spans": [
+    "Unit | nominal voltage | design pressure",
+    "Quasen T2 | 545 V | 286 bar"
+   ]
+  },
+  {
+   "fact_id": "D17-table-1",
+   "doc_id": "D17",
+   "kind": "table",
+   "question": "What is the rated output of the Varvar X8 unit?",
+   "answer": "809 MW",
+   "spans": [
+    "Unit | rated output | warranty period",
+    "Varvar X8 | 809 MW | 11 years"
+   ]
+  },
+  {
+   "fact_id": "D17-table-2",
+   "doc_id": "D17",
+   "kind": "table",
+   "question": "What is the unit price of the Danqua R5 unit?",
+   "answer": "83770 USD",
+   "spans": [
+    "Unit | storage capacity | unit price",
+    "Danqua R5 | 390 TB | 83770 USD"
+   ]
+  },
+  {
+   "fact_id": "D17-table-3",
+   "doc_id": "D17",
+   "kind": "table",
+   "question": "What is the storage capacity of the Sentov K8 unit?",
+   "answer": "445 TB",
+   "spans": [
+    "Unit | mass | storage capacity",
+    "Sentov K8 | 8333 kg | 445 TB"
+   ]
+  },
+  {
+   "fact_id": "D18-cross_page-0",
+   "doc_id": "D18",
+   "kind": "cross_page",
+   "question": "What is the mass of the Lendan T5 unit?",
+   "answer": "9363 kg",
+   "spans": [
+    "The Lendan T5 unit was commissioned at the Rilsen site in 1998.",
+    "Its mass is 9363 kg."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_page-1",
+   "doc_id": "D18",
+   "kind": "cross_page",
+   "question": "What is the warranty period of the Kelnex V1 unit?",
+   "answer": "6 years",
+   "spans": [
+    "The Kelnex V1 unit was commissioned at the Danvik site in 2001.",
+    "Its warranty period is 6 years."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_paragraph-0",
+   "doc_id": "D18",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Brolen V3 unit?",
+   "answer": "117 MW",
+   "spans": [
+    "The Brolen V3 unit was commissioned at the Mirvale site in 2020.",
+    "Its rated output is 117 MW."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_paragraph-1",
+   "doc_id": "D18",
+   "kind": "cross_paragraph",
+   "question": "What is the warranty period of the Tovbro R5 unit?",
+   "answer": "8 years",
+   "spans": [
+    "The Tovbro R5 unit was commissioned at the Ostbro site in 2009.",
+    "Its warranty period is 8 years."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_paragraph-2",
+   "doc_id": "D18",
+   "kind": "cross_paragraph",
+   "question": "What is the rated output of the Rilsen T1 unit?",
+   "answer": "804 MW",
+   "spans": [
+    "The Rilsen T1 unit was commissioned at the Quanex site in 2017.",
+    "Its rated output is 804 MW."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_paragraph-3",
+   "doc_id": "D18",
+   "kind": "cross_paragraph",
+   "question": "What is the unit price of the Mirlen T6 unit?",
+   "answer": "46384 USD",
+   "spans": [
+    "The Mirlen T6 unit was commissioned at the Rilsen site in 1988.",
+    "Its unit price is 46384 USD."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_sentence-0",
+   "doc_id": "D18",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Mirqua V9 unit?",
+   "answer": "7769 kg",
+   "spans": [
+    "The Mirqua V9 unit was commissioned at the Rilsen site in 2010.",
+    "Its mass is 7769 kg."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_sentence-1",
+   "doc_id": "D18",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Brosen V1 unit?",
+   "answer": "7917 kg",
+   "spans": [
+    "The Brosen V1 unit was commissioned at the Danvik site in 2014.",
+    "Its mass is 7917 kg."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_sentence-2",
+   "doc_id": "D18",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Ostost T9 unit?",
+   "answer": "3 years",
+   "spans": [
+    "The Ostost T9 unit was commissioned at the Kelmar site in 2022.",
+    "Its warranty period is 3 years."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_sentence-3",
+   "doc_id": "D18",
+   "kind": "cross_sentence",
+   "question": "What is the storage capacity of the Quatov T9 unit?",
+   "answer": "217 TB",
+   "spans": [
+    "The Quatov T9 unit was commissioned at the Kelmar site in 2019.",
+    "Its storage capacity is 217 TB."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_sentence-4",
+   "doc_id": "D18",
+   "kind": "cross_sentence",
+   "question": "What is the warranty period of the Ostlen V5 unit?",
+   "answer": "10 years",
+   "spans": [
+    "The Ostlen V5 unit was commissioned at the Kelmar site in 2005.",
+    "Its warranty period is 10 years."
+   ]
+  },
+  {
+   "fact_id": "D18-cross_sentence-5",
+   "doc_id": "D18",
+   "kind": "cross_sentence",
+   "question": "What is the mass of the Dansen T9 unit?",
+   "answer": "3688 kg",
+   "spans": [
+    "The Dansen T9 unit was commissioned at the Mirvale site in 2006.",
+    "Its mass is 3688 kg."
+   ]
+  },
+  {
+   "fact_id": "D18-single-0",
+   "doc_id": "D18",
+   "kind": "single",
+   "question": "What is the nominal voltage of the Mirdan K7 unit?",
+   "answer": "413 V",
+   "spans": [
+    "The Mirdan K7 unit has a nominal voltage of 413 V."
+   ]
+  },
+  {
+   "fact_id": "D18-single-1",
+   "doc_id": "D18",
+   "kind": "single",
+   "question": "What is the service interval of the Varsen K4 unit?",
+   "answer": "9 months",
+   "spans": [
+    "The Varsen K4 unit has a service interval of 9 months."
+   ]
+  },
+  {
+   "fact_id": "D18-single-2",
+   "doc_id": "D18",
+   "kind": "single",
+   "question": "What is the service interval of the Tovmir K9 unit?",
+   "answer": "33 months",
+   "spans": [
+    "The Tovmir K9 unit has a service interval of 33 months."
+   ]
+  },
+  {
+   "fact_id": "D18-single-3",
+   "doc_id": "D18",
+   "kind": "single",
+   "question": "What is the service interval of the Nexqua X7 unit?",
+   "answer": "33 months",
+   "spans": [
+    "The Nexqua X7 unit has a service interval of 33 months."
+   ]
+  },
+  {
+   "fact_id": "D18-single-4",
+   "doc_id": "D18",
+   "kind": "single",
+   "question": "What is the storage capacity of the Quasen R8 unit?",
+   "answer": "288 TB",
+   "spans": [
+    "The Quasen R8 unit has a storage capacity of 288 TB."
+   ]
+  },
+  {
+   "fact_id": "D18-single-5",
+   "doc_id": "D18",
+   "kind": "single",
+   "question": "What is the design pressure of the Dannex T6 unit?",
+   "answer": "185 bar",
+   "spans": [
+    "The Dannex T6 unit has a design pressure of 185 bar."
+   ]
+  },
+  {
+   "fact_id": "D18-table-0",
+   "doc_id": "D18",
+   "kind": "table",
+   "question": "What is the service interval of the Danvar V1 unit?",
+   "answer": "11 months",
+   "spans": [
+    "Unit | nominal voltage | service interval",
+    "Danvar V1 | 468 V | 11 months"
+   ]
+  },
+  {
+   "fact_id": "D18-table-1",
+   "doc_id": "D18",
+   "kind": "table",
+   "question": "What is the unit price of the Varqua X4 unit?",
+   "answer": "19939 USD",
+   "spans": [
+    "Unit | mass | unit price",
+    "Varqua X4 | 3764 kg | 19939 USD"
+   ]
+  },
+  {
+   "fact_id": "D18-table-2",
+   "doc_id": "D18",
+   "kind": "table",
+   "question": "What is the design pressure of the Nexkel K6 unit?",
+   "answer": "283 bar",
+   "spans": [
+    "Unit | design pressure | service interval",
+    "Nexkel K6 | 283 bar | 15 months"
+   ]
+  },
+  {
+   "fact_id": "D18-table-3",
+   "doc_id": "D18",
+   "kind": "table",
+   "question": "What is the warranty period of the Kellen T7 unit?",
+   "answer": "4 years",
+   "spans": [
+    "Unit | mass | warranty period",
+    "Kellen T7 | 6960 kg | 4 years"
+   ]
+  }
+ ]
+}
