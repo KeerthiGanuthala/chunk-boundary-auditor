@@ -25,7 +25,10 @@ from dataclasses import dataclass
 from . import tokens as tk
 
 PAGE_JOIN = "\n\n"
-_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+|\n")
+_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+|\n{2,}")
+# PDF extraction puts a newline at every line wrap. A single newline is therefore whitespace,
+# not a boundary; only a blank line separates units. See the war story in the README.
+_WRAP_RE = re.compile(r"(?<!\n)\n(?!\n)")
 _RECURSIVE_SEPARATORS = ("\n\n", "\n", ". ", " ")
 
 
@@ -104,8 +107,13 @@ def _pack(units: list[str], size: int, overlap_units: int, joiner: str) -> list[
     return out
 
 
+def unwrap(text: str) -> str:
+    """Join lines the PDF extractor wrapped: a lone newline becomes a space, blank lines stay."""
+    return _WRAP_RE.sub(" ", text)
+
+
 def sentence_window(pages: Sequence[str], size: int, overlap_sentences: int = 0) -> list[Chunk]:
-    text = PAGE_JOIN.join(pages)
+    text = unwrap(PAGE_JOIN.join(pages))
     sentences = [s.strip() for s in _SENTENCE_RE.split(text) if s and s.strip()]
     return _pack(sentences, size, overlap_sentences, " ")
 

@@ -49,9 +49,10 @@ def test_verdict_passes_when_the_best_strategy_is_under_the_thresholds(results, 
     assert code == EXIT_OK and reasons == []
 
 
-def test_verdict_fails_on_orphans_above_the_threshold(results, tmp_path):
+def test_verdict_fails_on_orphans_above_the_threshold(small_fixture_dir, tmp_path):
+    tiny = run_audit(strategy="fixed", size=8, fixture_dir=small_fixture_dir)
     policy = load_policy(write_policy(tmp_path / "p.toml", max_orphan_share="0.0"))
-    code, reasons = verdict(results, policy)
+    code, reasons = verdict([tiny], policy)
     assert code == EXIT_THRESHOLD
     assert any("orphans" in r for r in reasons)
 

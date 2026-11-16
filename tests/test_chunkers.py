@@ -15,6 +15,7 @@ from chunkaudit.chunkers import (
     paragraph,
     recursive,
     sentence_window,
+    unwrap,
 )
 
 PAGES = [
@@ -122,7 +123,7 @@ def test_page_aware_produces_at_least_one_chunk_per_non_empty_page():
 
 
 def test_sentence_window_never_cuts_inside_a_sentence():
-    for c in sentence_window(PAGES, 24):
+    for c in sentence_window(PAGES, 40):
         assert c.text.rstrip().endswith((".", "bar", "MW")) or c.text.endswith("pressure")
 
 
@@ -148,7 +149,7 @@ def test_sentence_window_splits_a_sentence_longer_than_size_with_fixed_windows()
 
 def test_sentence_window_overlap_is_dropped_when_it_would_not_fit():
     sentences = ["alpha beta gamma delta.", "epsilon zeta eta theta.", "iota kappa lambda mu."]
-    chunks = sentence_window(["\n".join(sentences)], 9, overlap_sentences=1)
+    chunks = sentence_window(["\n\n".join(sentences)], 9, overlap_sentences=1)
     assert [c.text for c in chunks] == sentences
 
 
@@ -228,3 +229,31 @@ def test_strategy_table_lists_the_five_shapes():
 def test_empty_input_gives_no_chunks():
     for name in STRATEGIES:
         assert chunk(name, ["", ""], 32) == []
+
+
+def test_unwrap_turns_a_lone_newline_into_a_space_and_keeps_blank_lines():
+    assert unwrap("a\nb\n\nc") == "a b\n\nc"
+
+
+def test_sentence_window_keeps_a_sentence_wrapped_across_pdf_lines_whole():
+    """Pinned bug: a one-sentence fact was orphaned by the strategy that never cuts a sentence.
+
+    Fact D06-single-1 in the committed fixture sat on a line wrap: "... USD. The" newline
+    "Tovqua M3 unit has a nominal voltage of 684 V." The sentence splitter treated every newline
+    as a sentence end, so "The" ended one unit and the rest of the sentence started another, and
+    the two could land in different chunks. Extracted PDF text wraps every line, so this was not
+    a corner case: it was every sentence that happened to wrap at a chunk boundary.
+    """
+    wrapped = (
+        "Its unit price is 54425 USD. The\nTovqua M3 unit has a nominal voltage of 684 V. "
+        "Operators\nreplaced the filters."
+    )
+    chunks = sentence_window([wrapped], 20)
+    assert any("The Tovqua M3 unit has a nominal voltage of 684 V." in c.text for c in chunks)
+
+
+def test_sentence_window_treats_a_table_block_as_one_unit_after_unwrapping():
+    """The price of unwrapping: a table's lines are no longer separate units."""
+    table = "Unit | mass\nOstsen K3 | 8076 kg\nRilost V8 | 6406 kg"
+    chunks = sentence_window([table], 512)
+    assert len(chunks) == 1 and "Ostsen K3 | 8076 kg Rilost V8" in chunks[0].text
