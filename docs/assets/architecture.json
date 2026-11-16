@@ -1,6 +1,6 @@
 {
  "source": "README.md ```mermaid-source fence",
  "output": "docs/assets/architecture.svg",
- "bytes": 31656,
+ "bytes": 31672,
  "htmlLabels": false
 }

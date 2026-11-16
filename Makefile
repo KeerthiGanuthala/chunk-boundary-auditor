@@ -12,7 +12,7 @@ lint:
 test:
 	$(PY) -m pytest --junitxml=reports/junit.xml --cov=chunkaudit --cov-report=json:reports/coverage.json --cov-report=term-missing
 
-# Regenerates the committed fixture from the seed in config/policy.toml and fails if it drifted.
+# Regenerates the committed fixture from the packaged policy seed and fails if it drifted.
 fixtures:
 	$(PY) -m chunkaudit generate --check
 

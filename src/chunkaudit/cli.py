@@ -36,7 +36,9 @@ from .report import EXIT_ERROR, EXIT_FIXTURE, EXIT_OK, table, verdict, write_jso
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="chunkaudit", description=__doc__.split("\n")[0])
     p.add_argument("--version", action="version", version=f"chunkaudit {__version__}")
-    p.add_argument("--policy", type=Path, default=None, help="policy TOML (default: config/)")
+    p.add_argument(
+        "--policy", type=Path, default=None, help="policy TOML (default: the packaged one)"
+    )
     p.add_argument("--fixtures", type=Path, default=DEFAULT_FIXTURE_DIR, help="fixture dir")
     sub = p.add_subparsers(dest="command", required=True)
 

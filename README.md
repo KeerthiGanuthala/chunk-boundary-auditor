@@ -28,7 +28,7 @@ A chunker's output cannot show which facts it split across a boundary, because t
 
 ## Quickstart
 
-Prerequisites: Python 3.10 or newer, `make`. No network is used at runtime; the fixture is committed.
+Prerequisites: Python 3.10 or newer, `make`. No network is used at runtime; the fixture is committed and ships inside the package, so `pip install .` is enough to run the audit anywhere.
 
 ```bash
 git clone https://github.com/KeerthiGanuthala/chunk-boundary-auditor.git
@@ -146,9 +146,9 @@ Source, rendered by `tools/render_diagram.py` and committed so it does not depen
 flowchart TB
   subgraph build [build the fixture: one seed, no network]
     direction LR
-    P[config/policy.toml] --> C[corpus.py\nplant facts, record spans]
+    P[data/policy.toml] --> C[corpus.py\nplant facts, record spans]
     C --> G[pdfgen.py\nsingle, two-column,\nreversed stream]
-    G --> F[(fixtures/\nPDFs, facts.json,\nmanifest.json)]
+    G --> F[(data/fixtures/\nPDFs, facts.json,\nmanifest.json)]
   end
   subgraph audit [audit it: three extraction orders, five strategies]
     direction LR
@@ -179,7 +179,7 @@ A replay of captured stdout, not a screen recording: `tools/record_demo.py` runs
 
 ## The fixture
 
-18 PDFs, 73 pages, generated from seed `20251116` by `chunkaudit generate` and pinned by SHA-256 in `fixtures/manifest.json`. `chunkaudit generate --check` regenerates into a temporary directory and fails on any byte that differs, so a PyMuPDF upgrade that moves a line break fails loudly instead of silently moving every number. 396 planted facts: 108 single, 108 cross-sentence, 72 cross-paragraph, 36 cross-page and 72 table. The awkward cases are deliberate:
+18 PDFs, 73 pages, generated from seed `20251116` by `chunkaudit generate` and pinned by SHA-256 in `src/chunkaudit/data/fixtures/manifest.json`. `chunkaudit generate --check` regenerates into a temporary directory and fails on any byte that differs, so a PyMuPDF upgrade that moves a line break fails loudly instead of silently moving every number. 396 planted facts: 108 single, 108 cross-sentence, 72 cross-paragraph, 36 cross-page and 72 table. The awkward cases are deliberate:
 
 - the filler sentences carry numbers, years and units of their own, so a fact cannot be found by looking for the number;
 - a cross-page fact always has a page footer between its two sentences;
@@ -203,8 +203,10 @@ Token sizes are the repository's own (ADR-003). The recursive and sentence strat
 
 ```
 chunk-boundary-auditor/
-  config/policy.toml        every threshold and size, with the reason beside it
   src/chunkaudit/
+    data/policy.toml        every threshold and size, with the reason beside it
+    data/fixtures/          18 PDFs, facts.json, manifest.json (ship inside the wheel)
+
     corpus.py               seeded generator: documents, planted facts, required spans
     pdfgen.py               PyMuPDF rendering in the layouts that hurt
     extract.py              raw, sorted and block-clustered extraction
@@ -214,7 +216,6 @@ chunk-boundary-auditor/
     report.py, html.py      tables, JSON, HTML, exit codes
     fixture.py, pipeline.py manifest pinning; the one path the CLI and experiments share
     cli.py                  generate | audit | extract | explain
-  fixtures/                 18 PDFs, facts.json, manifest.json
   experiments/              exp01 size sweep, exp02 overlap, exp03 strategies, exp04 extraction
   docs/experiments/         their JSON
   docs/adr/                 five decision records

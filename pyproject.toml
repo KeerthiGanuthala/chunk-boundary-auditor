@@ -44,6 +44,9 @@ Homepage = "https://github.com/KeerthiGanuthala/chunk-boundary-auditor"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+chunkaudit = ["data/policy.toml", "data/fixtures/*.pdf", "data/fixtures/*.json"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py310"

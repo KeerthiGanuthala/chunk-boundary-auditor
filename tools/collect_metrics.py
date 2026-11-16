@@ -22,6 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "reports"
+FIXTURES = ROOT / "src" / "chunkaudit" / "data" / "fixtures"
 EXPERIMENTS = ROOT / "docs" / "experiments"
 OUT = ROOT / "docs" / "metrics.json"
 
@@ -122,7 +123,7 @@ def by_strategy(results: list[dict]) -> dict[str, dict]:
 
 
 def collect() -> dict:
-    facts_json = json.loads((ROOT / "fixtures" / "facts.json").read_text(encoding="utf-8"))
+    facts_json = json.loads((FIXTURES / "facts.json").read_text(encoding="utf-8"))
     kinds = Counter(f["kind"] for f in facts_json["facts"])
     layouts = Counter(d["layout"] for d in facts_json["documents"])
     facts_per_doc = Counter(f["doc_id"] for f in facts_json["facts"])

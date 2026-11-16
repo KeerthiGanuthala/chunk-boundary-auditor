@@ -6,10 +6,10 @@ manifest mismatch rather than silently moving every number. ``chunkaudit generat
 regenerates into a temporary directory and compares hashes; CI runs it on every push.
 
 Files:
-    fixtures/D01.pdf ...   one PDF per document
-    fixtures/facts.json    every fact with its kind, question, answer and required spans, plus
+    data/fixtures/D01.pdf ...   one PDF per document
+    data/fixtures/facts.json    every fact with its kind, question, answer and required spans, plus
                            each document's layout and page count
-    fixtures/manifest.json seed, generator parameters and the SHA-256 of every file above
+    data/fixtures/manifest.json seed, generator parameters and the SHA-256 of every file above
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ from .config import Policy
 from .corpus import Corpus, Fact, corpus_from_policy
 from .pdfgen import write_corpus
 
-DEFAULT_FIXTURE_DIR = Path(__file__).resolve().parents[2] / "fixtures"
+DEFAULT_FIXTURE_DIR = Path(__file__).resolve().parent / "data" / "fixtures"
 
 
 class FixtureError(RuntimeError):

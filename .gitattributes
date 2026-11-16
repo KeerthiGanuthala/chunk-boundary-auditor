@@ -6,7 +6,7 @@
 *.yml linguist-detectable=true
 *.yaml linguist-detectable=true
 Makefile linguist-detectable=true
-fixtures/*.pdf binary
+src/chunkaudit/data/fixtures/*.pdf binary
 docs/video/*.gif binary
 docs/video/*.mp4 binary
 docs/assets/*.png binary

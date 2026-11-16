@@ -17,7 +17,7 @@ if sys.version_info >= (3, 11):  # pragma: no cover
 else:  # pragma: no cover
     import tomli as tomllib
 
-DEFAULT_POLICY_PATH = Path(__file__).resolve().parents[2] / "config" / "policy.toml"
+DEFAULT_POLICY_PATH = Path(__file__).resolve().parent / "data" / "policy.toml"
 
 KNOWN_STRATEGIES = ("fixed", "recursive", "sentence_window", "page_aware", "paragraph")
 KNOWN_EXTRACTION_MODES = ("raw", "sorted", "blocks")

@@ -11,7 +11,8 @@ The package is organised as a pipeline whose stages can each be blamed separatel
     report.py    turns the audit into tables, JSON and an exit code
 
 Nothing here calls the network or an embedding model. Every figure is a count over a committed,
-seeded fixture.
+seeded fixture that ships inside the package (``data/``), so an installed wheel runs as the
+checkout does.
 """
 
 __version__ = "0.1.0"
