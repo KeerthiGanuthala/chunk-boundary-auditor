@@ -47,7 +47,7 @@ That is a property of the fixture's paragraph lengths, and I say so."
 
 **Claim 4: every figure is machine-checked.**
 Command: `make receipts`, then change any number in the README and run it again.
-Numbers: 264 tests, 99 percent line coverage, 4 experiments, 5 decision records.
+Numbers: 268 tests, 99 percent line coverage, 4 experiments, 5 decision records.
 If pushed: "the checker matches anchor phrases, not digits, because a digit that happens to
 appear elsewhere would pass a stale sentence. The README tables and the banner are generated from
 the experiment JSON, and CI fails if they drift."
