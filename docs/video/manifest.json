@@ -1,0 +1,50 @@
+{
+ "note": "replay of captured stdout paced by measured wall time; not a screen recording",
+ "viewport": [
+  1100,
+  460
+ ],
+ "segments": [
+  {
+   "command": "chunkaudit audit",
+   "exit_code": 0,
+   "wall_seconds": 2.165,
+   "note": "the headline table: five strategies at the policy size",
+   "output_lines": 10
+  },
+  {
+   "command": "chunkaudit audit --mode sorted --strategy sentence_window",
+   "exit_code": 1,
+   "wall_seconds": 1.635,
+   "note": "the extraction loss, exit 1",
+   "output_lines": 6
+  },
+  {
+   "command": "chunkaudit explain D06-single-1 --strategy sentence_window --size 128",
+   "exit_code": 0,
+   "wall_seconds": 0.178,
+   "note": "one fact, span by span",
+   "output_lines": 4
+  },
+  {
+   "command": "python experiments/exp02_overlap_sweep.py",
+   "exit_code": 0,
+   "wall_seconds": 3.059,
+   "note": "overlap priced: recovered against growth",
+   "output_lines": 12
+  },
+  {
+   "command": "python tools/check_numbers.py",
+   "exit_code": 0,
+   "wall_seconds": 0.047,
+   "note": "every published figure re-checked",
+   "output_lines": 1
+  }
+ ],
+ "files": {
+  "mp4": "docs/video/demo.mp4",
+  "gif": "docs/video/demo.gif",
+  "gif_bytes": 516101,
+  "mp4_bytes": 156224
+ }
+}

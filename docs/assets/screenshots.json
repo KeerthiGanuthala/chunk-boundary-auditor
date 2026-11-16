@@ -1,0 +1,22 @@
+{
+ "badge": {
+  "text": "PASS",
+  "colour": "rgb(255, 255, 255)",
+  "background": "rgb(26, 127, 55)",
+  "visible": true
+ },
+ "screenshots": [
+  {
+   "image": "docs/assets/report-verdict.png",
+   "report": "reports/audit.html",
+   "from_heading": "verdict",
+   "to_heading": "strategies"
+  },
+  {
+   "image": "docs/assets/report-strategies.png",
+   "report": "reports/audit.html",
+   "from_heading": "strategies",
+   "to_heading": "lost"
+  }
+ ]
+}

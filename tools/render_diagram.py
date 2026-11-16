@@ -55,7 +55,7 @@ def render(source: str, mermaid_js: Path) -> str:
         page.add_script_tag(path=str(mermaid_js))
         svg = page.evaluate(
             """async (src) => {
-                mermaid.initialize({ startOnLoad: false, theme: 'neutral',
+                mermaid.initialize({ startOnLoad: false, theme: 'neutral', htmlLabels: false,
                     flowchart: { htmlLabels: false, useMaxWidth: false },
                     themeVariables: { fontFamily: 'Helvetica, Arial, sans-serif',
                                       fontSize: '14px' } });

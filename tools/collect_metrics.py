@@ -57,7 +57,7 @@ ANCHORS: dict[str, list[str]] = {
         "{} BPE tokens",
     ],
     "sentence_window_orphaned": ["still orphans {} facts", "sentence packing loses {}"],
-    "fixed_orphaned": ["lose {} facts (", "\"orphans {} facts\""],
+    "fixed_orphaned": ["lose {} facts (", '"orphans {} facts"'],
     "recursive_orphaned": ["recursive splitter loses {}"],
     "page_aware_orphaned": ["page-aware windows lose {}"],
     "page_aware_cross_page_orphaned": ["all {} cross-page facts", "pinned at the {} cross-page"],

@@ -143,18 +143,26 @@ Each of these has its own commit and its own test with the story in the docstrin
 Source, rendered by `tools/render_diagram.py` and committed so it does not depend on GitHub's renderer:
 
 ```mermaid-source
-flowchart LR
-  P[config/policy.toml] --> C[corpus.py\nplant facts, record spans]
-  C --> G[pdfgen.py\nsingle, two-column, reversed stream]
-  G --> F[(fixtures/*.pdf\nfacts.json, manifest)]
-  F --> E[extract.py\nraw, sorted, blocks]
-  E --> K[chunkers.py\nfixed, recursive, sentence,\npage-aware, paragraph]
-  K --> A[audit.py\ncontained, orphaned, broken]
-  F --> A
-  A --> R[report.py\ntable, JSON, HTML, exit code]
-  A --> X[experiments/*.py]
-  X --> M[tools/collect_metrics.py\ndocs/metrics.json]
-  M --> N[tools/check_numbers.py\nfails on a stale sentence]
+flowchart TB
+  subgraph build [build the fixture: one seed, no network]
+    direction LR
+    P[config/policy.toml] --> C[corpus.py\nplant facts, record spans]
+    C --> G[pdfgen.py\nsingle, two-column,\nreversed stream]
+    G --> F[(fixtures/\nPDFs, facts.json,\nmanifest.json)]
+  end
+  subgraph audit [audit it: three extraction orders, five strategies]
+    direction LR
+    E[extract.py\nraw, sorted, blocks] --> K[chunkers.py\nfixed, recursive, sentence,\npage-aware, paragraph]
+    K --> A[audit.py\ncontained, orphaned, broken]
+    A --> R[report.py, html.py\ntable, JSON, HTML, exit code]
+  end
+  subgraph receipts [prove it]
+    direction LR
+    X[experiments/exp01..04] --> M[tools/collect_metrics.py\ndocs/metrics.json]
+    M --> N[tools/check_numbers.py\nfails on a stale sentence]
+  end
+  build --> audit
+  audit --> receipts
 ```
 
 ## Evidence

@@ -16,13 +16,13 @@ from .corpus import FACT_KINDS
 
 STYLE = """
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-       margin: 32px auto; max-width: 980px; color: #1b1f23; background: #ffffff;
+       margin: 32px auto; max-width: 1060px; color: #1b1f23; background: #ffffff;
        line-height: 1.45; }
 h1 { font-size: 24px; margin: 0 0 4px 0; }
 h2 { font-size: 18px; margin: 28px 0 8px 0; border-bottom: 1px solid #d0d7de; padding-bottom: 4px; }
 p.sub { color: #57606a; margin: 0 0 16px 0; }
-table { border-collapse: collapse; width: 100%; font-size: 14px; }
-th, td { border: 1px solid #d0d7de; padding: 6px 10px; text-align: right; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { border: 1px solid #d0d7de; padding: 5px 8px; text-align: right; }
 th:first-child, td:first-child { text-align: left; }
 th { background: #f6f8fa; }
 tr.best td { background: #eef9f0; }
