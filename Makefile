@@ -1,4 +1,4 @@
-.PHONY: install lint test fixtures audit experiments receipts verify evidence clean
+.PHONY: install lint test fixtures audit experiments receipts docs verify evidence clean
 
 PY ?= python
 
@@ -28,7 +28,14 @@ experiments:
 
 receipts:
 	$(PY) tools/collect_metrics.py
+	$(PY) tools/render_tables.py --check
+	$(PY) tools/render_banner.py --check
 	$(PY) tools/check_numbers.py
+
+# Rewrites the README tables and the banner from the measured numbers.
+docs:
+	$(PY) tools/render_tables.py
+	$(PY) tools/render_banner.py
 
 verify: lint test fixtures experiments receipts
 

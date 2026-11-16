@@ -9,9 +9,9 @@ Reads docs/metrics.json (written by collect_metrics.py) and every checked docume
 2. A metric that no checked document quotes at all is reported as unused. That is not a failure,
    but a metric below six that is unused is reported as a receipts gap, because a small number
    is too likely to appear by coincidence for a digit match to prove anything.
-3. The reverse check: every number in the README outside fenced code, inline code, HTML tags and
-   link targets must equal some measured value or be on the allowed list. A number nothing
-   re-measures is a number that will go stale silently.
+3. The reverse check: every number in the README outside fenced code, inline code, HTML tags,
+   link targets and the generated result tables must equal some measured value or be on the
+   allowed list. A number nothing re-measures is a number that will go stale silently.
 
 Exit code 1 on any stale phrase, unanchored README number or missing checked document.
 """
@@ -31,6 +31,7 @@ NUMBER = r"(-?\d+(?:\.\d+)?)"
 
 def strip_code(text: str) -> str:
     text = re.sub(r"```.*?```", " ", text, flags=re.S)
+    text = re.sub(r"<!-- table:\w+ -->.*?<!-- /table -->", " ", text, flags=re.S)
     text = re.sub(r"`[^`\n]*`", " ", text)
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\]\([^)]*\)", "]()", text)
