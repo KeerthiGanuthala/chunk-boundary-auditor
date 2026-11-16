@@ -1,0 +1,53 @@
+# chunk-boundary-auditor policy.
+#
+# Every number the tool treats as a decision lives here, with the reason next to it.
+# The CLI reads this file by default; pass --policy to point at another one.
+
+[fixture]
+# The seed fixes every document, every planted fact and every PDF byte. Change it and
+# `chunkaudit generate` produces a different corpus; `chunkaudit generate --check` then
+# fails until the committed fixture is regenerated. The date is the day the corpus was frozen.
+seed = 20251116
+documents = 18
+# Pages per document are drawn uniformly from this range so cross-page facts have room.
+pages_min = 3
+pages_max = 5
+# Share of documents laid out in two columns. Two-column pages are where PDF extraction,
+# not the chunker, loses facts first (see experiments/exp04_extraction_loss.py).
+two_column_share = 0.5
+# Of the two-column documents, this share writes the right column into the content stream
+# before the left one. Some PDF producers do this, and it is why raw stream order cannot
+# be trusted on PDFs you did not write.
+reversed_stream_share = 0.5
+# Facts planted per document, by type. Totals are published in the README.
+facts_single = 6
+facts_cross_sentence = 6
+facts_cross_paragraph = 4
+facts_cross_page = 2
+facts_table = 4
+
+[extraction]
+# raw: content stream order (PyMuPDF default). sorted: PyMuPDF sort=True, which orders by
+# position and interleaves two-column text line by line. blocks: cluster text blocks into
+# columns by horizontal centre and read column-wise, which is what the audit recommends.
+mode = "blocks"
+
+[chunking]
+# Sizes are in tokens of the repository's deterministic tokenizer (see ADR-003), not BPE.
+# 512 is the size most RAG tutorials start with, which is why it is the default under test.
+default_size = 512
+default_overlap = 0
+# Strategies compared at matched size by `chunkaudit audit`.
+strategies = ["fixed", "recursive", "sentence_window", "page_aware", "paragraph"]
+# sentence_window packs whole sentences up to default_size and may carry this many sentences
+# over into the next chunk. Zero keeps it comparable with the other strategies at zero overlap.
+sentence_overlap = 0
+
+[thresholds]
+# `chunkaudit audit` exits 1 when the best strategy still orphans more than this share
+# of planted facts. The default is deliberately strict: a chunker that loses one fact in
+# twenty is a chunker that loses one answer in twenty before retrieval even starts.
+max_orphan_share = 0.05
+# Exit 1 as well when any fact is lost to extraction, because that loss happens before any
+# chunker can be blamed and no chunking change can recover it.
+max_extraction_loss_share = 0.0

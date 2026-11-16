@@ -1,0 +1,12 @@
+# Keep data-typed files visible to GitHub's language detection so the
+# language bar reflects what the repository actually contains.
+*.toml linguist-detectable=true
+*.svg linguist-detectable=true linguist-language=SVG
+*.json linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+Makefile linguist-detectable=true
+fixtures/*.pdf binary
+docs/video/*.gif binary
+docs/video/*.mp4 binary
+docs/assets/*.png binary
