@@ -24,7 +24,7 @@ A chunker's output cannot show which facts it split across a boundary, because t
 - **Giving the recursive splitter 32 tokens of overlap loses 1 more fact than no overlap at all, and 64 tokens loses 4 more.** The carried pieces take room in the next chunk and push apart a paragraph pair that used to fit. It reaches zero at 256 tokens of overlap, half the chunk.
 - **The best strategy still orphans 5 facts at the policy size of 512 tokens.** Fixed windows, the tutorial default, lose 17 facts (4.3 percent of planted facts); the recursive splitter loses 20; page-aware windows lose 51, because all 36 cross-page facts are unreachable to it by construction.
 
-254 tests, 99 percent line coverage, 4 experiments, 5 decision records, 18 PDFs with 396 planted facts. Every figure in this document is re-measured by CI and checked against the prose by `tools/check_numbers.py`; a stale sentence fails the build.
+264 tests, 99 percent line coverage, 4 experiments, 5 decision records, 18 PDFs with 396 planted facts. Every figure in this document is re-measured by CI and checked against the prose by `tools/check_numbers.py`; a stale sentence fails the build.
 
 ## Quickstart
 
@@ -221,7 +221,7 @@ chunk-boundary-auditor/
   docs/metrics.json         every published figure, with the phrase each must be quoted in
   tools/                    collect_metrics, check_numbers, render_banner, render_diagram,
                             capture_screenshots, record_demo
-  tests/                    254 tests, each named as the property it pins
+  tests/                    264 tests, each named as the property it pins
 ```
 
 Exit codes of `chunkaudit audit`:
