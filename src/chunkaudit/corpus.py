@@ -233,31 +233,36 @@ def generate_document(
         page_paras[p + 1][0].insert(0, second)
         facts.append(fact)
 
-    # cross_paragraph: end of paragraph k and start of paragraph k+1 on one page.
+    # cross_paragraph: end of paragraph k and start of paragraph k+1 on one page. The gap
+    # between them is remembered so no table is spliced into it later.
+    glued: dict[int, set[int]] = {p: set() for p in range(pages)}
     for i in range(facts_cross_paragraph):
         p = rng.randrange(pages)
         k = rng.randrange(paragraphs_per_page - 1)
         fact, first, second = _pair_fact(rng, namer, doc_id, "cross_paragraph", i)
         page_paras[p][k].append(first)
         page_paras[p][k + 1].insert(0, second)
+        glued[p].add(k + 1)
         facts.append(fact)
 
-    # cross_sentence: two adjacent sentences inside one paragraph.
-    for i in range(facts_cross_sentence):
-        p = rng.randrange(pages)
-        k = rng.randrange(paragraphs_per_page)
-        fact, first, second = _pair_fact(rng, namer, doc_id, "cross_sentence", i)
-        pos = rng.randint(1, max(1, len(page_paras[p][k]) - 1))
-        page_paras[p][k][pos:pos] = [first, second]
-        facts.append(fact)
-
-    # single: one sentence anywhere.
+    # single: one sentence, never first or last in its paragraph, because a paragraph's first
+    # and last sentences may already belong to a cross_paragraph or cross_page fact.
     for i in range(facts_single):
         p = rng.randrange(pages)
         k = rng.randrange(paragraphs_per_page)
         fact, sentence = _single_fact(rng, namer, doc_id, i)
-        pos = rng.randint(0, len(page_paras[p][k]))
+        pos = rng.randint(1, len(page_paras[p][k]) - 1)
         page_paras[p][k].insert(pos, sentence)
+        facts.append(fact)
+
+    # cross_sentence: two adjacent sentences inside one paragraph. Planted last, after every
+    # single fact, so nothing can be inserted between the pair afterwards.
+    for i in range(facts_cross_sentence):
+        p = rng.randrange(pages)
+        k = rng.randrange(paragraphs_per_page)
+        fact, first, second = _pair_fact(rng, namer, doc_id, "cross_sentence", i)
+        pos = rng.randint(1, len(page_paras[p][k]) - 1)
+        page_paras[p][k][pos:pos] = [first, second]
         facts.append(fact)
 
     # Render sentences to paragraph strings, then splice tables in as their own paragraphs.
@@ -270,9 +275,12 @@ def generate_document(
     for i in range(facts_table):
         p = table_pages[i]
         fact, table = _table_fact(rng, namer, doc_id, i)
-        # Never before the first paragraph: a cross_page second span must stay first on its page.
-        pos = rng.randint(1, len(rendered[p].paragraphs))
+        # Never before the first paragraph (a cross_page second span must stay first on its
+        # page) and never inside a cross_paragraph pair.
+        allowed = [q for q in range(1, len(rendered[p].paragraphs) + 1) if q not in glued[p]]
+        pos = rng.choice(allowed)
         rendered[p].paragraphs.insert(pos, table)
+        glued[p] = {q + 1 if q >= pos else q for q in glued[p]}
         facts.append(fact)
 
     title = f"Asset register {doc_id}: {rng.choice(_SITES)} operations"

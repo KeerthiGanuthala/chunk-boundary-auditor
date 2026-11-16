@@ -118,17 +118,25 @@ def paragraph(pages: Sequence[str], size: int, overlap: int = 0) -> list[Chunk]:
 
 def _split_recursive(text: str, size: int, separators: tuple[str, ...]) -> list[str]:
     """Return pieces of at most ``size`` tokens, split on the coarsest separator that works."""
+    if not text.strip():
+        return []
     if tk.count(text) <= size:
         return [text]
     if not separators:
         return [c.text for c in _fixed_on_text(text, size, 0)]
     sep, rest = separators[0], separators[1:]
-    parts = [p for p in text.split(sep) if p.strip()]
+    raw_parts = text.split(sep)
+    # Splitting on ". " strips the full stop from every part but the last; put it back on those
+    # parts only, otherwise the last sentence of a paragraph ends up with two full stops.
+    parts = [
+        part + ("." if sep == ". " and i < len(raw_parts) - 1 else "")
+        for i, part in enumerate(raw_parts)
+        if part.strip()
+    ]
     if len(parts) <= 1:
         return _split_recursive(text, size, rest)
     out: list[str] = []
-    for part in parts:
-        piece = part + (sep.rstrip() if sep == ". " else "")
+    for piece in parts:
         if tk.count(piece) <= size:
             out.append(piece)
         else:

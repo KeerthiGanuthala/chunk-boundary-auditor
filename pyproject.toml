@@ -59,6 +59,7 @@ addopts = "-q"
 [tool.coverage.run]
 source = ["chunkaudit"]
 branch = true
+omit = ["*/__main__.py"]
 
 [tool.coverage.report]
 show_missing = true
