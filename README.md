@@ -28,6 +28,8 @@ A chunker's output cannot show which facts it split across a boundary, because t
 
 ## Quickstart
 
+A tagged release (`v*`) builds the sdist and wheel, proves the wheel runs from outside the checkout, and attaches both to the GitHub release (`.github/workflows/release.yml`); PyPI publishing is wired through trusted publishing and activates once the project is registered there.
+
 Prerequisites: Python 3.10 or newer, `make`. No network is used at runtime; the fixture is committed and ships inside the package, so `pip install .` is enough to run the audit anywhere.
 
 ```bash
