@@ -1,11 +1,17 @@
-# Keep data-typed files visible to GitHub's language detection so the
-# language bar reflects what the repository actually contains.
+# Language detection: count the hand-authored configuration and the hand-authored banner, and
+# keep generated artefacts (experiment JSON, metrics, the rendered diagram, the fixture facts)
+# out of the language bar so it reflects what was written, not what was produced.
 *.toml linguist-detectable=true
-*.svg linguist-detectable=true linguist-language=SVG
-*.json linguist-detectable=true
 *.yml linguist-detectable=true
 *.yaml linguist-detectable=true
 Makefile linguist-detectable=true
+docs/assets/banner.svg linguist-detectable=true linguist-language=SVG
+docs/assets/architecture.svg linguist-generated=true
+docs/experiments/*.json linguist-generated=true
+docs/metrics.json linguist-generated=true
+docs/assets/*.json linguist-generated=true
+docs/video/manifest.json linguist-generated=true
+src/chunkaudit/data/fixtures/*.json linguist-generated=true
 src/chunkaudit/data/fixtures/*.pdf binary
 docs/video/*.gif binary
 docs/video/*.mp4 binary
