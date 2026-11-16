@@ -28,6 +28,7 @@ from .fixture import (
     verify_manifest,
     write_fixture,
 )
+from .html import write_report
 from .pipeline import run_audit
 from .report import EXIT_ERROR, EXIT_FIXTURE, EXIT_OK, table, verdict, write_json
 
@@ -48,6 +49,7 @@ def build_parser() -> argparse.ArgumentParser:
     a.add_argument("--overlap", type=int, default=None, help="overlap in tokens (or sentences)")
     a.add_argument("--mode", choices=KNOWN_EXTRACTION_MODES, default=None)
     a.add_argument("--json", type=Path, default=None, help="write results to this JSON file")
+    a.add_argument("--html", type=Path, default=None, help="write a self-contained HTML report")
     a.add_argument("--no-verdict", action="store_true", help="always exit 0 after a run")
 
     e = sub.add_parser("extract", help="print extracted text for one document")
@@ -112,9 +114,11 @@ def cmd_audit(args, policy) -> int:
     print(table(results))
     if args.json:
         write_json(results, args.json, {"policy": str(policy.source)})
+    code, reasons = verdict(results, policy)
+    if args.html:
+        write_report(args.html, results, code, reasons, policy.source.name)
     if args.no_verdict:
         return EXIT_OK
-    code, reasons = verdict(results, policy)
     for r in reasons:
         print(f"FAIL: {r}")
     if code == EXIT_OK:
