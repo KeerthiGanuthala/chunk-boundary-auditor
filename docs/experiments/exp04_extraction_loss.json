@@ -1,0 +1,339 @@
+{
+ "facts_per_layout": {
+  "single": 198,
+  "two_column": 110,
+  "two_column_reversed": 88
+ },
+ "question": "how many facts die before any chunker runs",
+ "results": [
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 27,
+     "orphaned": 9
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 69,
+     "orphaned": 3
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 107,
+     "orphaned": 1
+    },
+    "single": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "table": {
+     "broken": 0,
+     "contained": 72,
+     "orphaned": 0
+    }
+   },
+   "by_layout": {
+    "single": {
+     "broken": 0,
+     "facts": 198,
+     "orphaned": 3
+    },
+    "two_column": {
+     "broken": 0,
+     "facts": 110,
+     "orphaned": 1
+    },
+    "two_column_reversed": {
+     "broken": 0,
+     "facts": 88,
+     "orphaned": 9
+    }
+   },
+   "chunk_count": 91,
+   "contained": 383,
+   "extraction_mode": "raw",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D02-cross_page-0",
+    "D02-cross_page-1",
+    "D04-cross_page-0",
+    "D06-cross_paragraph-3",
+    "D07-cross_page-0",
+    "D07-cross_page-1",
+    "D08-cross_paragraph-2",
+    "D08-cross_sentence-3",
+    "D12-cross_page-0",
+    "D12-cross_page-1",
+    "D12-cross_paragraph-0",
+    "D14-cross_page-0",
+    "D14-cross_page-1"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 466.0,
+   "orphaned": 13,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "sentence_window"
+  },
+  {
+   "broken": 122,
+   "by_kind": {
+    "cross_page": {
+     "broken": 16,
+     "contained": 19,
+     "orphaned": 1
+    },
+    "cross_paragraph": {
+     "broken": 30,
+     "contained": 39,
+     "orphaned": 3
+    },
+    "cross_sentence": {
+     "broken": 44,
+     "contained": 63,
+     "orphaned": 1
+    },
+    "single": {
+     "broken": 32,
+     "contained": 76,
+     "orphaned": 0
+    },
+    "table": {
+     "broken": 0,
+     "contained": 67,
+     "orphaned": 5
+    }
+   },
+   "by_layout": {
+    "single": {
+     "broken": 0,
+     "facts": 198,
+     "orphaned": 3
+    },
+    "two_column": {
+     "broken": 70,
+     "facts": 110,
+     "orphaned": 2
+    },
+    "two_column_reversed": {
+     "broken": 52,
+     "facts": 88,
+     "orphaned": 5
+    }
+   },
+   "chunk_count": 91,
+   "contained": 264,
+   "extraction_mode": "sorted",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D02-cross_page-0",
+    "D02-cross_page-1",
+    "D02-cross_paragraph-0",
+    "D02-cross_paragraph-1",
+    "D02-cross_paragraph-2",
+    "D02-cross_paragraph-3",
+    "D02-cross_sentence-0",
+    "D02-cross_sentence-1",
+    "D02-cross_sentence-2",
+    "D02-cross_sentence-3",
+    "D02-cross_sentence-4",
+    "D02-cross_sentence-5",
+    "D02-single-2",
+    "D02-single-3",
+    "D02-table-2",
+    "D04-cross_page-0",
+    "D06-cross_page-0",
+    "D06-cross_page-1",
+    "D06-cross_paragraph-0",
+    "D06-cross_paragraph-1",
+    "D06-cross_paragraph-2",
+    "D06-cross_paragraph-3",
+    "D06-cross_sentence-0",
+    "D06-cross_sentence-1",
+    "D06-cross_sentence-3",
+    "D06-cross_sentence-4",
+    "D06-cross_sentence-5",
+    "D06-single-0",
+    "D06-single-1",
+    "D06-single-2",
+    "D06-single-3",
+    "D06-single-4",
+    "D06-single-5",
+    "D07-cross_page-0",
+    "D07-cross_page-1",
+    "D07-cross_paragraph-0",
+    "D07-cross_paragraph-1",
+    "D07-cross_paragraph-2",
+    "D07-cross_paragraph-3",
+    "D07-cross_sentence-0",
+    "D07-cross_sentence-1",
+    "D07-cross_sentence-2",
+    "D07-cross_sentence-3",
+    "D07-cross_sentence-4",
+    "D07-cross_sentence-5",
+    "D07-single-0",
+    "D07-single-2",
+    "D07-single-3",
+    "D07-single-4",
+    "D08-cross_paragraph-2",
+    "D08-cross_sentence-3",
+    "D09-cross_page-0",
+    "D09-cross_paragraph-0",
+    "D09-cross_paragraph-1",
+    "D09-cross_paragraph-2",
+    "D09-cross_sentence-0",
+    "D09-cross_sentence-1",
+    "D09-cross_sentence-2",
+    "D09-cross_sentence-3",
+    "D09-cross_sentence-4",
+    "D09-cross_sentence-5",
+    "D09-single-1",
+    "D09-single-2",
+    "D09-single-3",
+    "D09-single-4",
+    "D09-single-5",
+    "D10-cross_page-0",
+    "D10-cross_page-1",
+    "D10-cross_paragraph-1",
+    "D10-cross_paragraph-3",
+    "D10-cross_sentence-0",
+    "D10-cross_sentence-1",
+    "D10-cross_sentence-2",
+    "D10-cross_sentence-4",
+    "D10-cross_sentence-5",
+    "D10-single-0",
+    "D10-single-1",
+    "D10-single-3",
+    "D10-single-4",
+    "D10-table-1",
+    "D12-cross_page-0",
+    "D12-cross_page-1",
+    "D12-cross_paragraph-0",
+    "D12-cross_paragraph-1",
+    "D12-cross_paragraph-2",
+    "D12-cross_paragraph-3",
+    "D12-cross_sentence-1",
+    "D12-cross_sentence-4",
+    "D12-single-2",
+    "D12-single-3",
+    "D12-table-1",
+    "D14-cross_page-0",
+    "D14-cross_page-1",
+    "D14-cross_paragraph-0",
+    "D14-cross_paragraph-1",
+    "D14-cross_paragraph-2",
+    "D14-cross_paragraph-3",
+    "D14-cross_sentence-0",
+    "D14-cross_sentence-3",
+    "D14-cross_sentence-4",
+    "D14-cross_sentence-5",
+    "D14-single-2",
+    "D14-single-3",
+    "D14-single-5",
+    "D14-table-2",
+    "D14-table-3",
+    "D16-cross_page-1",
+    "D16-cross_paragraph-0",
+    "D16-cross_paragraph-1",
+    "D16-cross_paragraph-2",
+    "D16-cross_paragraph-3",
+    "D16-cross_sentence-0",
+    "D16-cross_sentence-1",
+    "D16-cross_sentence-2",
+    "D16-cross_sentence-4",
+    "D16-cross_sentence-5",
+    "D16-single-2",
+    "D16-single-3",
+    "D16-single-5",
+    "D17-cross_page-0",
+    "D17-cross_page-1",
+    "D17-cross_paragraph-0",
+    "D17-cross_paragraph-1",
+    "D17-cross_paragraph-3",
+    "D17-cross_sentence-0",
+    "D17-cross_sentence-1",
+    "D17-cross_sentence-2",
+    "D17-cross_sentence-3",
+    "D17-cross_sentence-4",
+    "D17-single-1",
+    "D17-single-2",
+    "D17-single-5"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 465.9,
+   "orphaned": 10,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "sentence_window"
+  },
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 35,
+     "orphaned": 1
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 69,
+     "orphaned": 3
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 107,
+     "orphaned": 1
+    },
+    "single": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "table": {
+     "broken": 0,
+     "contained": 72,
+     "orphaned": 0
+    }
+   },
+   "by_layout": {
+    "single": {
+     "broken": 0,
+     "facts": 198,
+     "orphaned": 3
+    },
+    "two_column": {
+     "broken": 0,
+     "facts": 110,
+     "orphaned": 2
+    },
+    "two_column_reversed": {
+     "broken": 0,
+     "facts": 88,
+     "orphaned": 0
+    }
+   },
+   "chunk_count": 91,
+   "contained": 391,
+   "extraction_mode": "blocks",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D04-cross_page-0",
+    "D06-cross_paragraph-3",
+    "D08-cross_paragraph-2",
+    "D08-cross_sentence-3",
+    "D09-cross_paragraph-2"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 466.0,
+   "orphaned": 5,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "sentence_window"
+  }
+ ],
+ "size": 512,
+ "strategy": "sentence_window"
+}

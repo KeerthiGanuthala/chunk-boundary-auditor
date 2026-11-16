@@ -1,0 +1,339 @@
+{
+ "best": {
+  "orphaned": 5,
+  "strategy": "sentence_window"
+ },
+ "extraction_mode": "blocks",
+ "overlap": 0,
+ "question": "which strategy loses the fewest facts at the policy size",
+ "results": [
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 33,
+     "orphaned": 3
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 69,
+     "orphaned": 3
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 105,
+     "orphaned": 3
+    },
+    "single": {
+     "broken": 0,
+     "contained": 105,
+     "orphaned": 3
+    },
+    "table": {
+     "broken": 0,
+     "contained": 67,
+     "orphaned": 5
+    }
+   },
+   "chunk_count": 91,
+   "contained": 379,
+   "extraction_mode": "blocks",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D02-cross_page-0",
+    "D03-cross_sentence-1",
+    "D04-cross_page-0",
+    "D04-table-2",
+    "D05-cross_page-0",
+    "D05-cross_paragraph-1",
+    "D06-single-1",
+    "D06-single-2",
+    "D08-cross_sentence-3",
+    "D09-cross_paragraph-3",
+    "D11-cross_sentence-2",
+    "D11-table-0",
+    "D15-table-0",
+    "D16-cross_paragraph-2",
+    "D16-table-2",
+    "D17-single-2",
+    "D17-table-0"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 466.0,
+   "orphaned": 17,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "fixed"
+  },
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 32,
+     "orphaned": 4
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 56,
+     "orphaned": 16
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "single": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "table": {
+     "broken": 0,
+     "contained": 72,
+     "orphaned": 0
+    }
+   },
+   "chunk_count": 95,
+   "contained": 376,
+   "extraction_mode": "blocks",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D03-cross_page-1",
+    "D04-cross_page-0",
+    "D05-cross_paragraph-3",
+    "D08-cross_page-1",
+    "D08-cross_paragraph-1",
+    "D09-cross_paragraph-1",
+    "D09-cross_paragraph-2",
+    "D10-cross_paragraph-0",
+    "D10-cross_paragraph-2",
+    "D11-cross_paragraph-2",
+    "D11-cross_paragraph-3",
+    "D12-cross_paragraph-1",
+    "D12-cross_paragraph-3",
+    "D14-cross_page-0",
+    "D14-cross_paragraph-0",
+    "D14-cross_paragraph-2",
+    "D15-cross_paragraph-1",
+    "D15-cross_paragraph-2",
+    "D16-cross_paragraph-1",
+    "D18-cross_paragraph-2"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 446.4,
+   "orphaned": 20,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "recursive"
+  },
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 35,
+     "orphaned": 1
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 69,
+     "orphaned": 3
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 107,
+     "orphaned": 1
+    },
+    "single": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "table": {
+     "broken": 0,
+     "contained": 72,
+     "orphaned": 0
+    }
+   },
+   "chunk_count": 91,
+   "contained": 391,
+   "extraction_mode": "blocks",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D04-cross_page-0",
+    "D06-cross_paragraph-3",
+    "D08-cross_paragraph-2",
+    "D08-cross_sentence-3",
+    "D09-cross_paragraph-2"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 466.0,
+   "orphaned": 5,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "sentence_window"
+  },
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 0,
+     "orphaned": 36
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 71,
+     "orphaned": 1
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 104,
+     "orphaned": 4
+    },
+    "single": {
+     "broken": 0,
+     "contained": 105,
+     "orphaned": 3
+    },
+    "table": {
+     "broken": 0,
+     "contained": 65,
+     "orphaned": 7
+    }
+   },
+   "chunk_count": 134,
+   "contained": 345,
+   "extraction_mode": "blocks",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D01-cross_page-0",
+    "D01-cross_page-1",
+    "D02-cross_page-0",
+    "D02-cross_page-1",
+    "D02-table-2",
+    "D03-cross_page-0",
+    "D03-cross_page-1",
+    "D03-cross_sentence-2",
+    "D03-cross_sentence-5",
+    "D03-table-2",
+    "D04-cross_page-0",
+    "D04-cross_page-1",
+    "D04-table-1",
+    "D04-table-2",
+    "D05-cross_page-0",
+    "D05-cross_page-1",
+    "D06-cross_page-0",
+    "D06-cross_page-1",
+    "D06-cross_sentence-3",
+    "D06-single-1",
+    "D07-cross_page-0",
+    "D07-cross_page-1",
+    "D08-cross_page-0",
+    "D08-cross_page-1",
+    "D08-cross_sentence-3",
+    "D08-table-3",
+    "D09-cross_page-0",
+    "D09-cross_page-1",
+    "D10-cross_page-0",
+    "D10-cross_page-1",
+    "D10-single-1",
+    "D11-cross_page-0",
+    "D11-cross_page-1",
+    "D11-single-1",
+    "D12-cross_page-0",
+    "D12-cross_page-1",
+    "D12-table-1",
+    "D13-cross_page-0",
+    "D13-cross_page-1",
+    "D14-cross_page-0",
+    "D14-cross_page-1",
+    "D15-cross_page-0",
+    "D15-cross_page-1",
+    "D15-table-0",
+    "D16-cross_page-0",
+    "D16-cross_page-1",
+    "D16-cross_paragraph-2",
+    "D17-cross_page-0",
+    "D17-cross_page-1",
+    "D18-cross_page-0",
+    "D18-cross_page-1"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 316.5,
+   "orphaned": 51,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "page_aware"
+  },
+  {
+   "broken": 0,
+   "by_kind": {
+    "cross_page": {
+     "broken": 0,
+     "contained": 32,
+     "orphaned": 4
+    },
+    "cross_paragraph": {
+     "broken": 0,
+     "contained": 56,
+     "orphaned": 16
+    },
+    "cross_sentence": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "single": {
+     "broken": 0,
+     "contained": 108,
+     "orphaned": 0
+    },
+    "table": {
+     "broken": 0,
+     "contained": 72,
+     "orphaned": 0
+    }
+   },
+   "chunk_count": 95,
+   "contained": 376,
+   "extraction_mode": "blocks",
+   "facts_total": 396,
+   "lost_fact_ids": [
+    "D03-cross_page-1",
+    "D04-cross_page-0",
+    "D05-cross_paragraph-3",
+    "D08-cross_page-1",
+    "D08-cross_paragraph-1",
+    "D09-cross_paragraph-1",
+    "D09-cross_paragraph-2",
+    "D10-cross_paragraph-0",
+    "D10-cross_paragraph-2",
+    "D11-cross_paragraph-2",
+    "D11-cross_paragraph-3",
+    "D12-cross_paragraph-1",
+    "D12-cross_paragraph-3",
+    "D14-cross_page-0",
+    "D14-cross_paragraph-0",
+    "D14-cross_paragraph-2",
+    "D15-cross_paragraph-1",
+    "D15-cross_paragraph-2",
+    "D16-cross_paragraph-1",
+    "D18-cross_paragraph-2"
+   ],
+   "max_chunk_tokens": 512,
+   "mean_chunk_tokens": 446.4,
+   "orphaned": 20,
+   "overlap": 0,
+   "size": 512,
+   "strategy": "paragraph"
+  }
+ ],
+ "size": 512,
+ "worst": {
+  "orphaned": 51,
+  "strategy": "page_aware"
+ }
+}
