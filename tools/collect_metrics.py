@@ -46,7 +46,7 @@ ANCHORS: dict[str, list[str]] = {
     "pages_total": ["{} pages,"],
     "two_column_documents": ["{} two-column documents", "{} of the documents are two-column"],
     "reversed_documents": ["{} of those write", "{} of those"],
-    "two_column_facts": ["of the {} facts on two-column"],
+    "two_column_facts": ["has {} facts on two-column"],
     "tests_total": ["{} tests"],
     "coverage_line_pct": ["{} percent line coverage"],
     "policy_size": [
@@ -76,7 +76,7 @@ ANCHORS: dict[str, list[str]] = {
     "recursive_overlap_zero_growth_pct": ["index {} percent larger"],
     "sorted_broken": ["breaks {} of the 396"],
     "sorted_broken_pct": ["{} percent of every fact"],
-    "sorted_broken_two_column_pct": ["{} percent of the facts on two-column"],
+    "sorted_broken_two_column_pct": ["sorting breaks {} percent of them"],
     "raw_reversed_orphaned": ["costs {} orphans"],
     "blocks_broken": ["breaks {} of the same facts", "broke {} facts", "loses {} of the facts"],
     "fixed_128_orphaned": ["lose {} facts at 128 tokens"],

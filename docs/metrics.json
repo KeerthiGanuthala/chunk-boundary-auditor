@@ -164,7 +164,7 @@
    "{} percent of every fact"
   ],
   "sorted_broken_two_column_pct": [
-   "{} percent of the facts on two-column"
+   "sorting breaks {} percent of them"
   ],
   "strategy_count": [
    "{} strategies and"
@@ -177,7 +177,7 @@
    "{} of the documents are two-column"
   ],
   "two_column_facts": [
-   "of the {} facts on two-column"
+   "has {} facts on two-column"
   ]
  },
  "checked_documents": [
