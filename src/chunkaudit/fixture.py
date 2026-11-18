@@ -1,9 +1,12 @@
-"""The committed fixture: PDFs, the facts planted in them, and a manifest that pins both.
+"""The committed fixture: PDFs, the facts planted in them, and a manifest that pins the bytes.
 
 The fixture is committed rather than regenerated on every run so that a reviewer audits the same
-bytes the README describes, and so that a PyMuPDF upgrade that changes layout is caught as a
-manifest mismatch rather than silently moving every number. ``chunkaudit generate --check``
-regenerates into a temporary directory and compares hashes; CI runs it on every push.
+files the README describes. Two checks guard it, for two different failures. ``verify_manifest``
+compares the committed bytes against the SHA-256 in the manifest: a cheap tamper and corruption
+check that needs no regeneration and holds in any environment. ``check_against_policy`` regenerates
+from the seed and compares content, the planted facts and the extracted text, which is what every
+number depends on; a PyMuPDF build that recompresses identical text to different bytes is reported
+but is not a failure, because it moves no number. CI runs both on every push.
 
 Files:
     data/fixtures/D01.pdf ...   one PDF per document
@@ -16,11 +19,12 @@ from __future__ import annotations
 
 import hashlib
 import json
-from dataclasses import asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from .config import Policy
 from .corpus import Corpus, Fact, corpus_from_policy
+from .extract import MODES, extract_pdf
 from .pdfgen import write_corpus
 
 DEFAULT_FIXTURE_DIR = Path(__file__).resolve().parent / "data" / "fixtures"
@@ -96,17 +100,65 @@ def verify_manifest(fixture_dir: Path = DEFAULT_FIXTURE_DIR) -> list[str]:
     return problems
 
 
-def check_against_policy(policy: Policy, fixture_dir: Path, scratch: Path) -> list[str]:
-    """Regenerate into ``scratch`` and report every file whose bytes differ from ``fixture_dir``."""
-    fresh = write_fixture(policy, scratch)
+@dataclass
+class ReproCheck:
+    """Outcome of regenerating the fixture and comparing it with the committed copy.
+
+    ``problems`` are content differences (a changed fact, or extracted text that moved): these fail
+    the check, because they would move a published number. ``byte_only`` names PDFs whose compressed
+    bytes differ while every mode's extracted text is identical: a PyMuPDF build difference that
+    changes no number, reported but not a failure.
+    """
+
+    problems: list[str]
+    byte_only: list[str]
+
+    @property
+    def ok(self) -> bool:
+        return not self.problems
+
+
+def check_against_policy(policy: Policy, fixture_dir: Path, scratch: Path) -> ReproCheck:
+    """Regenerate into ``scratch`` and compare content with the committed fixture.
+
+    The reproducible invariant is the corpus and the text a reader (and the audit) sees, not the
+    compressed PDF bytes. A third-party renderer does not promise byte-identical output across its
+    own versions and does not need to, because what every number depends on is the extracted text.
+    So this compares facts.json and the text extracted in all three modes, and treats a bytes-only
+    difference (identical text, different compression) as information rather than a failure. The
+    extracted text was verified identical under PyMuPDF 1.28.2 (Python 3.10) and 2.1 (Python 3.11+).
+    """
+    write_fixture(policy, scratch)
     problems: list[str] = []
-    for name, digest in fresh["files"].items():
-        committed = fixture_dir / name
-        if not committed.exists():
+    byte_only: list[str] = []
+
+    committed_facts = fixture_dir / "facts.json"
+    if not committed_facts.exists():
+        problems.append("missing facts.json")
+    elif json.loads(committed_facts.read_text(encoding="utf-8")) != json.loads(
+        (scratch / "facts.json").read_text(encoding="utf-8")
+    ):
+        problems.append("facts.json content differs")
+
+    for fresh_pdf in sorted(scratch.glob("*.pdf")):
+        name = fresh_pdf.name
+        committed_pdf = fixture_dir / name
+        if not committed_pdf.exists():
             problems.append(f"missing {name}")
-        elif sha256(committed) != digest:
-            problems.append(f"differs {name}")
-    return problems
+            continue
+        try:
+            committed_text = {m: extract_pdf(committed_pdf, m).text for m in MODES}
+        except Exception:
+            # A committed PDF that cannot even be opened is itself a content problem.
+            problems.append(f"unreadable {name}")
+            continue
+        fresh_text = {m: extract_pdf(fresh_pdf, m).text for m in MODES}
+        if committed_text != fresh_text:
+            problems.append(f"text differs {name}")
+        elif sha256(committed_pdf) != sha256(fresh_pdf):
+            byte_only.append(name)
+
+    return ReproCheck(problems=problems, byte_only=byte_only)
 
 
 def corpus_for(policy: Policy) -> Corpus:

@@ -24,7 +24,7 @@ A chunker's output cannot show which facts it split across a boundary, because t
 - **Giving the recursive splitter 32 tokens of overlap loses 1 more fact than no overlap at all, and 64 tokens loses 4 more.** The carried pieces take room in the next chunk and push apart a paragraph pair that used to fit. It reaches zero at 256 tokens of overlap, half the chunk.
 - **The best strategy still orphans 5 facts at the policy size of 512 tokens.** Fixed windows, the tutorial default, lose 17 facts (4.3 percent of planted facts); the recursive splitter loses 20; page-aware windows lose 51, because all 36 cross-page facts are unreachable to it by construction.
 
-268 tests, 99 percent line coverage, 4 experiments, 5 decision records, 18 PDFs with 396 planted facts. Every figure in this document is re-measured by CI and checked against the prose by `tools/check_numbers.py`; a stale sentence fails the build.
+270 tests, 99 percent line coverage, 4 experiments, 5 decision records, 18 PDFs with 396 planted facts. Every figure in this document is re-measured by CI and checked against the prose by `tools/check_numbers.py`; a stale sentence fails the build.
 
 ## Quickstart
 
@@ -183,7 +183,7 @@ A replay of captured stdout, not a screen recording: `tools/record_demo.py` runs
 
 ## The fixture
 
-18 PDFs, 73 pages, generated from seed `20251116` by `chunkaudit generate` and pinned by SHA-256 in `src/chunkaudit/data/fixtures/manifest.json`. `chunkaudit generate --check` regenerates into a temporary directory and fails on any byte that differs, so a PyMuPDF upgrade that moves a line break fails loudly instead of silently moving every number. 396 planted facts: 108 single, 108 cross-sentence, 72 cross-paragraph, 36 cross-page and 72 table. The awkward cases are deliberate:
+18 PDFs, 73 pages, generated from seed `20251116` by `chunkaudit generate`. The committed bytes are pinned by SHA-256 in `src/chunkaudit/data/fixtures/manifest.json` for tamper detection. `chunkaudit generate --check` regenerates into a temporary directory and compares *content*: the planted facts, and the text extracted in all three modes, which is what every number depends on. A PyMuPDF upgrade that moved a line break would change that text and fail the check loudly; a build that only recompresses identical text to different bytes changes no extracted text and no number, so the check reports it as a bytes-only difference and passes. That case is real, not hypothetical: PyMuPDF 1.28.2 (the newest wheel for Python 3.10) and 2.1 (Python 3.11 and up) write different PDF bytes, and the extracted text and every audit figure are identical under both, which is why the check verifies the text rather than the bytes. 396 planted facts: 108 single, 108 cross-sentence, 72 cross-paragraph, 36 cross-page and 72 table. The awkward cases are deliberate:
 
 - the filler sentences carry numbers, years and units of their own, so a fact cannot be found by looking for the number;
 - a cross-page fact always has a page footer between its two sentences;
@@ -226,7 +226,7 @@ chunk-boundary-auditor/
   docs/metrics.json         every published figure, with the phrase each must be quoted in
   tools/                    collect_metrics, check_numbers, render_banner, render_diagram,
                             capture_screenshots, record_demo, render_explainer
-  tests/                    268 tests, each named as the property it pins
+  tests/                    270 tests, each named as the property it pins
 ```
 
 Exit codes of `chunkaudit audit`:

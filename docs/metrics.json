@@ -14,6 +14,8 @@
   "3.10",
   "3.11",
   "3.12",
+  "1.28.2",
+  "2.1",
   "0.1.0",
   "2025",
   "20251116",
@@ -231,7 +233,7 @@
   "sorted_broken_pct": 30.8,
   "sorted_broken_two_column_pct": 61.6,
   "strategy_count": 5,
-  "tests_total": 268,
+  "tests_total": 270,
   "two_column_documents": 9,
   "two_column_facts": 198
  },

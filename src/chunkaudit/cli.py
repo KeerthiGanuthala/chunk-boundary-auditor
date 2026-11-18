@@ -77,14 +77,21 @@ def build_parser() -> argparse.ArgumentParser:
 def cmd_generate(args, policy) -> int:
     if args.check:
         with tempfile.TemporaryDirectory() as tmp:
-            problems = check_against_policy(policy, args.fixtures, Path(tmp))
-        if problems:
-            print("fixture differs from what the policy generates:")
-            for pr in problems:
+            result = check_against_policy(policy, args.fixtures, Path(tmp))
+        if result.problems:
+            print("fixture content differs from what the policy generates:")
+            for pr in result.problems:
                 print(f"  {pr}")
             print("run `chunkaudit generate` to refresh it, then commit the result")
             return EXIT_FIXTURE
-        print(f"fixture matches policy seed {policy.fixture.seed}")
+        if result.byte_only:
+            print(
+                f"fixture content matches policy seed {policy.fixture.seed}: "
+                f"{len(result.byte_only)} PDFs differ in compressed bytes only, with identical "
+                f"extracted text (a PyMuPDF build difference that moves no number)"
+            )
+        else:
+            print(f"fixture matches policy seed {policy.fixture.seed}")
         return EXIT_OK
     manifest = write_fixture(policy, args.fixtures)
     print(f"wrote {len(manifest['files'])} files to {args.fixtures} (seed {policy.fixture.seed})")

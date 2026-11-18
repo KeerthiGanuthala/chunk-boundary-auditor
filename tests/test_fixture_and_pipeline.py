@@ -2,6 +2,7 @@
 
 import json
 
+import pymupdf
 import pytest
 
 from chunkaudit.fixture import (
@@ -74,16 +75,56 @@ def test_regenerating_removes_stale_pdfs(small_policy, tmp_path):
 def test_check_against_policy_is_clean_for_a_matching_fixture(
     small_policy, small_fixture_dir, tmp_path
 ):
-    assert check_against_policy(small_policy, small_fixture_dir, tmp_path) == []
+    result = check_against_policy(small_policy, small_fixture_dir, tmp_path)
+    assert result.problems == []
+    assert result.byte_only == []
+    assert result.ok
 
 
-def test_check_against_policy_names_a_differing_file(small_policy, tmp_path):
+def test_check_against_policy_names_a_missing_or_unreadable_file(small_policy, tmp_path):
     committed = tmp_path / "committed"
     write_fixture(small_policy, committed)
-    (committed / "D01.pdf").write_bytes(b"%PDF changed")
+    (committed / "D01.pdf").write_bytes(b"%PDF not a real pdf")
     (committed / "D03.pdf").unlink()
-    problems = check_against_policy(small_policy, committed, tmp_path / "scratch")
-    assert problems == ["differs D01.pdf", "missing D03.pdf"]
+    result = check_against_policy(small_policy, committed, tmp_path / "scratch")
+    assert result.problems == ["unreadable D01.pdf", "missing D03.pdf"]
+    assert not result.ok
+
+
+def test_check_against_policy_flags_a_real_text_change(small_policy, tmp_path):
+    """A committed PDF whose extracted text moved is a content problem: a number would move."""
+    committed = tmp_path / "committed"
+    write_fixture(small_policy, committed)
+    doc = pymupdf.open(committed / "D02.pdf")
+    doc[0].insert_text((70, 70), "An extra planted sentence that was never in the corpus.")
+    doc.save(committed / "_tmp.pdf", garbage=0, deflate=True, no_new_id=True)
+    doc.close()
+    (committed / "_tmp.pdf").replace(committed / "D02.pdf")
+    result = check_against_policy(small_policy, committed, tmp_path / "scratch")
+    assert "text differs D02.pdf" in result.problems
+    assert not result.ok
+
+
+def test_check_against_policy_tolerates_a_bytes_only_difference(small_policy, tmp_path):
+    """The regression this fix exists for: different compressed bytes, identical extracted text.
+
+    This is what a different PyMuPDF build produces. The committed PyMuPDF 2.1 (Python 3.11+) and
+    the 1.28.2 that Python 3.10 resolves to write the same text to different bytes; the check must
+    pass on that difference, because it moves no number, and only report it.
+    """
+    committed = tmp_path / "committed"
+    write_fixture(small_policy, committed)
+    original = (committed / "D01.pdf").read_bytes()
+    # Re-save with the streams left uncompressed: different bytes, byte for byte the same text.
+    doc = pymupdf.open(committed / "D01.pdf")
+    doc.save(committed / "_tmp.pdf", garbage=4, deflate=False, clean=True)
+    doc.close()
+    (committed / "_tmp.pdf").replace(committed / "D01.pdf")
+    assert (committed / "D01.pdf").read_bytes() != original  # precondition: bytes really differ
+    result = check_against_policy(small_policy, committed, tmp_path / "scratch")
+    assert result.problems == []
+    assert result.byte_only == ["D01.pdf"]
+    assert result.ok
 
 
 def test_load_facts_round_trips_the_corpus(small_corpus, small_fixture_dir):
@@ -110,7 +151,7 @@ def test_the_committed_fixture_matches_its_manifest(committed_fixture_dir):
 def test_the_committed_fixture_matches_the_committed_policy(
     default_policy, committed_fixture_dir, tmp_path
 ):
-    assert check_against_policy(default_policy, committed_fixture_dir, tmp_path) == []
+    assert check_against_policy(default_policy, committed_fixture_dir, tmp_path).problems == []
 
 
 def test_run_audit_audits_every_fact_in_the_fixture(small_corpus, small_fixture_dir):

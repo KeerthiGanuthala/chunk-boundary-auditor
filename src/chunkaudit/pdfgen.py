@@ -12,10 +12,11 @@ Every paragraph is inserted as its own text box so it becomes its own text block
 That is also how most document producers behave, and it is what lets the ``blocks`` extraction
 mode cluster blocks into columns.
 
-Determinism: the PDF metadata dates are pinned, the file identifier is not regenerated on save, and
-PyMuPDF lays out text deterministically, so the same corpus produces byte-identical files. The
-fixture manifest records the SHA-256 of every file and ``chunkaudit generate --check`` fails when
-they drift.
+Determinism: the PDF metadata dates are pinned and the file identifier is not regenerated on save,
+so a given PyMuPDF build renders the same corpus to byte-identical files. Across PyMuPDF versions
+the compressed bytes differ while the laid-out text does not, so the fixture is checked by content
+(``chunkaudit generate --check``, which compares the extracted text) and the committed bytes are
+pinned by SHA-256 only for tamper detection.
 """
 
 from __future__ import annotations

@@ -31,3 +31,12 @@ whose own quirks would need explaining, without removing the need for the advers
 - What it does not measure: scanned pages, hyphenation at line ends, rotated text, forms, and
   producers whose block structure PyMuPDF segments differently. Each of those is a layout the
   fixture does not contain, and a loss it therefore cannot see.
+- Raw PDF bytes are not reproducible across PyMuPDF versions, and were never the invariant worth
+  pinning. The committed fixture was frozen under PyMuPDF 2.1 (Python 3.11 and up); Python 3.10
+  resolves to 1.28.2, the newest wheel it has, and 1.28.2 writes the same corpus to different
+  compressed bytes. The extracted text, and therefore every audit figure, is identical under both.
+  So the fixture is checked by content (`chunkaudit generate --check` compares the facts and the
+  extracted text) and the committed bytes are pinned by SHA-256 only to catch tampering and
+  corruption of the committed files, not as a cross-environment guarantee. An early version checked
+  bytes and failed CI on Python 3.10 for a difference that moved no number; the test suite now pins
+  that a bytes-only difference passes and a text difference fails.
